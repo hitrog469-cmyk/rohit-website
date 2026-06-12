@@ -2,26 +2,362 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─── CSS Variables — Dark (default) ────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* backgrounds */
+  --bg-page:     #050505;
+  --bg-ink:      #0a0a0a;
+  --bg-surface:  #111111;
+  --bg-elevated: #1a1a1a;
+  --bg-subtle:   #0d0d0d;
+  --bg-hover:    #141414;
+
+  /* borders */
+  --border-subtle:   #0d0d0d;
+  --border-default:  #1a1a1a;
+  --border-muted:    #222222;
+  --border-emphasis: #333333;
+
+  /* text */
+  --text-primary:   #F5F5F5;
+  --text-secondary: #A3A3A3;
+  --text-tertiary:  #525252;
+  --text-quaternary:#444444;
+  --text-dim:       #333333;
+  --text-faint:     #222222;
+  --text-ghost:     #141414;
+
+  /* accent */
+  --amber:          #F59E0B;
+  --amber-dim:      rgba(245, 158, 11, 0.12);
+  --amber-glow:     rgba(245, 158, 11, 0.3);
+
+  /* legacy aliases (keep for backwards compat) */
+  --color-void: var(--bg-page);
+  --color-ink: var(--bg-ink);
+  --color-surface: var(--bg-surface);
+  --color-overlay: var(--bg-elevated);
+  --color-border: var(--border-muted);
+  --color-muted: var(--text-dim);
+  --color-amber: var(--amber);
+  --color-amber-dim: var(--amber-dim);
+  --color-amber-glow: var(--amber-glow);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+
+  --nav-bg: rgba(5, 5, 5, 0.92);
+  --shadow-card: none;
+
+  color-scheme: dark;
 }
 
-@media (prefers-color-scheme: dark) {
+/* ─── CSS Variables — Light ──────────────────────────────────── */
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Warm stone palette */
+    --bg-page:     #F5F4F0;
+    --bg-ink:      #ECEAE5;
+    --bg-surface:  #FFFFFF;
+    --bg-elevated: #EEECEA;
+    --bg-subtle:   #F8F7F3;
+    --bg-hover:    #E4E2DD;
+
+    --border-subtle:   #E4E2DD;
+    --border-default:  #D3D1CB;
+    --border-muted:    #C0BDB7;
+    --border-emphasis: #9E9B94;
+
+    /* warm brown-gray text scale */
+    --text-primary:    #1C1917;
+    --text-secondary:  #44403C;
+    --text-tertiary:   #78716C;
+    --text-quaternary: #A8A29E;
+    --text-dim:        #C6C1BB;
+    --text-faint:      #DEDBD6;
+    --text-ghost:      #E8E5E0;
+
+    /* amber — darker for sufficient light-bg contrast */
+    --amber:      #B45309;
+    --amber-dim:  rgba(180, 83, 9, 0.09);
+    --amber-glow: rgba(180, 83, 9, 0.18);
+
+    --nav-bg: rgba(245, 244, 240, 0.95);
+    --shadow-card: 0 1px 4px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
+
+    color-scheme: light;
   }
+}
+
+/* ─── Light-mode global class overrides ─────────────────────── */
+/* Target Tailwind arbitrary-value classes. In CSS, # must be \# inside
+   an identifier, and Tailwind generates .bg-\[\#xxxxxx\] accordingly. */
+@media (prefers-color-scheme: light) {
+  /* ── Page / section backgrounds ── */
+  .bg-\[\#050505\], .bg-\[\#010101\], .bg-\[\#020202\], .bg-\[\#030303\] { background-color: var(--bg-page) !important; }
+  .bg-\[\#0a0a0a\], .bg-\[\#0f0f0f\]  { background-color: var(--bg-subtle) !important; }
+  .bg-\[\#111\], .bg-\[\#111111\]      { background-color: var(--bg-surface) !important; }
+  .bg-\[\#141414\], .bg-\[\#1a1a1a\]  { background-color: var(--bg-elevated) !important; }
+  .bg-\[\#060606\]                     { background-color: var(--bg-hover) !important; }
+  .bg-\[\#0d0d0d\]                     { background-color: var(--bg-ink) !important; }
+  /* ── Hover variants ── */
+  .hover\:bg-\[\#0d0d0d\]:hover { background-color: var(--bg-hover) !important; }
+  /* ── Border colors ── */
+  .border-\[\#0d0d0d\]                     { border-color: var(--border-subtle)   !important; }
+  .border-\[\#1a1a1a\]                     { border-color: var(--border-default)  !important; }
+  .border-\[\#141414\]                     { border-color: var(--border-default)  !important; }
+  .border-\[\#222\], .border-\[\#222222\]  { border-color: var(--border-muted)    !important; }
+  .border-\[\#333\], .border-\[\#333333\]  { border-color: var(--border-emphasis) !important; }
+  /* ── Text: near-white → near-black ── */
+  .text-\[\#F5F5F5\], .text-\[\#E5E5E5\], .text-\[\#FAFAFA\], .text-white { color: var(--text-primary)    !important; }
+  .text-\[\#A3A3A3\], .text-\[\#D4D4D4\], .text-\[\#B0B0B0\]              { color: var(--text-secondary)  !important; }
+  .text-\[\#525252\], .text-\[\#4A4A4A\]                                    { color: var(--text-tertiary)   !important; }
+  .text-\[\#444\],    .text-\[\#444444\]                                     { color: var(--text-quaternary) !important; }
+  /* ── Ghost text: stay as subtle hint (NOT invisible) ── */
+  .text-\[\#333\], .text-\[\#333333\]      { color: var(--text-dim)        !important; }
+  .text-\[\#222\], .text-\[\#222222\]      { color: var(--text-faint)      !important; }
+  .text-\[\#1a1a1a\], .text-\[\#141414\]  { color: var(--text-ghost)      !important; }
+  /* ── Cards: add subtle shadow in light mode ── */
+  .rounded-2xl.border,
+  .rounded-xl.border  { box-shadow: var(--shadow-card) !important; }
+  /* ── Scrollbar ── */
+  ::-webkit-scrollbar-track { background: var(--bg-elevated); }
+}
+
+/* ─── Reset & Base ──────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Custom cursor — hide system cursor, but only for mouse/trackpad users.
+   Touch devices and assistive tech keep native behavior. */
+@media (pointer: fine) {
+  html {
+    cursor: none;
   }
+  * {
+    cursor: none !important;
+  }
+}
+
+/* ─── Selection ─────────────────────────────────────────────── */
+::selection {
+  background: rgba(245, 158, 11, 0.25);
+  color: #F59E0B;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-page);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--amber);
+  border-radius: 99px;
+}
+
+/* ─── Typography Scale ──────────────────────────────────────── */
+.text-display {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+.text-headline {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.text-body-large {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+}
+
+/* ─── Utility Classes ───────────────────────────────────────── */
+.amber-text { color: var(--color-amber); }
+
+.amber-glow-text {
+  color: var(--color-amber);
+  text-shadow: 0 0 40px rgba(245, 158, 11, 0.5);
+}
+
+.section-padding {
+  padding: clamp(5rem, 10vw, 9rem) clamp(1.5rem, 6vw, 6rem);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.amber-border {
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-amber);
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  padding: 0.35rem 0.9rem;
+  border-radius: 99px;
+  transition: letter-spacing 0.35s ease, border-color 0.35s ease,
+    box-shadow 0.35s ease, background 0.35s ease;
+}
+
+.section-label:hover {
+  letter-spacing: 0.24em;
+  border-color: rgba(245, 158, 11, 0.5);
+  background: rgba(245, 158, 11, 0.12);
+  box-shadow: 0 0 24px rgba(245, 158, 11, 0.15);
+}
+
+/* The label's leading dot breathes */
+.section-label > span:first-child {
+  animation: label-breathe 2.4s ease-in-out infinite;
+}
+
+@keyframes label-breathe {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.65); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-label > span:first-child {
+    animation: none;
+  }
+}
+
+.amber-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-amber), transparent);
+  opacity: 0.35;
+}
+
+/* ─── Lenis smooth scroll ───────────────────────────────────── */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* ─── Mobile tap highlight ──────────────────────────────────── */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+canvas {
+  display: block;
+}
+
+/* ─── Blog post prose ───────────────────────────────────────── */
+.prose-rohit {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.0625rem;
+}
+.prose-rohit h1, .prose-rohit h2, .prose-rohit h3, .prose-rohit h4 {
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.prose-rohit h2 { font-size: 1.5rem; }
+.prose-rohit h3 { font-size: 1.2rem; color: #F59E0B; }
+.prose-rohit p { margin-bottom: 1.25rem; }
+.prose-rohit a { color: #F59E0B; text-decoration: underline; text-underline-offset: 3px; }
+.prose-rohit a:hover { color: #FBBF24; }
+.prose-rohit strong { color: #F5F5F5; font-weight: 600; }
+.prose-rohit em { color: #D4D4D4; font-style: italic; }
+.prose-rohit ul, .prose-rohit ol { padding-left: 1.5rem; margin-bottom: 1.25rem; }
+.prose-rohit li { margin-bottom: 0.4rem; }
+.prose-rohit blockquote {
+  border-left: 2px solid #F59E0B;
+  padding-left: 1rem;
+  color: #525252;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+.prose-rohit code {
+  font-family: var(--font-jetbrains), monospace;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-muted);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.875em;
+  color: #F59E0B;
+}
+.prose-rohit pre {
+  background: var(--bg-ink);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 1.25rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+.prose-rohit pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--text-secondary);
+}
+.prose-rohit hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #F59E0B40, transparent);
+  margin: 2.5rem 0;
+}
+/* KaTeX math blocks */
+.prose-rohit .math {
+  overflow-x: auto;
+  padding: 1rem;
+  background: var(--bg-ink);
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  color: #F5F5F5;
+  text-align: center;
+  font-size: 1.1rem;
 }
