@@ -2,78 +2,100 @@
 
 import { useRef, useState } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
-import { MapPin, ChevronDown } from "lucide-react";
+import { MapPin, ChevronDown, ExternalLink } from "lucide-react";
 
 const EVENTS = [
   {
+    year: "2018",
+    role: "SEE — District Topper",
+    org: "Baglung, Nepal",
+    location: "Baglung → Kathmandu",
+    type: "education",
+    color: "#F59E0B",
+    desc: "Topped the district in the School Leaving Examination. 3.95 / 4.0. Packed everything up and moved to Kathmandu for the science stream — first time living away from home, first bet placed entirely on myself. Didn't look back.",
+    highlights: ["3.95 / 4.0 GPA", "District Topper · Baglung", "Baglung → Kathmandu"],
+  },
+  {
     year: "2020",
     role: "Co-founder — Learners Club",
-    org: "Learners Club — YouTube",
-    location: "Baglung / Remote",
+    org: "YouTube",
+    location: "Kathmandu (Remote)",
     type: "creative",
     color: "#10B981",
-    desc: "COVID lockdown. Three school friends decided to do something useful. Built a YouTube channel teaching high school physics, chemistry and maths. 300+ videos. 3,000+ subscribers. Kept going until NIT made time impossible.",
-    highlights: ["300+ videos", "3,000+ subscribers", "Physics · Chemistry · Maths"],
+    desc: "COVID hit. Schools shut. Three school friends saw a gap and filled it — built a YouTube channel teaching high school physics, chemistry and maths to students who suddenly had no access to teachers. No funding, no studio, just knowledge and time. 300+ videos. 3,000+ subscribers. Students actually learning.",
+    highlights: ["300+ videos", "3,000+ subs", "Physics · Chemistry · Maths", "COVID impact"],
   },
   {
     year: "2021",
-    role: "B.Tech Student — Civil Engineering",
-    org: "NIT Rourkela",
+    role: "B.Tech — Civil Engineering",
+    org: "India",
+    location: "Rourkela, Odisha, India",
+    type: "education",
+    color: "#3B82F6",
+    desc: "1,500km from home. Said yes to everything from day one. Class Representative. Branch Representative. Mentor at Institute Counselling Services — helping fellow students navigate academic and personal pressures. Represented the institute in football at inter-collegiate level. If a role meant contributing more, I took it. Four years of being uncomfortable on purpose.",
+    highlights: ["Class Representative", "Branch Representative", "Institute Counselling Mentor", "Football — Inter-collegiate"],
+  },
+  {
+    year: "2024 · Summer",
+    role: "Quality Assurance Intern",
+    org: "Government of India Subsidiary",
+    location: "India",
+    type: "work",
+    color: "#8B5CF6",
+    desc: "Summer internship at an organisation operating under the Government of India. Got a ground-level view of how quality systems work inside large public infrastructure projects — the scale, the process, the people. Left with a completely different understanding of how India operates as an economy. Changed my plans. Before this, I was in a hurry to leave for higher studies. After this, I wanted to understand more first.",
+    highlights: ["Quality Assurance", "Govt. of India subsidiary", "Infrastructure scale", "Shifted my perspective"],
+  },
+  {
+    year: "2024 · Aug",
+    role: "Thesis Research — FG-GRC Plates",
+    org: "Dept. of Civil Engineering",
+    location: "Rourkela, India",
+    type: "research",
+    color: "#A855F7",
+    desc: "Officially began thesis research in August 2024 — but the questions had been building with my supervisor much earlier. Buckling and free vibration of Functionally Graded Graphene Reinforced Composite plates under combined thermomechanical loading. Months in the literature, Classical Plate Theory derivations, ABAQUS parametric studies, MATLAB scripting. Primarily computational — the lab was my workstation. Built a live web simulator for the plate analysis tool so anyone can run the calculations.",
+    highlights: ["FG-GRC · ABAQUS · MATLAB", "Thermomechanical loading", "Buckling & Vibration", "Live web tool ↗"],
+    link: "https://fg-grc-calculator.vercel.app/",
+    linkLabel: "Open FG-GRC Simulator →",
+  },
+  {
+    year: "2024–25",
+    role: "Final Year — Placements · Research · One More Internship",
+    org: "Engineering Institute",
     location: "Rourkela, India",
     type: "education",
     color: "#F59E0B",
-    desc: "Joined one of India's premier NITs — 1,500km from home. Started with mechanics, materials, and the fundamentals of how structures hold up and fail.",
-    highlights: ["Structural Analysis", "Concrete Technology", "Geotechnical Eng."],
-  },
-  {
-    year: "2022",
-    role: "Research Intern — Structural Lab",
-    org: "NIT Rourkela",
-    location: "Rourkela, India",
-    type: "research",
-    color: "#3B82F6",
-    desc: "Assisted in experimental testing of RC beams. First exposure to ABAQUS. Started asking questions no textbook had answers to.",
-    highlights: ["ABAQUS basics", "RC beam testing", "Load-deflection curves"],
-  },
-  {
-    year: "2023",
-    role: "Thesis Research Begins",
-    org: "Dept. of Civil Engineering, NIT Rourkela",
-    location: "Rourkela, India",
-    type: "research",
-    color: "#8B5CF6",
-    desc: "Chose FG-GRC plates as thesis topic. Spent months in the literature, deriving equations, running ABAQUS parametrics. This is where the obsession started.",
-    highlights: ["FEM modeling", "MATLAB scripting", "Classical Plate Theory"],
+    desc: "Final year running three things at once: finishing the thesis, sitting for campus placements (curious what the industry looked like post-internship), and taking one more internship in the last semester to keep expanding what I knew. The internship experience had given me appetite for the non-traditional side of construction — the technology layer, the systems thinking. Wanted to understand where the field was actually heading.",
+    highlights: ["Thesis completion", "Campus placements", "Final semester internship", "Technology in construction"],
   },
   {
     year: "2025",
-    role: "B.Tech Graduate",
-    org: "NIT Rourkela",
-    location: "Rourkela, India",
-    type: "education",
-    color: "#F59E0B",
-    desc: "Graduated with thesis on buckling and vibration of FG-GRC plates under thermomechanical loading. CGPA 8.0/10. Returned to Kathmandu carrying four years of fire.",
-    highlights: ["Thesis defended", "CGPA 8.0 / 10", "FG-GRC research"],
+    role: "Construction Tech Professional",
+    org: "Multinational Construction Firm",
+    location: "Kathmandu, Nepal",
+    type: "current",
+    color: "#EF4444",
+    desc: "Applied for a role at a multinational construction company — a non-traditional path for a fresh graduate, less experience than most people in the room. Got selected. Now working alongside people with years on me, finding new perspectives on how construction actually works at scale and at the intersection of technology. Excelling. Every day adds something the degree didn't cover.",
+    highlights: ["Multinational firm", "Construction technology", "Cross-functional exposure", "Least experienced · excelling"],
   },
   {
-    year: "2025–26",
-    role: "Working · Researching · Building",
-    org: "Kathmandu, Nepal",
+    year: "Now",
+    role: "Building the next chapter",
+    org: "Kathmandu → Wherever",
     location: "Kathmandu, Nepal",
     type: "current",
     color: "#F59E0B",
-    desc: "Full-time job while looking for the right research opportunity. Building this website, working on structural projects, and keeping the hunger alive. Earning matters. So does the next chapter.",
-    highlights: ["Full-time work", "Research hunt", "Building in public"],
+    desc: "24 hours a day. No wasted ones. The research experience, the construction industry insight, the Learners Club mission — all of it is converging. Looking to build something bigger as a team, leverage every angle I've developed, and find the right people to build with. Precision. Experience. No regrets.",
+    highlights: ["Research + Industry", "Building as a team", "Full-stack perspective", "No wasted hours"],
   },
   {
-    year: "2026/27",
-    role: "MSc / PhD — Structural Engineering",
-    org: "TBD — KAUST · NUS · TU Munich",
-    location: "???",
+    year: "→ MS / PhD",
+    role: "Graduate Research",
+    org: "TBD",
+    location: "Somewhere with the right lab",
     type: "future",
     color: "#525252",
-    desc: "The next chapter. Wherever the research takes me. The boundary conditions are still unknown — but the loading is clear.",
-    highlights: ["Research continuation", "International exposure", "?"],
+    desc: "The FG-GRC work is not finished. The questions I have require better infrastructure, the right supervisor, and a research environment built for going deep. The boundary conditions are set. The loading is clear. The next academic chapter is a matter of timing and the right door.",
+    highlights: ["FG-GRC continuation", "International research", "?"],
   },
 ];
 
@@ -100,7 +122,7 @@ function TimelineNode({
       animate={inView ? { opacity: 1, x: 0 } : {}}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
     >
-      {/* Center line + node */}
+      {/* Node + line */}
       <div className="flex flex-col items-center shrink-0 w-8">
         <motion.div
           className="relative w-8 h-8 rounded-full border-2 flex items-center justify-center shrink-0 z-10"
@@ -110,29 +132,26 @@ function TimelineNode({
           }}
           animate={
             isCurrent
-              ? { boxShadow: [`0 0 0 0 ${event.color}50`, `0 0 0 12px ${event.color}00`] }
+              ? { boxShadow: [`0 0 0 0 ${event.color}50`, `0 0 0 14px ${event.color}00`] }
               : {}
           }
-          transition={{ duration: 1.5, repeat: Infinity }}
+          transition={{ duration: 1.6, repeat: Infinity }}
           whileHover={{ scale: 1.2 }}
         >
           {isFuture ? (
             <motion.span
-              className="text-[#525252] font-bold text-xs"
+              className="font-bold text-xs"
+              style={{ color: "#525252" }}
               animate={{ opacity: [0.3, 1, 0.3] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
               ?
             </motion.span>
           ) : (
-            <div
-              className="w-2 h-2 rounded-full"
-              style={{ backgroundColor: event.color }}
-            />
+            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: event.color }} />
           )}
         </motion.div>
 
-        {/* Connecting line */}
         {!isLast && (
           <motion.div
             className="w-px flex-1 mt-1"
@@ -142,8 +161,8 @@ function TimelineNode({
             style={{
               transformOrigin: "top",
               background: isFuture
-                ? "repeating-linear-gradient(to bottom, #333 0, #333 4px, transparent 4px, transparent 8px)"
-                : `linear-gradient(to bottom, ${event.color}40, ${EVENTS[index + 1]?.color ?? event.color}20)`,
+                ? "repeating-linear-gradient(to bottom, #2a2a2a 0, #2a2a2a 4px, transparent 4px, transparent 8px)"
+                : `linear-gradient(to bottom, ${event.color}40, ${EVENTS[index + 1]?.color ?? event.color}15)`,
             }}
           />
         )}
@@ -161,23 +180,18 @@ function TimelineNode({
 
         <div className="flex items-start justify-between gap-4">
           <div>
-            <h3
-              className={`font-bold text-base ${isFuture ? "text-[#525252]" : "text-[#F5F5F5]"}`}
-            >
+            <h3 className={`font-bold text-base leading-snug ${isFuture ? "text-[#404040]" : "text-[#F5F5F5]"}`}>
               {event.role}
             </h3>
-            <p className={`text-sm mt-0.5 ${isFuture ? "text-[#333]" : "text-[#A3A3A3]"}`}>
+            <p className={`text-sm mt-0.5 ${isFuture ? "text-[#2a2a2a]" : "text-[#525252]"}`}>
               {event.org}
             </p>
             <div className="flex items-center gap-1 mt-1">
-              <MapPin className="w-3 h-3 text-[#333]" />
-              <span className="text-[11px] text-[#333] font-mono">{event.location}</span>
+              <MapPin className="w-3 h-3 text-[#2a2a2a]" />
+              <span className="text-[11px] text-[#2a2a2a] font-mono">{event.location}</span>
             </div>
           </div>
-          <motion.div
-            animate={{ rotate: open ? 180 : 0 }}
-            className="text-[#333] mt-1 shrink-0"
-          >
+          <motion.div animate={{ rotate: open ? 180 : 0 }} className="text-[#333] mt-1 shrink-0">
             <ChevronDown className="w-4 h-4" />
           </motion.div>
         </div>
@@ -191,10 +205,11 @@ function TimelineNode({
               transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
               style={{ overflow: "hidden" }}
             >
-              <p className="text-[#A3A3A3] text-sm leading-relaxed mt-3 mb-3">
+              <p className="text-[#737373] text-sm leading-[1.85] mt-3 mb-4">
                 {event.desc}
               </p>
-              <div className="flex flex-wrap gap-2">
+
+              <div className="flex flex-wrap gap-2 mb-3">
                 {event.highlights.map((h) => (
                   <span
                     key={h}
@@ -209,6 +224,30 @@ function TimelineNode({
                   </span>
                 ))}
               </div>
+
+              {"link" in event && event.link && (
+                <a
+                  href={event.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="inline-flex items-center gap-2 mt-1 text-xs font-mono px-3 py-1.5 rounded-lg transition-all duration-200"
+                  style={{
+                    color: event.color,
+                    background: `${event.color}12`,
+                    border: `1px solid ${event.color}35`,
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLAnchorElement).style.background = `${event.color}22`;
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLAnchorElement).style.background = `${event.color}12`;
+                  }}
+                >
+                  <ExternalLink className="w-3 h-3" />
+                  {"linkLabel" in event ? String(event.linkLabel) : "Open →"}
+                </a>
+              )}
             </motion.div>
           )}
         </AnimatePresence>
@@ -223,7 +262,8 @@ export default function Timeline() {
 
   return (
     <section id="experience" ref={ref} className="section-padding bg-void relative overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none opacity-[0.02]"
+      <div
+        className="absolute inset-0 pointer-events-none opacity-[0.02]"
         style={{ backgroundImage: "radial-gradient(circle, #F59E0B 1px, transparent 1px)", backgroundSize: "40px 40px" }}
       />
 
@@ -240,13 +280,15 @@ export default function Timeline() {
           <h2 className="text-headline text-[#F5F5F5] mt-4">
             The <span className="text-[#F59E0B]">Road</span> So Far
           </h2>
-          <p className="text-[#525252] mt-3 text-base">Click any node to expand.</p>
+          <p className="text-[#525252] mt-3 text-base">
+            From Baglung to wherever this is going. Click any node.
+          </p>
         </motion.div>
 
         <div>
           {EVENTS.map((event, i) => (
             <TimelineNode
-              key={event.year}
+              key={`${event.year}-${i}`}
               event={event}
               index={i}
               isLast={i === EVENTS.length - 1}
