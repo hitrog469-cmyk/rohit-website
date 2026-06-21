@@ -69,13 +69,13 @@ const EVENTS = [
   },
   {
     year: "2025",
-    role: "Construction Tech Professional",
-    org: "Multinational Construction Firm",
+    role: "AI Data Operations",
+    org: "CloudFactory",
     location: "Kathmandu, Nepal",
     type: "current",
     color: "#EF4444",
-    desc: "Applied for a role at a multinational construction company. Non-traditional path for a fresh graduate, less experience than most people in the room. Got selected. Now working alongside people with years on me, finding new perspectives on how construction actually works at scale and at the intersection of technology. Excelling. Every day adds something the degree didn't cover.",
-    highlights: ["Multinational firm", "Construction technology", "Cross-functional exposure", "Least experienced · excelling"],
+    desc: "Cleared the entry exam comfortably. Two rounds of interviews, cleared both. CloudFactory took a bet on me despite slightly less experience than others in the room, and I've been making that count every day since. Working on AI data operations at scale, cross-functional teams, sharp people around me. Excelling. Every week adds a perspective the degree didn't cover.",
+    highlights: ["CloudFactory", "AI Data Operations", "Cleared exam + 2 interviews", "Excelling"],
   },
   {
     year: "Now",

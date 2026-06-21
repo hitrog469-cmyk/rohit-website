@@ -25,9 +25,19 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
-    // Simulate send — wire EmailJS here later
-    await new Promise((r) => setTimeout(r, 1500));
-    setStatus("sent");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Failed");
+      setStatus("sent");
+      setForm({ name: "", email: "", message: "" });
+    } catch {
+      setStatus("idle");
+      alert("Something went wrong. Try emailing directly at rohitofficial.ce@gmail.com");
+    }
   };
 
   return (
@@ -168,7 +178,7 @@ export default function Contact() {
             <p className="text-[#A3A3A3] text-base leading-relaxed mb-8">
               Whether you have a research collaboration in mind, want to discuss
               structural engineering, need a builder for your project, or just want
-              to connect — my inbox is open.
+              to connect. My inbox is open.
             </p>
 
             <div className="space-y-3 mb-10">
