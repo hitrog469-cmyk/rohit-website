@@ -160,7 +160,7 @@ export default function Education() {
             </div>
 
             <p className="text-[#A3A3A3] text-sm leading-relaxed">
-              Left Baglung for Kathmandu to pursue science stream. First time living away from home — in a hostel, in a city I barely knew. The hunger to prove something started here.
+              Left Baglung for Kathmandu to pursue science stream. First time living away from home. In a hostel, in a city I barely knew. The hunger to prove something started here.
             </p>
           </motion.div>
         </div>

@@ -11,10 +11,10 @@ const DETAIL_CARDS = [
 ];
 
 const STORY_SHORT =
-  "I grew up in Baglung — a small hilly district in western Nepal, on the road to Dhaulagiri. My father spent his prime years working in Bahrain, Saudi Arabia and Dubai so that his children wouldn't have to. I was district topper in my school exams. I got into NIT Rourkela. I don't take that lightly. Civil engineer, researcher, builder — and someone who hasn't forgotten where the journey started.";
+  "I grew up in Baglung, a small hilly district in western Nepal near Dhaulagiri. My father spent his prime years working in Bahrain, Saudi Arabia and Dubai so his children wouldn't have to. I was district topper in school. I got into NIT Rourkela. I don't take any of that lightly. Civil engineer, researcher, builder. Someone who hasn't forgotten where the journey started.";
 
 const STORY_FULL =
-  "My father never really got to live his own life. He worked as a security guard in the Gulf for years, sent money home, came back when his health needed it, and picked up whatever work he could — including walking streets in Baglung selling recharge cards so there'd be money for the next day. He never complained once. That is what drives me more than any grade ever could.\n\nI graduated from NIT Rourkela with a B.Tech in Civil Engineering and an 8.0 CGPA, where I spent four years obsessing over why structures fail — and how to make them not. My thesis on Functionally Graded Graphene Reinforced Composite (FG-GRC) plates under combined thermomechanical loading wasn't just academic. It was personal. I watched the 2015 earthquake devastate Kathmandu from a phone screen in Baglung, terrified and helpless. I chose structures because of that day.\n\nDuring COVID lockdown, I co-founded Learners Club with two school friends — a YouTube channel with 300+ videos and 3,000+ subscribers, teaching high school physics, chemistry and maths to students who couldn't afford better. That's still the mission.\n\nI'm back in Kathmandu now. Working. Researching. Looking for the next door. The goal was never just a degree — it was to become someone useful to the world I came from.";
+  "My father never really got to live his own life. He worked security in the Gulf for years, sent money home, came back when his health needed it, and picked up whatever work he could find. For a stretch he was walking streets in Baglung selling phone recharge cards so there'd be money for the next day. He never complained once. That's what drives me more than any grade ever could.\n\nI graduated with a B.Tech in Civil Engineering and an 8.0 CGPA, having spent four years obsessing over why structures fail and how to make them not. My thesis on Functionally Graded Graphene Reinforced Composite (FG-GRC) plates wasn't just academic work. It was personal. I watched the 2015 earthquake devastate Kathmandu from a phone screen in Baglung, terrified and completely helpless. I chose structures because of that afternoon.\n\nDuring COVID lockdown I co-founded Learners Club with two school friends. A YouTube channel, 300+ videos, 3,000+ subscribers, teaching high school physics, chemistry and maths to students who needed it. That mission isn't finished.\n\nI'm back in Kathmandu now. Working full time at a multinational construction firm, researching, building in public. Looking for the right next move. The goal was never just a degree. It was to become someone useful to the world I came from.";
 
 function FloatingCard({
   icon,
@@ -218,11 +218,11 @@ export default function About() {
             >
               <p className="text-[#525252] text-sm italic leading-relaxed">
                 &ldquo;My father sold phone recharge cards on a street in Baglung so I could study.
-                Everything I build is for him — and for every kid in a small town who doesn&apos;t
+                Everything I build is for him, and for every kid in a small town who doesn&apos;t
                 know yet that they&apos;re capable of something large.&rdquo;
               </p>
               <footer className="mt-2 text-[#333333] text-xs font-mono">
-                — why I do any of this
+                / why I do any of this
               </footer>
             </motion.blockquote>
           </div>

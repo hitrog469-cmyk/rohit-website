@@ -12,7 +12,7 @@ const EVENTS = [
     location: "Baglung → Kathmandu",
     type: "education",
     color: "#F59E0B",
-    desc: "Topped the district in the School Leaving Examination. 3.95 / 4.0. Packed everything up and moved to Kathmandu for the science stream — first time living away from home, first bet placed entirely on myself. Didn't look back.",
+    desc: "Topped the district in the School Leaving Examination. 3.95 / 4.0. Packed everything up and moved to Kathmandu for the science stream. First time living away from home, first bet placed entirely on myself. Didn't look back.",
     highlights: ["3.95 / 4.0 GPA", "District Topper · Baglung", "Baglung → Kathmandu"],
   },
   {
@@ -22,7 +22,7 @@ const EVENTS = [
     location: "Kathmandu (Remote)",
     type: "creative",
     color: "#10B981",
-    desc: "COVID hit. Schools shut. Three school friends saw a gap and filled it — built a YouTube channel teaching high school physics, chemistry and maths to students who suddenly had no access to teachers. No funding, no studio, just knowledge and time. 300+ videos. 3,000+ subscribers. Students actually learning.",
+    desc: "COVID hit. Schools shut. Three school friends saw a gap and filled it. Built a YouTube channel teaching high school physics, chemistry and maths to students who suddenly had no access to teachers. No funding, no studio, just knowledge and time. 300+ videos. 3,000+ subscribers. Students actually learning.",
     highlights: ["300+ videos", "3,000+ subs", "Physics · Chemistry · Maths", "COVID impact"],
   },
   {
@@ -32,7 +32,7 @@ const EVENTS = [
     location: "Rourkela, Odisha, India",
     type: "education",
     color: "#3B82F6",
-    desc: "1,500km from home. Said yes to everything from day one. Class Representative. Branch Representative. Mentor at Institute Counselling Services — helping fellow students navigate academic and personal pressures. Represented the institute in football at inter-collegiate level. If a role meant contributing more, I took it. Four years of being uncomfortable on purpose.",
+    desc: "1,500km from home. Said yes to everything from day one. Class Representative. Branch Representative. Mentor at Institute Counselling Services, helping fellow students navigate academic and personal pressures. Represented the institute in football at inter-collegiate level. If a role meant contributing more, I took it. Four years of being uncomfortable on purpose.",
     highlights: ["Class Representative", "Branch Representative", "Institute Counselling Mentor", "Football — Inter-collegiate"],
   },
   {
@@ -42,7 +42,7 @@ const EVENTS = [
     location: "India",
     type: "work",
     color: "#8B5CF6",
-    desc: "Summer internship at an organisation operating under the Government of India. Got a ground-level view of how quality systems work inside large public infrastructure projects — the scale, the process, the people. Left with a completely different understanding of how India operates as an economy. Changed my plans. Before this, I was in a hurry to leave for higher studies. After this, I wanted to understand more first.",
+    desc: "Summer internship at an organisation operating under the Government of India. Got a ground-level view of how quality systems work inside large public infrastructure projects: the scale, the process, the people. Left with a completely different understanding of how India operates as an economy. Changed my plans. Before this, I was in a hurry to leave for higher studies. After this, I wanted to understand more first.",
     highlights: ["Quality Assurance", "Govt. of India subsidiary", "Infrastructure scale", "Shifted my perspective"],
   },
   {
@@ -52,7 +52,7 @@ const EVENTS = [
     location: "Rourkela, India",
     type: "research",
     color: "#A855F7",
-    desc: "Officially began thesis research in August 2024 — but the questions had been building with my supervisor much earlier. Buckling and free vibration of Functionally Graded Graphene Reinforced Composite plates under combined thermomechanical loading. Months in the literature, Classical Plate Theory derivations, ABAQUS parametric studies, MATLAB scripting. Primarily computational — the lab was my workstation. Built a live web simulator for the plate analysis tool so anyone can run the calculations.",
+    desc: "Officially began thesis research in August 2024, but the questions had been building with my supervisor much earlier. Buckling and free vibration of Functionally Graded Graphene Reinforced Composite plates under combined thermomechanical loading. Months in the literature, Classical Plate Theory derivations, ABAQUS parametric studies, MATLAB scripting. Primarily computational: the lab was my workstation. Built a live web simulator for the plate analysis tool so anyone can run the calculations.",
     highlights: ["FG-GRC · ABAQUS · MATLAB", "Thermomechanical loading", "Buckling & Vibration", "Live web tool ↗"],
     link: "https://fg-grc-calculator.vercel.app/",
     linkLabel: "Open FG-GRC Simulator →",
@@ -74,7 +74,7 @@ const EVENTS = [
     location: "Kathmandu, Nepal",
     type: "current",
     color: "#EF4444",
-    desc: "Applied for a role at a multinational construction company — a non-traditional path for a fresh graduate, less experience than most people in the room. Got selected. Now working alongside people with years on me, finding new perspectives on how construction actually works at scale and at the intersection of technology. Excelling. Every day adds something the degree didn't cover.",
+    desc: "Applied for a role at a multinational construction company. Non-traditional path for a fresh graduate, less experience than most people in the room. Got selected. Now working alongside people with years on me, finding new perspectives on how construction actually works at scale and at the intersection of technology. Excelling. Every day adds something the degree didn't cover.",
     highlights: ["Multinational firm", "Construction technology", "Cross-functional exposure", "Least experienced · excelling"],
   },
   {
@@ -84,7 +84,7 @@ const EVENTS = [
     location: "Kathmandu, Nepal",
     type: "current",
     color: "#F59E0B",
-    desc: "24 hours a day. No wasted ones. The research experience, the construction industry insight, the Learners Club mission — all of it is converging. Looking to build something bigger as a team, leverage every angle I've developed, and find the right people to build with. Precision. Experience. No regrets.",
+    desc: "24 hours a day. No wasted ones. The research experience, the construction industry insight, the Learners Club mission: all of it is converging. Looking to build something bigger as a team, leverage every angle I've developed, and find the right people to build with. Precision. Experience. No regrets.",
     highlights: ["Research + Industry", "Building as a team", "Full-stack perspective", "No wasted hours"],
   },
   {

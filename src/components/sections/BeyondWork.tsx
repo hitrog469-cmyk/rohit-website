@@ -68,7 +68,7 @@ const PERSONALITY = [
     icon: "◉",
     title: "Cricket",
     sub: "Medium-pace bowler · Weekend warrior",
-    desc: "Plays every Sunday. Rohit Sharma fan — the Hitman's pull shot is pure mechanics at work. Has a theory that bowling is applied physics. The crease is the lab.",
+    desc: "Plays every Sunday. Rohit Sharma fan. The Hitman's pull shot is pure mechanics at work. Has a theory that bowling is applied physics. The crease is the lab.",
     color: "#10B981",
   },
   {
@@ -82,21 +82,21 @@ const PERSONALITY = [
     icon: "▤",
     title: "Learners Club",
     sub: "300+ videos · 3,000+ subscribers",
-    desc: "Co-founded during COVID-19 lockdown with two school friends. We uploaded 300+ videos teaching high school physics, chemistry, and maths to students who needed it. On hold now — but the mission isn't over.",
+    desc: "Co-founded during COVID-19 lockdown with two school friends. We uploaded 300+ videos teaching high school physics, chemistry, and maths to students who needed it. On hold now. The mission isn't over.",
     color: "#8B5CF6",
   },
   {
     icon: "△",
     title: "Baglung → Kathmandu",
     sub: "From the hills. Built in the city.",
-    desc: "Grew up in Baglung, a small district near Dhaulagiri in western Nepal. Moved to Kathmandu for +2, then to India for engineering. The mountains, the terraces, the pace of a smaller city — that shaped how I see everything, including structures.",
+    desc: "Grew up in Baglung, a small district near Dhaulagiri in western Nepal. Moved to Kathmandu for +2, then to India for engineering. The mountains, the terraces, the pace of a smaller city shaped how I see everything, including structures.",
     color: "#F59E0B",
   },
   {
     icon: "✦",
     title: "हर हर महादेव",
     sub: "Faith · Nepal · Roots",
-    desc: "Grew up with Mahadev as part of the furniture — the temples in Baglung, the rituals my parents kept. I'm not religious in a strict sense. But there's something about believing in something larger than yourself that I think makes you a better engineer, and a better human.",
+    desc: "Grew up with Mahadev as part of the furniture. The temples in Baglung, the rituals my parents kept. I'm not religious in a strict sense. But there's something about believing in something larger than yourself that makes you a better engineer, and a better human.",
     color: "#EF4444",
   },
 ];
@@ -111,10 +111,10 @@ const FAILURES = [
     hook: "He worked Gulf security for years. Sent money home. Never complained. That's the foundation everything else is built on.",
     story: [
       "My dad worked security in Bahrain. Then Saudi Arabia. Then Dubai. Years of his life in someone else's country, doing night shifts, sending money home so that his sons could eat, study, become something he didn't get to be. He never made a scene about it. It was just what the situation required, and he did it.",
-      "In 2015, a health issue brought him back to Nepal. The Gulf didn't hold his spot — that's not how it works. For a stretch of time he was selling phone recharge cards to keep the household going. Ten rupees at a time. I was in school. I was watching. And every morning when I sat down to study, I knew exactly what was funding that moment — and who.",
-      "He's now a bank security guard in Kathmandu. Still steady. Still going. The man has never once asked me to make him proud out loud — but I've always known what's at stake.",
+      "In 2015, a health issue brought him back to Nepal. The Gulf doesn't hold your spot when you leave. For a stretch of time he was selling phone recharge cards to keep the household going. Ten rupees at a time. I was in school. I was watching. And every morning when I sat down to study, I knew exactly what was funding that moment, and who.",
+      "He's now a bank security guard in Kathmandu. Still steady. Still going. The man has never once asked me to make him proud out loud. I've always known what's at stake.",
     ],
-    turned: "That clarity is the engine. Not pressure, not guilt — direction. Every exam I sat, every project I built, every late night I chose to keep going — it connects back to what I watched my father do without ever asking for recognition. I want to build a life that's worth what he paid for it. That's a clear enough reason to work hard.",
+    turned: "That clarity is the engine. Not pressure, not guilt. Direction. Every exam I sat, every project I built, every late night I chose to keep going connects back to what I watched my father do without ever asking for recognition. I want to build a life that's worth what he paid for it. That's a clear enough reason to work hard.",
     color: "#EF4444",
   },
   {
@@ -123,13 +123,13 @@ const FAILURES = [
     tag: "PURPOSE",
     tagColor: "#3B82F6",
     title: "I watched Kathmandu collapse on a phone screen. That afternoon gave me my reason.",
-    hook: "April 25, 2015. The city I was heading toward was falling in real time — and I was 200km away with nothing to give.",
+    hook: "April 25, 2015. The city I was heading toward was falling in real time. I was 200km away with nothing to give.",
     story: [
-      "I was in Baglung when the earthquake hit. Our area was shaken but we were among the fortunate — structures cracked, people frightened, but no one in my immediate circle lost. In the scale of that disaster, we were lucky.",
-      "But on my phone: Dharahara was falling. Balkhu — the neighbourhood I'd move to for +2, where my school would later be — was on the news. Buildings I'd been to, a city I was heading toward: reduced to footage. 9,000 people died. My family was trying to reach each other. Lines were jammed. I was thirteen years old, in Baglung, with nothing to do except watch and pray.",
-      "That specific feeling — being physically safe while somewhere you love falls apart — doesn't leave you. I had no knowledge, no tools, nothing to give. Just a phone screen and the sudden, very clear understanding that buildings are not permanent. That the structures people trust with their lives can and do fail.",
+      "I was in Baglung when the earthquake hit. Our area was shaken but we were among the fortunate. Structures cracked, people frightened, but no one in my immediate circle was lost. In the scale of that disaster, we were lucky.",
+      "But on my phone: Dharahara was falling. Balkhu, the neighbourhood I'd move to for +2 where my school would later be, was on the news. Buildings I'd been to, a city I was heading toward, reduced to footage. 9,000 people died. My family was trying to reach each other. Lines were jammed. I was thirteen years old, in Baglung, with nothing to do except watch and pray.",
+      "That specific feeling of being physically safe while somewhere you love falls apart doesn't leave you. I had no knowledge, no tools, nothing to give. Just a phone screen and the sudden, very clear understanding that buildings are not permanent. That the structures people trust with their lives can and do fail.",
     ],
-    turned: "I chose structural engineering because of that afternoon. Not the heroic version — just the honest one. I want to understand why buildings fail so I can help build better ones. Every seismic paper I read, every finite element model I run, every plate analysis I write — April 25 is somewhere in the foundation. That day gave my work a reason that goes far beyond a degree.",
+    turned: "I chose structural engineering because of that afternoon. Not the heroic version, just the honest one. I want to understand why buildings fail so I can help build better ones. Every seismic paper I read, every finite element model I run, every plate analysis I write: April 25 is somewhere in the foundation. That day gave my work a reason that goes far beyond a degree.",
     color: "#3B82F6",
   },
   {
@@ -142,7 +142,7 @@ const FAILURES = [
     story: [
       "After topping the district at Grade 10, the next move was clear: Kathmandu for the +2 science programme at Bernhardt Secondary School in Balkhu. Good school. Big city. And I had no social network there, no family nearby, no map beyond the hostel address.",
       "Going from a town where everyone knew my name to a classroom where I was just another student required a real recalibration. I had to learn how to build structure for myself when no one was checking on me. How to study without the familiar environment. How to make a new place feel like somewhere you belong rather than just somewhere you're surviving.",
-      "I adjusted. Made friends. Found my footing. Got 3.85 GPA out of 4.0. But what Kathmandu gave me that went beyond the grade was the capacity for independence — the confidence that I could land in an unfamiliar place and figure it out. That proved useful in Rourkela. It will prove useful wherever I go next.",
+      "I adjusted. Made friends. Found my footing. Got 3.85 GPA out of 4.0. But what Kathmandu gave me beyond the grade was the capacity for independence. The confidence that I could land in an unfamiliar place and figure it out. That proved useful in Rourkela. It will prove useful wherever I go next.",
     ],
     turned: "Every move I've made has been a version of the same bet: leave the familiar room for the bigger one. Kathmandu prepared me for India. Each time you do it, it gets slightly less terrifying and slightly more second nature. The willingness to uproot, adapt, and rebuild is probably the most transferable skill I have.",
     color: "#10B981",
@@ -155,9 +155,9 @@ const FAILURES = [
     title: "I arrived at NIT as the district topper. The lecture hall had different information.",
     hook: "I had a certificate that said I was the best. That certificate was not going to help me here.",
     story: [
-      "In Baglung and at Bernhardt, I was the person who had things figured out — 3.95 GPA, district topper, the one people pointed to. I'd earned that identity through real work, and I carried it to Rourkela.",
-      "NIT reshaped things quickly. The students around me had come through Kota coaching centres, cracked JEE, spent years drilling problems I was seeing for the first time. First semester, I sat in Structural Analysis and genuinely followed maybe a third of it. Too proud to raise my hand in the early weeks — so I ground through those months alone at night, rebuilding foundations from scratch.",
-      "It took about a year to find my footing. Once I did, something became clear: curiosity, cross-disciplinary thinking, research instinct — these were real assets that hadn't been produced in everyone around me by the coaching-centre path. The early gap wasn't a ceiling. It was just the opening chapter of a different kind of preparation.",
+      "In Baglung and at Bernhardt, I was the person who had things figured out. 3.95 GPA, district topper, the one people pointed to. I'd earned that identity through real work, and I carried it to Rourkela.",
+      "NIT reshaped things quickly. The students around me had come through Kota coaching centres, cracked JEE, spent years drilling problems I was seeing for the first time. First semester, I sat in Structural Analysis and genuinely followed maybe a third of it. Too proud to raise my hand in the early weeks, so I ground through those months alone at night, rebuilding foundations from scratch.",
+      "It took about a year to find my footing. Once I did, something became clear: curiosity, cross-disciplinary thinking, research instinct. These were real assets that hadn't been produced in everyone around me by the coaching-centre path. The early gap wasn't a ceiling. It was the opening chapter of a different kind of preparation.",
     ],
     turned: "Being the best in a smaller room is not the same as being ready for a bigger one. That first year forced me to become a genuine student again — uncertain, humble, hungry to understand rather than to look like I already did. That process built the researcher I became. Not the certificate. The willingness to start over.",
     color: "#F59E0B",
@@ -167,14 +167,14 @@ const FAILURES = [
     year: "2021–25",
     tag: "GROWTH",
     tagColor: "#8B5CF6",
-    title: "At NIT I said yes to everything. That grew me — and stretched me thin.",
+    title: "At NIT I said yes to everything. That grew me, and stretched me thin.",
     hook: "Four years of clubs, responsibilities, research, and Learners Club on the side. I wanted all of it. I couldn't always deliver on all of it.",
     story: [
-      "I didn't go to NIT to just study. I was involved — student activities, events, helping juniors, lab work, the thesis, building Learners Club from Kathmandu. I wanted to understand what the institution had to offer beyond the syllabus, and I said yes to most things that came my way.",
+      "I didn't go to NIT to just study. I was involved. Student activities, events, helping juniors, lab work, the thesis, building Learners Club from Kathmandu. I wanted to understand what the institution had to offer beyond the syllabus, and I said yes to most things that came my way.",
       "That approach built things in me I'm genuinely grateful for: how to manage competing demands, how to show up for people while delivering on your own work, how to lead small things and follow in larger ones, how to fail fast and extract the lesson. Four years of doing too much produced a more capable person than four years of playing it safe would have.",
-      "But there were also stretches where I was spread too thin. Commitments I under-delivered on. Projects I half-finished. Moments where I was present in too many places at once and fully present in none. Learning to distinguish between what's important and what just feels urgent — that took longer than it should have.",
+      "But there were also stretches where I was spread too thin. Commitments I under-delivered on. Projects I half-finished. Moments where I was present in too many places at once and fully present in none. Learning to distinguish between what's important and what just feels urgent took longer than it should have.",
     ],
-    turned: "Being ambitious about what you take on and being ruthless about what you protect are not contradictions — they work together. I learned that the hard way. The person who came out of four years of doing too much is more capable than the person who played it safe would have been. But focus is a skill, not a limitation. I'm still building it.",
+    turned: "Being ambitious about what you take on and being ruthless about what you protect are not contradictions. They work together. I learned that the hard way. The person who came out of four years of doing too much is more capable than the person who played it safe would have been. But focus is a skill, not a limitation. I'm still building it.",
     color: "#8B5CF6",
   },
   {
@@ -183,13 +183,13 @@ const FAILURES = [
     tag: "MISSION",
     tagColor: "#10B981",
     title: "We built Learners Club during COVID. Keeping it going while at NIT was a different challenge.",
-    hook: "300 videos. 3,000 subscribers. Students who needed it. The mission was real — and it still is.",
+    hook: "300 videos. 3,000 subscribers. Students who needed it. The mission was real. It still is.",
     story: [
-      "COVID-19 lockdown, 2020. Three school friends in Kathmandu, no classes, and a clear problem: high school students across Nepal had lost access to teachers overnight. So we built Learners Club — a YouTube channel teaching physics, chemistry, and maths. We didn't wait for permission. We just started.",
-      "It worked better than we expected. 300+ videos. 3,000+ subscribers. Comments from students saying they finally understood topics they'd been stuck on for weeks. We weren't chasing numbers — we were solving a real problem with what we had. It was the most purposeful thing I'd been part of.",
+      "COVID-19 lockdown, 2020. Three school friends in Kathmandu, no classes, and a clear problem: high school students across Nepal had lost access to teachers overnight. So we built Learners Club, a YouTube channel teaching physics, chemistry, and maths. We didn't wait for permission. We just started.",
+      "It worked better than we expected. 300+ videos. 3,000+ subscribers. Comments from students saying they finally understood topics they'd been stuck on for weeks. We weren't chasing numbers. We were solving a real problem with what we had. It was the most purposeful thing I'd been part of.",
       "Then NIT started and the time compressed — four years of coursework, lab work, thesis research, and everything else. Uploading consistently became uploading occasionally, then rarely. The channel didn't end dramatically. It just got quieter. I'd check it sometimes and feel the recognition that something unfinished was waiting for me.",
     ],
-    turned: "Learners Club is unfinished business, not a closed chapter. The mission — making quality education accessible to students who don't have access to the coaching-centre path — is still exactly right. The research background I built at NIT only makes me more equipped to deliver on it. Getting back to it is a matter of when, not if.",
+    turned: "Learners Club is unfinished business, not a closed chapter. The mission of making quality education accessible to students who don't have the coaching-centre path is still exactly right. The research background I built at NIT only makes me more equipped to deliver on it. Getting back to it is a matter of when, not if.",
     color: "#10B981",
   },
   {
@@ -201,10 +201,10 @@ const FAILURES = [
     hook: "Four years in India changed how I think, what I expect, who I am. Coming home and recalibrating — that takes its own kind of work.",
     story: [
       "I left Kathmandu at eighteen. Came back at twenty-two with a degree, a research background, and a very different relationship with my own capabilities and expectations.",
-      "My family was the same. The city was mostly the same. But I had changed in ways that took time to fully see. I thought differently. I expected different things from work, from conversations, from myself. There was a recalibration period — finding how the person I'd become fits back into the place and the people I love.",
+      "My family was the same. The city was mostly the same. But I had changed in ways that took time to fully see. I thought differently. I expected different things from work, from conversations, from myself. There was a recalibration period: finding how the person I'd become fits back into the place and the people I love.",
       "I also saw things I'd been too young to fully see before. My parents were older. The sacrifices they'd made were more legible now that I had some life experience to read them through. The responsibility — to make something of what they'd given me — settled differently. Not heavier. More clearly mine.",
     ],
-    turned: "Returning wasn't the end of something. It was a reorientation. I know now that wherever I go next — research, further study, building things — I want it to connect back to here. Not to stay, but to build something that the place I came from can be part of. That's a cleaner ambition than just leaving and not looking back.",
+    turned: "Returning wasn't the end of something. It was a reorientation. I know now that wherever I go next, whether research, further study, or building things, I want it to connect back to here. Not to stay, but to build something that the place I came from can be part of. That's a cleaner ambition than just leaving and not looking back.",
     color: "#F97316",
   },
   {
@@ -215,7 +215,7 @@ const FAILURES = [
     title: "Graduation was the beginning. The chapter after is the one that counts.",
     hook: "Everyone had a plan for the morning after. Mine is still being written — intentionally.",
     story: [
-      "The imagined version of post-graduation: a clear next step, a research fellowship, forward momentum. The actual version: a full-time job because earning mattered and I knew it mattered — a family to pull weight for, responsibilities that were mine to carry. I made that decision with my eyes open.",
+      "The imagined version of post-graduation: a clear next step, a research fellowship, forward momentum. The actual version: a full-time job because earning mattered and I knew it mattered. A family to pull weight for, responsibilities that were mine to carry. I made that decision with my eyes open.",
       "There was still a gap between the imagined trajectory and the real one. I'd spent four years building toward something. Coming back and operating at a different pace than I'd pictured required some adjustment.",
       "What I've realised over the time since: the messy middle is where most of the important formation happens. The thesis proved I could do the research. Now I'm building the broader platform — the discipline, the direction, the work ethic — that makes the next opportunity worth taking when it arrives. That's what this chapter is actually for.",
     ],
@@ -509,10 +509,10 @@ export default function BeyondWork() {
               The path was not straight. It was mine.
             </p>
             <p className="text-[#A3A3A3] text-base leading-relaxed max-w-2xl mb-6">
-              Every chapter above — the hard ones, the uncertain ones, the ones that required rebuilding from scratch — produced something the easy path couldn&apos;t have. A district topper from Baglung who learned to be a genuine student. An engineer who knows exactly why the work matters. Someone who has moved between cities and countries and rebuilt himself each time.
+              Every chapter above, the hard ones, the uncertain ones, the ones that required rebuilding from scratch, produced something the easy path couldn&apos;t have. A district topper from Baglung who learned to be a genuine student. An engineer who knows exactly why the work matters. Someone who has moved between cities and countries and rebuilt himself each time.
             </p>
             <p className="text-[#A3A3A3] text-base leading-relaxed max-w-2xl mb-8">
-              I&apos;m not done. The research chapter, the Learners Club chapter, whatever comes next — those are all still ahead. <span style={{ color: "var(--text-primary)", fontWeight: 600 }}>But the foundation is real. Built from Baglung. Tested at NIT. Still going.</span>
+              I&apos;m not done. The research chapter, the Learners Club chapter, whatever comes next: those are all still ahead. <span style={{ color: "var(--text-primary)", fontWeight: 600 }}>But the foundation is real. Built from Baglung. Tested at NIT. Still going.</span>
             </p>
             <div className="flex items-center gap-3">
               <div className="h-px w-8" style={{ background: "rgba(245,158,11,0.5)" }} />
