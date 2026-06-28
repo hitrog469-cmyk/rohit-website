@@ -101,7 +101,7 @@ export default function Education() {
                 <p className="text-[#F5F5F5] text-sm font-medium leading-snug">
                   Buckling & Vibration of FG-GRC Plates Under Combined Thermomechanical Loading
                 </p>
-                <p className="text-[#525252] text-xs mt-1">Supervisor: [Prof. Name] · Dept. of Civil Engineering</p>
+                <p className="text-[#525252] text-xs mt-1">Supervisor: Prof. Shishir Kumar Sahu · Dept. of Civil Engineering</p>
               </div>
 
               {/* Key courses */}

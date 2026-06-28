@@ -13,8 +13,8 @@ const FIRST_NAME = "ROHIT";
 const LAST_NAME = "ACHARYA";
 
 const ROLES = [
-  "Structural Engineer",
-  "FG-GRC Researcher",
+  "Structural Engineer · FG-GRC Researcher",
+  "Construction Data Analyst · CloudFactory",
   "FEM · ABAQUS · MATLAB",
   "Engineering Educator",
   "Builder of Things",
@@ -168,7 +168,7 @@ export default function Hero() {
           transition={{ delay: 2, duration: 0.7 }}
         >
           <p className="text-[#525252] text-xs md:text-sm font-mono tracking-widest max-w-md text-center leading-relaxed">
-            Engineer &nbsp;·&nbsp; Researcher &nbsp;·&nbsp; Educator
+            Engineer &nbsp;·&nbsp; Researcher &nbsp;·&nbsp; Construction Data Analyst
           </p>
           <p className="text-[#333] text-xs font-mono tracking-wider">
             Kathmandu &nbsp;·&nbsp; NIT Rourkela &nbsp;·&nbsp; Learners Club

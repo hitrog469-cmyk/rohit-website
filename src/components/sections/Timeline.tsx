@@ -69,13 +69,13 @@ const EVENTS = [
   },
   {
     year: "2025",
-    role: "AI Data Operations",
+    role: "Construction Data Analyst",
     org: "CloudFactory",
     location: "Kathmandu, Nepal",
     type: "current",
     color: "#EF4444",
-    desc: "Cleared the entry exam comfortably. Two rounds of interviews, cleared both. CloudFactory took a bet on me despite slightly less experience than others in the room, and I've been making that count every day since. Working on AI data operations at scale, cross-functional teams, sharp people around me. Excelling. Every week adds a perspective the degree didn't cover.",
-    highlights: ["CloudFactory", "AI Data Operations", "Cleared exam + 2 interviews", "Excelling"],
+    desc: "Cleared the written exam. Two interview rounds, both cleared. CloudFactory backed my ability despite slightly less experience than most candidates in the room. Now working at the intersection of civil engineering and AI data operations: reviewing site walkthrough visual data, verifying build progress against BIM models and schedules, conducting quality checks on annotated construction datasets. Sharp team, real impact, fast learning curve. Excelling.",
+    highlights: ["CloudFactory", "BIM · Visual Data Verification", "Cleared exam + 2 interviews", "Construction × AI"],
   },
   {
     year: "Now",
