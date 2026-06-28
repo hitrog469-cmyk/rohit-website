@@ -221,7 +221,7 @@ export default function Contact() {
               <div>
                 <p className="text-[#F5F5F5] font-semibold">Download CV</p>
                 <p className="text-[#525252] text-xs font-mono mt-0.5">
-                  PDF · Updated June 2025
+                  PDF · Updated May 2026
                 </p>
               </div>
               <div className="w-10 h-10 rounded-full bg-[#F59E0B]/10 border border-[#F59E0B]/30 flex items-center justify-center group-hover:bg-[#F59E0B] group-hover:border-[#F59E0B] transition-all">
