@@ -25,7 +25,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-xs leading-relaxed max-w-[200px]" style={{ color: "var(--text-dim)" }}>
-              Structural engineer from Nepal. Researcher in FG-GRC composites. Builder of things that matter.
+              Civil engineer working on AI and computational methods for construction and structures. NIT Rourkela.
             </p>
           </div>
 

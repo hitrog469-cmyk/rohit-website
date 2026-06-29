@@ -20,17 +20,24 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rohitacharya.dev"),
-  title: "Rohit Acharya — Structural Engineer & Researcher",
+  title: "Rohit Acharya — Civil Engineer · AI & Computational Methods for Structures",
   description:
-    "Structural engineer from Nepal. Researcher in FG-GRC composite plates. Builder of things that matter. NIT Rourkela.",
+    "Civil engineer working at the intersection of AI, computation, and structural engineering. Construction-AI at CloudFactory, composites researcher, builder of shipped engineering tools. NIT Rourkela.",
   keywords: [
     "Rohit Acharya",
+    "Civil Engineer",
     "Structural Engineer",
+    "AI Construction",
+    "CloudFactory",
+    "Buildots",
+    "Computational Methods",
     "FG-GRC",
     "Composite Plates",
     "NIT Rourkela",
     "Nepal",
     "Researcher",
+    "BIM",
+    "Computer Vision",
   ],
   authors: [{ name: "Rohit Acharya" }],
   creator: "Rohit Acharya",
@@ -38,16 +45,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://rohitacharya.dev",
-    title: "Rohit Acharya — Structural Engineer & Researcher",
+    title: "Rohit Acharya — Civil Engineer · AI & Computational Methods for Structures",
     description:
-      "Structural engineer from Nepal. Researcher in FG-GRC composite plates. Builder of things that matter.",
+      "Civil engineer working at the intersection of AI, computation, and structural engineering. Construction-AI at CloudFactory, composites researcher, builder of shipped engineering tools. NIT Rourkela.",
     siteName: "Rohit Acharya",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rohit Acharya — Structural Engineer & Researcher",
+    title: "Rohit Acharya — Civil Engineer · AI & Computational Methods for Structures",
     description:
-      "Structural engineer from Nepal. Researcher in FG-GRC composite plates.",
+      "Civil engineer working at the intersection of AI, computation, and structural engineering. Construction-AI at CloudFactory, composites researcher, builder of shipped tools.",
   },
   robots: {
     index: true,

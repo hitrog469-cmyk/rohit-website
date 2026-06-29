@@ -133,7 +133,7 @@ export default function CodexTeaser() {
             >→</motion.span>
           </Link>
           <p className="text-[#1a1a1a] text-[10px] font-mono mt-4 tracking-widest">
-            tip: &apos;rohit&apos; works on every lock · so does 42 · so does &apos;please&apos;
+            The answer is in the research.
           </p>
         </motion.div>
       </div>

@@ -171,7 +171,7 @@ export default function CodexPage() {
           transition={{ delay: 0.9 }}
           className="text-center mt-16 text-[#222] text-xs font-mono"
         >
-          tip: sudo works · so does &quot;please&quot; · and rohit · and 42
+          The answer is in the research.
         </motion.div>
       </div>
 

@@ -69,13 +69,13 @@ const EVENTS = [
   },
   {
     year: "2025",
-    role: "Construction Data Analyst",
-    org: "CloudFactory",
-    location: "Kathmandu, Nepal",
+    role: "Construction Analyst",
+    org: "CloudFactory (Buildots)",
+    location: "Lalitpur, Nepal · Jul 2025 – Present",
     type: "current",
     color: "#EF4444",
-    desc: "Cleared the written exam. Two interview rounds, both cleared. CloudFactory backed my ability despite slightly less experience than most candidates in the room. Now working at the intersection of civil engineering and AI data operations: reviewing site walkthrough visual data, verifying build progress against BIM models and schedules, conducting quality checks on annotated construction datasets. Sharp team, real impact, fast learning curve. Excelling.",
-    highlights: ["CloudFactory", "BIM · Visual Data Verification", "Cleared exam + 2 interviews", "Construction × AI"],
+    desc: "Working on Buildots, an AI platform that monitors construction progress by comparing 360° site walkthrough imagery against BIM models and schedules. Verify construction progress, run quality audits on annotated construction datasets, identify sequencing and scope deviations, and contribute domain review standards that improve dataset reliability for computer-vision construction-monitoring models. Cleared the written exam, two interview rounds. CloudFactory backed the ability.",
+    highlights: ["CloudFactory · Buildots", "BIM vs 360° Site Imagery", "CV-based Progress Monitoring", "Construction × AI"],
   },
   {
     year: "Now",

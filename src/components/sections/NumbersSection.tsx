@@ -15,18 +15,25 @@ const STATS = [
 ];
 
 function AnimatedNumber({ value, prefix = "", suffix = "", inView }: { value: number; prefix?: string; suffix?: string; inView: boolean }) {
-  const [display, setDisplay] = useState(0);
+  const [display, setDisplay] = useState(value);
+  const animated = useRef(false);
 
   useEffect(() => {
-    if (!inView) return;
-    let start = 0;
-    const duration = 1400;
+    // Fallback: always show real value after 2s regardless of scroll state
+    const fallback = setTimeout(() => setDisplay(value), 2000);
+    return () => clearTimeout(fallback);
+  }, [value]);
+
+  useEffect(() => {
+    if (!inView || animated.current) return;
+    animated.current = true;
+    let current = 0;
     const step = Math.ceil(value / 60);
     const interval = setInterval(() => {
-      start += step;
-      if (start >= value) { setDisplay(value); clearInterval(interval); }
-      else setDisplay(start);
-    }, duration / (value / step));
+      current += step;
+      if (current >= value) { setDisplay(value); clearInterval(interval); }
+      else setDisplay(current);
+    }, 1400 / (value / step));
     return () => clearInterval(interval);
   }, [inView, value]);
 
@@ -39,7 +46,7 @@ function AnimatedNumber({ value, prefix = "", suffix = "", inView }: { value: nu
 
 export default function NumbersSection() {
   const ref = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-100px" });
+  const inView = useInView(ref, { once: true, margin: "0px" });
 
   return (
     <section className="py-24 px-6 md:px-12 bg-[#030303] relative overflow-hidden">

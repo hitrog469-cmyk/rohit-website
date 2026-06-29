@@ -90,7 +90,7 @@ export default function Education() {
               <div className="flex items-center gap-3 mb-6 p-4 rounded-xl bg-[#0a0a0a] border border-[#1a1a1a]">
                 <Award className="w-5 h-5 text-[#F59E0B]" />
                 <div>
-                  <p className="text-[#F5F5F5] font-bold text-lg">CGPA — 8.0 / 10.0</p>
+                  <p className="text-[#F5F5F5] font-bold text-lg">CGPA — 7.96 / 10.0</p>
                   <p className="text-[#525252] text-xs">Cumulative Grade Point Average</p>
                 </div>
               </div>

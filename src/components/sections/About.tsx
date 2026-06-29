@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
 const DETAIL_CARDS = [
-  { icon: "◈", label: "NIT Rourkela", sub: "B.Tech Civil · 8.0 CGPA" },
+  { icon: "◈", label: "NIT Rourkela", sub: "B.Tech Civil · 7.96 CGPA" },
   { icon: "△", label: "Baglung → Kathmandu", sub: "Nepal" },
   { icon: "◉", label: "Bayern Munich", sub: "Joshua Kimmich fan" },
   { icon: "▤", label: "Learners Club", sub: "300+ videos · 3k+ subs" },

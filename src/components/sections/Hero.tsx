@@ -13,11 +13,11 @@ const FIRST_NAME = "ROHIT";
 const LAST_NAME = "ACHARYA";
 
 const ROLES = [
-  "Structural Engineer · FG-GRC Researcher",
-  "Construction Data Analyst · CloudFactory",
-  "FEM · ABAQUS · MATLAB",
-  "Engineering Educator",
-  "Builder of Things",
+  "Civil Engineer · AI & Computational Methods",
+  "Construction AI · CloudFactory (Buildots)",
+  "FG-GRC Composites Researcher · NIT Rourkela",
+  "FEM · ABAQUS · MATLAB · BIM",
+  "Builder of Shipped Engineering Tools",
   "From Baglung, Nepal",
 ];
 
@@ -167,8 +167,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2, duration: 0.7 }}
         >
-          <p className="text-[#525252] text-xs md:text-sm font-mono tracking-widest max-w-md text-center leading-relaxed">
-            Engineer &nbsp;·&nbsp; Researcher &nbsp;·&nbsp; Construction Data Analyst
+          <p className="text-[#525252] text-xs md:text-sm font-mono tracking-widest max-w-lg text-center leading-relaxed">
+            Construction AI at CloudFactory &nbsp;·&nbsp; Composite-plate mechanics research &nbsp;·&nbsp; Builder of shipped tools
           </p>
           <p className="text-[#333] text-xs font-mono tracking-wider">
             Kathmandu &nbsp;·&nbsp; NIT Rourkela &nbsp;·&nbsp; Learners Club

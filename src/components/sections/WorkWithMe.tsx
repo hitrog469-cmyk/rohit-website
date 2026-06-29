@@ -7,6 +7,22 @@ import { ArrowUpRight } from "lucide-react";
 const SERVICES = [
   {
     number: "01",
+    title: "Research Collaboration",
+    icon: "⬡",
+    color: "#8B5CF6",
+    tagline: "Co-authorship, domain expertise, or analytical support",
+    offerings: [
+      "AI and computer vision for construction progress monitoring",
+      "BIM-based digital twin and site-data integration",
+      "Functionally Graded Material (FGM) plate analysis",
+      "ABAQUS parametric study design and execution",
+      "Halpin-Tsai micromechanics modelling · CPT formulation",
+    ],
+    ideal: "Graduate supervisors · Research groups · PhD students · Conference papers",
+    cta: "Collaborate",
+  },
+  {
+    number: "02",
     title: "Structural Analysis & FEM",
     icon: "△",
     color: "#F59E0B",
@@ -22,7 +38,7 @@ const SERVICES = [
     cta: "Request Analysis",
   },
   {
-    number: "02",
+    number: "03",
     title: "Engineering Software & Dashboards",
     icon: "◳",
     color: "#3B82F6",
@@ -36,22 +52,6 @@ const SERVICES = [
     ],
     ideal: "Infrastructure startups · Research institutes · Engineering firms · NGOs",
     cta: "Discuss Project",
-  },
-  {
-    number: "03",
-    title: "Research Collaboration",
-    icon: "⬡",
-    color: "#8B5CF6",
-    tagline: "Co-authorship, literature review, or analytical support",
-    offerings: [
-      "Functionally Graded Material (FGM) plate analysis",
-      "ABAQUS parametric study design and execution",
-      "Classical Plate Theory / FSDT formulation",
-      "Halpin-Tsai micromechanics modelling",
-      "Journal paper writing support & review",
-    ],
-    ideal: "PhD students · Assistant professors · Research groups · Conference papers",
-    cta: "Collaborate",
   },
   {
     number: "04",
@@ -196,8 +196,8 @@ export default function WorkWithMe() {
             transition={{ delay: 0.1, duration: 0.7 }}
           >
             <h2 className="text-headline text-[#F5F5F5]">
-              Need an Engineer <br />
-              Who <span className="text-[#F59E0B]">Also Codes?</span>
+              Open to Research <br />
+              <span className="text-[#F59E0B]">Collaboration</span>
             </h2>
           </motion.div>
 
@@ -208,21 +208,17 @@ export default function WorkWithMe() {
             className="space-y-4"
           >
             <p className="text-[#A3A3A3] text-base leading-relaxed">
-              Most structural engineers can&apos;t build the software to analyze their data.
-              Most developers don&apos;t understand why a structure fails. I sit at that
-              intersection — and it&apos;s a rare place to be.
+              I sit at the intersection of civil engineering, computational methods, and AI for construction. Current work: verifying construction progress against BIM models using computer vision at CloudFactory. Research foundation: buckling and stability of FG-GRC composite plates under thermomechanical loading, NIT Rourkela.
             </p>
             <p className="text-[#525252] text-sm leading-relaxed">
-              Whether you need rigorous FEM analysis, a custom engineering dashboard,
-              a research collaborator, or someone who can explain composite plate
-              theory to a general audience — I&apos;m available for the right work.
+              Whether you need a research collaborator, rigorous FEM analysis, a custom engineering tool, or domain expertise in AI-driven construction monitoring — I am available for the right work.
             </p>
 
             {/* Availability badge */}
-            <div className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-full border border-[#10B981]/25 bg-[#10B981]/08">
-              <span className="w-2 h-2 rounded-full bg-[#10B981] animate-pulse" />
-              <span className="text-[#10B981] text-sm font-medium">
-                Currently available for freelance & collaborations
+            <div className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-full border border-[#8B5CF6]/25 bg-[#8B5CF6]/08">
+              <span className="w-2 h-2 rounded-full bg-[#8B5CF6] animate-pulse" />
+              <span className="text-[#8B5CF6] text-sm font-medium">
+                Open to research collaborations and graduate opportunities
               </span>
             </div>
           </motion.div>

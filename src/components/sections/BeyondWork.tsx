@@ -7,7 +7,7 @@ const FUN_FACTS = [
   { front: "Can explain FEM to a 10 year old", back: "Springs, nodes, and a rubber duck" },
   { front: "Rohit Sharma or no one", back: "The Hitman's pull shot is just applied momentum." },
   { front: "Bayern Munich & Joshua Kimmich", back: "Pressing, positioning, pure football IQ." },
-  { front: "Believes Mahadev fixes all bugs", back: "हर हर महादेव" },
+  { front: "हर हर महादेव", back: "Faith from Baglung. Carried everywhere." },
   { front: "District topper from Baglung", back: "A small hill town near Dhaulagiri. Proud of it." },
   { front: "Dad worked in the Gulf. I worked at NIT.", back: "Different kinds of hard. Same mission." },
 ];

@@ -279,8 +279,7 @@ export default function Research() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2 }}
         >
-          Buckling and vibration of Functionally Graded Graphene Reinforced
-          Composite plates under combined thermomechanical loading.
+          Artificial intelligence and computational methods for construction and structural engineering: computer vision and BIM-based construction progress monitoring, digital twins, and data-driven infrastructure assessment. Built on a foundation in computational structural mechanics — buckling and stability of advanced composite and functionally graded plates under thermomechanical loading.
           <span className="text-[#F59E0B]"> B.Tech thesis — NIT Rourkela, 2025.</span>
         </motion.p>
 
