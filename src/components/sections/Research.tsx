@@ -349,7 +349,7 @@ export default function Research() {
             <MethodCard
               title="ABAQUS FEM Validation"
               summary="12+ parametric variables, 200+ simulation runs"
-              detail="Built parametric ABAQUS models with shell elements (S4R) to validate the analytical results. Boundary conditions (SSSS, CCCC, CSCS), plate aspect ratios (a/b: 1–2), slenderness ratios (a/h: 10–50), and temperature fields (ΔT: 0–200K) were systematically varied."
+              detail="Built parametric ABAQUS models with solid elements (C3D20R) to validate the analytical results. Boundary conditions (SSSS, CCCC, CSCS), plate aspect ratios (a/b: 1–2), slenderness ratios (a/h: 10–50), and temperature fields (ΔT: 0–200K) were systematically varied."
             />
             <MethodCard
               title="Nondimensional Analysis"
