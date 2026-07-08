@@ -8,6 +8,15 @@ export function useCounter(end: number, duration = 1800, startOnMount = false) {
 
   const start = () => setStarted(true);
 
+  // Fallback: if the in-view trigger never fires (mobile, fast scroll,
+  // reduced motion), show the real value instead of staying at 0.
+  useEffect(() => {
+    const fallback = setTimeout(() => {
+      setCount((c) => (c === 0 ? end : c));
+    }, 2500);
+    return () => clearTimeout(fallback);
+  }, [end]);
+
   useEffect(() => {
     if (!started) return;
     const startTime = performance.now();

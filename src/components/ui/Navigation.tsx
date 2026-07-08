@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { label: "Projects", href: "projects", page: false },
   { label: "Skills", href: "skills", page: false },
   { label: "Blog", href: "/blog", page: true },
-  { label: "Hire Me", href: "work-with-me", page: false },
+  { label: "Collaborate", href: "work-with-me", page: false },
   { label: "Contact", href: "contact", page: false },
 ];
 

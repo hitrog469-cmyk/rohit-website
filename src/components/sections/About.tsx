@@ -11,10 +11,10 @@ const DETAIL_CARDS = [
 ];
 
 const STORY_SHORT =
-  "I grew up in Baglung, a small hilly district in western Nepal near Dhaulagiri. My father spent his prime years working in Bahrain, Saudi Arabia and Dubai so his children wouldn't have to. I was district topper in school. I got into NIT Rourkela. I don't take any of that lightly. Civil engineer, researcher, builder. Someone who hasn't forgotten where the journey started.";
+  "I grew up in Baglung, a small hilly district in western Nepal near Dhaulagiri. My father spent his prime years working in Bahrain, Saudi Arabia and Dubai so his children wouldn't have to. I topped my district in school, got into NIT Rourkela, and spent four years there learning why structures stand and fail. None of that came free, and I don't treat it like it did.";
 
 const STORY_FULL =
-  "My father never really got to live his own life. He worked security in the Gulf for years, sent money home, came back when his health needed it, and picked up whatever work he could find. For a stretch he was walking streets in Baglung selling phone recharge cards so there'd be money for the next day. He never complained once. That's what drives me more than any grade ever could.\n\nI graduated with a B.Tech in Civil Engineering and an 8.0 CGPA, having spent four years obsessing over why structures fail and how to make them not. My thesis on Functionally Graded Graphene Reinforced Composite (FG-GRC) plates wasn't just academic work. It was personal. I watched the 2015 earthquake devastate Kathmandu from a phone screen in Baglung, terrified and completely helpless. I chose structures because of that afternoon.\n\nDuring COVID lockdown I co-founded Learners Club with two school friends. A YouTube channel, 300+ videos, 3,000+ subscribers, teaching high school physics, chemistry and maths to students who needed it. That mission isn't finished.\n\nI'm back in Kathmandu now. Working full time at CloudFactory as a Construction Data Analyst, sitting at the intersection of civil engineering and AI-driven data operations: reviewing site walkthrough visual data, verifying build progress against BIM models, running quality checks on annotated construction datasets. Researching. Building in public. The goal was never just a degree. It was to become someone useful to the world I came from.";
+  "My father never really got to live his own life. He worked security in the Gulf for years, sent money home, came back when his health needed it, and picked up whatever work he could find. For a stretch he was walking streets in Baglung selling phone recharge cards so there'd be money for the next day. He never complained once. That's what drives me more than any grade ever could.\n\nI graduated with a B.Tech in Civil Engineering from NIT Rourkela, 7.96 CGPA, after four years of obsessing over why structures fail and how to make them not. My thesis on Functionally Graded Graphene Reinforced Composite plates wasn't just academic work for me. I watched the 2015 earthquake wreck Kathmandu from a phone screen in Baglung, terrified and useless. I chose structures because of that afternoon.\n\nDuring COVID lockdown I co-founded Learners Club with two school friends. A YouTube channel, 300+ videos, 3,000+ subscribers, teaching high school physics, chemistry and maths to students who needed it. That mission isn't finished.\n\nI'm back in Kathmandu now, working at CloudFactory as a Construction Analyst on the Buildots platform. My job is basically making sure an AI that watches construction sites doesn't lie: checking 360° walkthrough footage against BIM models, auditing annotated datasets, flagging where the model gets the sequence wrong. Evenings go to research and building tools. The degree was never the goal. Being useful to the place I came from is.";
 
 function FloatingCard({
   icon,
@@ -167,10 +167,10 @@ export default function About() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             >
-              The Human{" "}
-              <span className="text-[#F59E0B]">Behind</span>
+              Where I{" "}
+              <span className="text-[#F59E0B]">Come From</span>
               <br />
-              The Work
+              Matters
             </motion.h2>
 
             <motion.p

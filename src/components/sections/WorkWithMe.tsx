@@ -10,7 +10,7 @@ const SERVICES = [
     title: "Research Collaboration",
     icon: "⬡",
     color: "#8B5CF6",
-    tagline: "Co-authorship, domain expertise, or analytical support",
+    tagline: "The thesis opened more questions than it closed. I want to keep going.",
     offerings: [
       "AI and computer vision for construction progress monitoring",
       "BIM-based digital twin and site-data integration",
@@ -26,7 +26,7 @@ const SERVICES = [
     title: "Structural Analysis & FEM",
     icon: "△",
     color: "#F59E0B",
-    tagline: "From back-of-envelope to validated ABAQUS model",
+    tagline: "200+ ABAQUS runs taught me where models break. That's the useful part.",
     offerings: [
       "Finite Element Modeling (ABAQUS, SAP2000, STAAD.Pro)",
       "Buckling & vibration analysis of plates and frames",
@@ -42,7 +42,7 @@ const SERVICES = [
     title: "Engineering Software & Dashboards",
     icon: "◳",
     color: "#3B82F6",
-    tagline: "I turn your structural data into something you can actually use",
+    tagline: "I built three of these for my own research before anyone paid me to",
     offerings: [
       "Custom structural analysis web tools & simulators",
       "Real-time Structural Health Monitoring dashboards",
@@ -58,7 +58,7 @@ const SERVICES = [
     title: "Technical Content & Education",
     icon: "▶",
     color: "#10B981",
-    tagline: "Complex engineering, made unmistakably clear",
+    tagline: "300+ teaching videos during COVID. Explaining things is old muscle memory.",
     offerings: [
       "Educational video scripts on structural concepts",
       "Technical blog posts and whitepapers",
@@ -208,10 +208,10 @@ export default function WorkWithMe() {
             className="space-y-4"
           >
             <p className="text-[#A3A3A3] text-base leading-relaxed">
-              I sit at the intersection of civil engineering, computational methods, and AI for construction. Current work: verifying construction progress against BIM models using computer vision at CloudFactory. Research foundation: buckling and stability of FG-GRC composite plates under thermomechanical loading, NIT Rourkela.
+              By day I check what an AI thinks a construction site looks like against what it actually looks like, at CloudFactory on the Buildots platform. Before that, my thesis at NIT Rourkela was buckling of graphene-reinforced composite plates. Two different worlds that keep turning out to be the same world.
             </p>
             <p className="text-[#525252] text-sm leading-relaxed">
-              Whether you need a research collaborator, rigorous FEM analysis, a custom engineering tool, or domain expertise in AI-driven construction monitoring — I am available for the right work.
+              If you&apos;re a supervisor with a plate-mechanics or construction-AI problem, a research group that needs an extra pair of hands, or someone who needs an engineering tool that doesn&apos;t exist yet, write to me. I answer every serious email.
             </p>
 
             {/* Availability badge */}
@@ -244,10 +244,10 @@ export default function WorkWithMe() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { step: "01", label: "You email me", desc: "Describe what you need. No formal brief required — just the problem." },
-              { step: "02", label: "We scope it", desc: "One call or async exchange. I'll tell you exactly what I can deliver and when." },
-              { step: "03", label: "I build it", desc: "Analysis, code, content — delivered with full documentation and explanation." },
-              { step: "04", label: "You own it", desc: "You get the files, the model, the code. No black boxes, no lock-in." },
+              { step: "01", label: "You email me", desc: "Plain email. Tell me the problem, skip the formal brief." },
+              { step: "02", label: "We talk", desc: "One call or a few emails. If I can't do it well, I'll say so and point you somewhere better." },
+              { step: "03", label: "I do the work", desc: "Analysis, code, or writing, with the reasoning documented so you can check me." },
+              { step: "04", label: "It's yours", desc: "Files, models, source code. You shouldn't need me again unless you want to." },
             ].map((item) => (
               <div key={item.step} className="text-center">
                 <div className="text-2xl font-black text-[#F59E0B]/40 mb-2">{item.step}</div>

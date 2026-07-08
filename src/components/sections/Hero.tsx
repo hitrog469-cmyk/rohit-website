@@ -13,12 +13,12 @@ const FIRST_NAME = "ROHIT";
 const LAST_NAME = "ACHARYA";
 
 const ROLES = [
-  "Civil Engineer · AI & Computational Methods",
-  "Construction AI · CloudFactory (Buildots)",
-  "FG-GRC Composites Researcher · NIT Rourkela",
-  "FEM · ABAQUS · MATLAB · BIM",
-  "Builder of Shipped Engineering Tools",
-  "From Baglung, Nepal",
+  "Civil Engineer, working on AI for construction",
+  "Construction Analyst at CloudFactory (Buildots)",
+  "Composites researcher, NIT Rourkela '25",
+  "ABAQUS · MATLAB · Python · BIM",
+  "I ship the tools I wish existed",
+  "Baglung → Kathmandu → Rourkela → back",
 ];
 
 function LetterReveal({ text, delay = 0 }: { text: string; delay?: number }) {
@@ -168,7 +168,7 @@ export default function Hero() {
           transition={{ delay: 2, duration: 0.7 }}
         >
           <p className="text-[#525252] text-xs md:text-sm font-mono tracking-widest max-w-lg text-center leading-relaxed">
-            Construction AI at CloudFactory &nbsp;·&nbsp; Composite-plate mechanics research &nbsp;·&nbsp; Builder of shipped tools
+            Days at CloudFactory checking AI against real construction sites. Nights on composite-plate research and tools nobody asked me to build.
           </p>
           <p className="text-[#333] text-xs font-mono tracking-wider">
             Kathmandu &nbsp;·&nbsp; NIT Rourkela &nbsp;·&nbsp; Learners Club

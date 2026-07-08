@@ -74,7 +74,7 @@ const EVENTS = [
     location: "Lalitpur, Nepal · Jul 2025 – Present",
     type: "current",
     color: "#EF4444",
-    desc: "Working on Buildots, an AI platform that monitors construction progress by comparing 360° site walkthrough imagery against BIM models and schedules. Verify construction progress, run quality audits on annotated construction datasets, identify sequencing and scope deviations, and contribute domain review standards that improve dataset reliability for computer-vision construction-monitoring models. Cleared the written exam, two interview rounds. CloudFactory backed the ability.",
+    desc: "Working on Buildots, an AI platform that monitors construction progress by comparing 360° site walkthrough imagery against BIM models and schedules. My job is making sure the AI doesn't lie: verifying progress claims, auditing annotated datasets, catching sequencing and scope deviations, and writing the domain review standards that keep the computer-vision models honest. Got in through a written exam and two interview rounds.",
     highlights: ["CloudFactory · Buildots", "BIM vs 360° Site Imagery", "CV-based Progress Monitoring", "Construction × AI"],
   },
   {
@@ -84,8 +84,8 @@ const EVENTS = [
     location: "Kathmandu, Nepal",
     type: "current",
     color: "#F59E0B",
-    desc: "24 hours a day. No wasted ones. The research experience, the construction industry insight, the Learners Club mission: all of it is converging. Looking to build something bigger as a team, leverage every angle I've developed, and find the right people to build with. Precision. Experience. No regrets.",
-    highlights: ["Research + Industry", "Building as a team", "Full-stack perspective", "No wasted hours"],
+    desc: "Back home in Kathmandu after four years away, and the city looks different when you've spent a degree learning why buildings fail. The research, the CloudFactory work, the Learners Club years are all starting to point at the same thing, and I'm figuring out what to build next and who to build it with. Applying to graduate programs in parallel, because the thesis questions won't leave me alone.",
+    highlights: ["Research + Industry", "Grad school applications", "Building with a team"],
   },
   {
     year: "→ MS / PhD",
