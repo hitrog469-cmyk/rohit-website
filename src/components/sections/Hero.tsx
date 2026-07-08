@@ -169,7 +169,7 @@ export default function Hero() {
             transition={{ delay: 1.7, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           />
           <span className="px-3 text-[9px] md:text-[10px] font-mono tracking-[0.3em] text-[#F59E0B]/60 whitespace-nowrap">
-            EST. 2001 · BAGLUNG 28.27°N 83.59°E
+            EST. 2003 · BAGLUNG 28.27°N 83.59°E
           </span>
           <motion.div
             className="flex-1 h-px bg-[#F59E0B]/30"

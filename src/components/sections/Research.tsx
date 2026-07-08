@@ -85,7 +85,7 @@ function PlateVisualizer() {
               animate={inView ? { width: `${(4 - i) * 20}%` } : {}}
               transition={{ delay: 0.5 + i * 0.15, duration: 1, ease: "easeOut" }}
             />
-            <span className="relative z-10 text-xs text-[#A3A3A3] font-mono ml-2">
+            <span className="relative z-10 text-xs text-[#F5F5F5] font-mono ml-2 px-2 py-0.5 rounded bg-black/50">
               {i === 0 ? "▲ " : i === 3 ? "▼ " : "  "}
               {layer.label}
             </span>
@@ -104,14 +104,14 @@ function PlateVisualizer() {
           </motion.div>
         ))}
         {/* Axis label */}
-        <div className="absolute right-2 top-1/2 -translate-y-1/2 -rotate-90 text-[10px] font-mono text-[#333] tracking-widest">
+        <div className="absolute right-2 top-1/2 -translate-y-1/2 -rotate-90 text-[10px] font-mono text-[#737373] tracking-widest">
           THICKNESS (h)
         </div>
       </div>
       <div className="flex justify-between mt-2 px-1">
-        <span className="text-[10px] font-mono text-[#333]">W_GPL = 1.0%</span>
+        <span className="text-[10px] font-mono text-[#737373]">W_GPL = 1.0%</span>
         <span className="text-[10px] font-mono text-[#F59E0B]">FG-X Distribution</span>
-        <span className="text-[10px] font-mono text-[#333]">W_GPL = 0%</span>
+        <span className="text-[10px] font-mono text-[#737373]">W_GPL = 0%</span>
       </div>
     </div>
   );
@@ -309,7 +309,7 @@ export default function Research() {
               animate={inView ? { opacity: 1 } : {}}
               transition={{ delay: 0.8 }}
             >
-              FG-X distributes graphene nanoplatlets with maximum concentration at the
+              FG-X distributes graphene nanoplatelets with maximum concentration at the
               surfaces — where bending stresses are highest — producing superior
               buckling resistance compared to uniform distribution.
             </motion.p>
