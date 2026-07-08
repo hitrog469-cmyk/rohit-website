@@ -17,6 +17,7 @@ import CodexTeaser from "@/components/sections/CodexTeaser";
 import ExploreTeaser from "@/components/sections/ExploreTeaser";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/ui/Footer";
+import DimensionLine from "@/components/ui/DimensionLine";
 
 export default function Home() {
   const posts = getAllPosts();
@@ -27,18 +28,22 @@ export default function Home() {
       <Navigation />
       <Hero />
       <About />
+      <DimensionLine label="Section A-A · The Work" />
       <Research />
       <Projects />
       <NumbersSection />
+      <DimensionLine label="Section B-B · The Road" />
       <Timeline />
       <ManifestoSection />
       <Skills />
       <Education />
+      <DimensionLine label="Section C-C · The Person" />
       <BeyondWork />
       <WorkWithMe />
       <BlogPreview posts={posts} />
       <ExploreTeaser />
       <CodexTeaser />
+      <DimensionLine label="Detail 01 · Say Hello" />
       <Contact />
       <Footer />
     </main>

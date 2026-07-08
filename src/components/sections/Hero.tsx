@@ -140,7 +140,7 @@ export default function Hero() {
           <LetterReveal text={FIRST_NAME} delay={0.5} />
         </div>
         <div
-          className="text-display font-black tracking-tight mb-8 overflow-hidden"
+          className="text-display font-black tracking-tight mb-3 overflow-hidden"
           style={{
             perspective: "1000px",
             WebkitTextStroke: "1px rgba(245,158,11,0.4)",
@@ -149,6 +149,39 @@ export default function Hero() {
         >
           <LetterReveal text={LAST_NAME} delay={0.85} />
         </div>
+
+        {/* Dimension line under the name — measured like a beam on a drawing */}
+        <motion.div
+          className="flex items-center w-full max-w-md md:max-w-xl mb-8 select-none"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.6, duration: 0.8 }}
+          aria-hidden
+        >
+          <div className="w-px h-3 bg-[#F59E0B]/40" />
+          <svg width="9" height="7" viewBox="0 0 9 7" className="shrink-0 -ml-px">
+            <path d="M9 3.5 L1.5 3.5 M1.5 3.5 L6 1 M1.5 3.5 L6 6" stroke="#F59E0B" strokeOpacity="0.45" strokeWidth="1" fill="none" />
+          </svg>
+          <motion.div
+            className="flex-1 h-px bg-[#F59E0B]/30"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ delay: 1.7, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          />
+          <span className="px-3 text-[9px] md:text-[10px] font-mono tracking-[0.3em] text-[#F59E0B]/60 whitespace-nowrap">
+            EST. 2001 · BAGLUNG 28.27°N 83.59°E
+          </span>
+          <motion.div
+            className="flex-1 h-px bg-[#F59E0B]/30"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ delay: 1.7, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          />
+          <svg width="9" height="7" viewBox="0 0 9 7" className="shrink-0 -mr-px">
+            <path d="M0 3.5 L7.5 3.5 M7.5 3.5 L3 1 M7.5 3.5 L3 6" stroke="#F59E0B" strokeOpacity="0.45" strokeWidth="1" fill="none" />
+          </svg>
+          <div className="w-px h-3 bg-[#F59E0B]/40" />
+        </motion.div>
 
         {/* Rotating role */}
         <motion.div

@@ -83,8 +83,24 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="h-px mb-6" style={{ background: "var(--border-subtle)" }} />
+        {/* Title block — like the stamp box on a structural drawing sheet */}
+        <div
+          className="mb-8 grid grid-cols-2 md:grid-cols-5 font-mono text-[9px] tracking-wider uppercase"
+          style={{ border: "1px solid var(--border-default)" }}
+        >
+          {[
+            { k: "PROJECT", v: "PERSONAL SITE — REV 2026" },
+            { k: "DRAWN BY", v: "R. ACHARYA" },
+            { k: "CHECKED BY", v: "R. ACHARYA (NOBODY ELSE VOLUNTEERED)" },
+            { k: "SCALE", v: "1:1 — NO EXAGGERATION" },
+            { k: "LOCATION", v: "28.27°N 83.59°E → 27.72°N 85.32°E" },
+          ].map(({ k, v }) => (
+            <div key={k} className="p-3" style={{ borderRight: "1px solid var(--border-default)", borderTop: "1px solid var(--border-default)", marginTop: "-1px" }}>
+              <div style={{ color: "var(--text-faint)" }}>{k}</div>
+              <div className="mt-1 normal-case tracking-normal" style={{ color: "var(--text-tertiary)" }}>{v}</div>
+            </div>
+          ))}
+        </div>
 
         {/* Bottom row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
