@@ -94,8 +94,8 @@ const EVENTS = [
     location: "Somewhere with the right lab",
     type: "future",
     color: "#525252",
-    desc: "The FG-GRC work is not finished. The questions I have require better infrastructure, the right supervisor, and a research environment built for going deep. The boundary conditions are set. The loading is clear. The next academic chapter is a matter of timing and the right door.",
-    highlights: ["FG-GRC continuation", "International research", "?"],
+    desc: "The questions I care about now sit between AI and infrastructure: how machines read construction sites, how data changes the way we assess and maintain what we build. Answering them properly needs a real lab, the right supervisor, and time to go deep. The next academic chapter is a matter of timing and the right door.",
+    highlights: ["AI × infrastructure", "International research", "?"],
   },
 ];
 

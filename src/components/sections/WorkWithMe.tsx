@@ -208,10 +208,10 @@ export default function WorkWithMe() {
             className="space-y-4"
           >
             <p className="text-[#A3A3A3] text-base leading-relaxed">
-              By day I check what an AI thinks a construction site looks like against what it actually looks like, at CloudFactory on the Buildots platform. Before that, my thesis at NIT Rourkela was buckling of graphene-reinforced composite plates. Two different worlds that keep turning out to be the same world.
+              Most of civil engineering still runs on paper, gut feeling, and site visits. I work on the part that doesn&apos;t: at CloudFactory I check what an AI thinks a construction site looks like against what it actually looks like. Before that, four years at NIT Rourkela — thesis in computational mechanics, and a habit of turning every problem into a tool someone else can use.
             </p>
             <p className="text-[#525252] text-sm leading-relaxed">
-              If you&apos;re a supervisor with a plate-mechanics or construction-AI problem, a research group that needs an extra pair of hands, or someone who needs an engineering tool that doesn&apos;t exist yet, write to me. I answer every serious email.
+              If you&apos;re a supervisor or research group working anywhere around AI, data, or computation in the built environment — or you need an engineering tool that doesn&apos;t exist yet — write to me. I answer every serious email.
             </p>
 
             {/* Availability badge */}

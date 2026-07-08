@@ -13,10 +13,10 @@ const FIRST_NAME = "ROHIT";
 const LAST_NAME = "ACHARYA";
 
 const ROLES = [
-  "Civil Engineer, working on AI for construction",
+  "Civil engineer, but the kind that codes",
   "Construction Analyst at CloudFactory (Buildots)",
-  "Composites researcher, NIT Rourkela '25",
-  "ABAQUS · MATLAB · Python · BIM",
+  "AI × infrastructure, NIT Rourkela '25",
+  "Python · BIM · ABAQUS · whatever the problem needs",
   "I ship the tools I wish existed",
   "Baglung → Kathmandu → Rourkela → back",
 ];
@@ -168,7 +168,7 @@ export default function Hero() {
           transition={{ delay: 2, duration: 0.7 }}
         >
           <p className="text-[#525252] text-xs md:text-sm font-mono tracking-widest max-w-lg text-center leading-relaxed">
-            Days at CloudFactory checking AI against real construction sites. Nights on composite-plate research and tools nobody asked me to build.
+            Days at CloudFactory teaching AI to read construction sites. Nights on research and tools nobody asked me to build.
           </p>
           <p className="text-[#333] text-xs font-mono tracking-wider">
             Kathmandu &nbsp;·&nbsp; NIT Rourkela &nbsp;·&nbsp; Learners Club
