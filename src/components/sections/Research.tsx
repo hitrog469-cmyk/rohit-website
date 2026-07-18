@@ -85,7 +85,10 @@ function PlateVisualizer() {
               animate={inView ? { width: `${(4 - i) * 20}%` } : {}}
               transition={{ delay: 0.5 + i * 0.15, duration: 1, ease: "easeOut" }}
             />
-            <span className="relative z-10 text-xs text-[#F5F5F5] font-mono ml-2 px-2 py-0.5 rounded bg-black/50">
+            <span
+              className="relative z-10 text-xs font-mono ml-2 px-2 py-0.5 rounded"
+              style={{ background: "rgba(255,255,255,0.82)", color: "#1C1917" }}
+            >
               {i === 0 ? "▲ " : i === 3 ? "▼ " : "  "}
               {layer.label}
             </span>

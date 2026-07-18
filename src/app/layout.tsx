@@ -1,8 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Fraunces } from "next/font/google";
 import "./globals.css";
 import SmoothScrollProvider from "@/components/providers/SmoothScrollProvider";
-import CustomCursor from "@/components/ui/CustomCursor";
 import CommandPaletteProvider from "@/components/ui/CommandPaletteProvider";
 
 const inter = Inter({
@@ -16,6 +15,13 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains",
   display: "swap",
   weight: ["400", "500"],
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-serif",
+  display: "swap",
+  axes: ["opsz"],
 });
 
 export const metadata: Metadata = {
@@ -77,10 +83,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} ${fraunces.variable}`}>
       <body className="bg-[var(--bg-page)] text-[var(--text-primary)] font-sans antialiased">
         <SmoothScrollProvider>
-          <CustomCursor />
           <CommandPaletteProvider />
           {children}
         </SmoothScrollProvider>
