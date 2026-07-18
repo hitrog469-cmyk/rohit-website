@@ -270,8 +270,8 @@ export default function Research() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.1, duration: 0.7 }}
         >
-          The Work That{" "}
-          <span className="text-[#F59E0B]">Defines</span> Me
+          Research,{" "}
+          <span className="text-[#F59E0B]">so far</span>
         </motion.h2>
         <motion.p
           className="text-[#525252] text-base mb-16 max-w-xl leading-relaxed"
@@ -359,7 +359,77 @@ export default function Research() {
           </div>
         </motion.div>
 
-        {/* Download + future research */}
+        {/* Second study — FRP seminar work */}
+        <motion.div
+          className="rounded-xl border border-[#222] bg-surface p-6 mb-14"
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.55 }}
+        >
+          <div className="flex items-center gap-3 mb-3">
+            <span className="text-[10px] font-mono tracking-widest text-[#F59E0B] uppercase">Also — Seminar Study, 2024</span>
+          </div>
+          <h3 className="text-[#F5F5F5] font-semibold text-lg mb-2">
+            FRP Strengthening of Aging Reinforced Concrete
+          </h3>
+          <p className="text-[#A3A3A3] text-sm leading-relaxed max-w-3xl mb-3">
+            Before the thesis, I spent a semester reviewing how CFRP, GFRP, and BFRP retrofitting
+            restores capacity in aging concrete structures — comparing externally bonded and
+            near-surface-mounted systems, and deriving the analytical formulations for flexural
+            capacity, shear contribution, and axial confinement. Reported gains in the literature:
+            60–85% in flexure, up to 200% in shear, 50–60% axial. That review later became the basis
+            for the FRP-RC section analyzer I built and shipped.
+          </p>
+          <a
+            href="https://frp-analyzer.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#F59E0B] text-sm font-mono hover:text-[#FBBF24] transition-colors"
+          >
+            → The tool that came out of it
+          </a>
+        </motion.div>
+
+        {/* Open questions — what I want to pursue next */}
+        <motion.div
+          className="mb-14"
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.6 }}
+        >
+          <h3 className="text-[#F5F5F5] font-semibold text-lg mb-2">Questions I haven&apos;t answered yet</h3>
+          <p className="text-[#525252] text-sm mb-6 max-w-2xl">
+            The honest list. These are the problems I want to take into graduate research —
+            some grew out of the thesis, some out of watching AI meet real construction sites every day.
+          </p>
+          <div className="grid md:grid-cols-2 gap-3">
+            {[
+              {
+                q: "Can construction-progress AI learn structural context?",
+                note: "Current CV models see surfaces, not load paths. A model that knows a wall is shear-critical should flag it differently. Nobody's built that yet.",
+              },
+              {
+                q: "How far can nondimensional buckling results stretch?",
+                note: "My thesis results hold for the studied parameter space. Nonlinear post-buckling, nano-scale effects, and FSDT for thicker plates are all open — and experimental validation most of all.",
+              },
+              {
+                q: "What does a digital twin mean for a country like Nepal?",
+                note: "Digital twins assume rich sensor data and clean BIM. Most Nepali infrastructure has neither. What's the minimum-data version that still saves lives in the next earthquake?",
+              },
+              {
+                q: "Can dataset QA be formalized for construction CV?",
+                note: "At CloudFactory I write review standards by judgment. There should be a measurable framework for annotation reliability in construction imagery. I have notes.",
+              },
+            ].map((item) => (
+              <div key={item.q} className="rounded-xl border border-[#1a1a1a] bg-[#0a0a0a] p-5">
+                <p className="text-[#F5F5F5] text-sm font-semibold mb-2 leading-snug">{item.q}</p>
+                <p className="text-[#525252] text-xs leading-relaxed">{item.note}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Artifacts */}
         <div className="flex flex-col sm:flex-row gap-4 items-start">
           <motion.a
             href="/thesis.pdf"
@@ -371,16 +441,19 @@ export default function Research() {
             whileHover={{ scale: 1.03 }}
           >
             <Download className="w-4 h-4" />
-            Download Thesis PDF
+            Read the Thesis (PDF)
           </motion.a>
-          <motion.div
-            className="px-5 py-3 rounded-full glass amber-border text-[#F59E0B] text-sm font-mono"
+          <motion.a
+            href="https://fg-grc-calculator.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full glass amber-border text-[#F59E0B] text-sm font-mono hover:bg-[#F59E0B]/10 transition-all"
             initial={{ opacity: 0, y: 10 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.7 }}
           >
-            Future: Nonlinear dynamics · Nano-plates · FSDT · Experimental validation
-          </motion.div>
+            Run the buckling simulator →
+          </motion.a>
         </div>
       </div>
     </section>
