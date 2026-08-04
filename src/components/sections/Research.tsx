@@ -143,8 +143,8 @@ const TIMELINE = [
   {
     icon: <Layers className="w-4 h-4" />,
     phase: "Results",
-    title: "FG-X outperforms all distributions",
-    desc: "+30% buckling load enhancement. Validated against published benchmarks. Results submitted as part of B.Tech thesis, NIT Rourkela.",
+    title: "Distribution pattern and thermal exposure both dominate",
+    desc: "Critical buckling load rose about 30% as GNP volume fraction went from 5% to 25%; exposure from 300K to 500K cost about 15% of capacity. Benchmarked against Li et al. (2018), Feng et al. (2017) and Song et al. (2017). B.Tech thesis, NIT Rourkela.",
   },
 ];
 
@@ -282,14 +282,20 @@ export default function Research() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2 }}
         >
-          Artificial intelligence and computational methods for construction and structural engineering: computer vision and BIM-based construction progress monitoring, digital twins, and data-driven infrastructure assessment. Built on a foundation in computational structural mechanics — buckling and stability of advanced composite and functionally graded plates under thermomechanical loading.
+          My thesis asked what happens to a plate that is not quite flat when you heat it
+          and load it at the same time. Small departures from the ideal geometry move the
+          critical buckling load, so the ABAQUS campaign varied imperfection amplitude
+          alongside gradient index, aspect ratio, boundary conditions and temperature, with
+          the runs processed in Python and MATLAB. Since then most of my working days have
+          gone to large capital projects, establishing what was actually built from
+          360-degree capture, drone survey and 3D scans, and reading that against the model.
           <span className="text-[#F59E0B]"> B.Tech thesis — NIT Rourkela, 2025.</span>
         </motion.p>
 
         {/* Stats row */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
-          <StatCard prefix="+" value={30} suffix="%" label="Buckling load enhancement (FG-X vs UD)" delay={0} />
-          <StatCard prefix="-" value={15} suffix="%" label="Natural frequency reduction at 500K" delay={150} />
+          <StatCard prefix="+" value={30} suffix="%" label="Critical buckling load, GNP fraction 5% to 25%" delay={0} />
+          <StatCard prefix="-" value={15} suffix="%" label="Capacity lost, thermal exposure 300K to 500K" delay={150} />
           <StatCard value={12} suffix="+" label="Parametric variables studied" delay={300} />
           <StatCard value={4} label="GPL distribution patterns compared" delay={450} />
         </div>
@@ -402,26 +408,34 @@ export default function Research() {
         >
           <h3 className="text-[#F5F5F5] font-semibold text-lg mb-2">Questions I haven&apos;t answered yet</h3>
           <p className="text-[#525252] text-sm mb-6 max-w-2xl">
-            The honest list. These are the problems I want to take into graduate research —
-            some grew out of the thesis, some out of watching AI meet real construction sites every day.
+            The honest list. Some of these came out of the thesis. Most came from standing
+            on a site, then looking hard at the data that was supposed to describe it.
           </p>
           <div className="grid md:grid-cols-2 gap-3">
             {[
               {
-                q: "Can construction-progress AI learn structural context?",
-                note: "Current CV models see surfaces, not load paths. A model that knows a wall is shear-critical should flag it differently. Nobody's built that yet.",
+                q: "When an automated progress result is wrong, where did it actually break?",
+                note: "A disputed result can start in the capture, in the 3D or model review, in how an activity was configured, in the dependency logic, or in the inference itself. By the time it surfaces in a delay forecast it has already propagated through the network. I trace these by hand, one link at a time. There should be a principled way to localise the fault.",
               },
               {
-                q: "How far can nondimensional buckling results stretch?",
-                note: "My thesis results hold for the studied parameter space. Nonlinear post-buckling, nano-scale effects, and FSDT for thicker plates are all open — and experimental validation most of all.",
+                q: "Can production rates be read the way traffic flow is read?",
+                note: "Line of balance plans a project as crews moving through locations at a rate, against a fixed capacity. Roads have a mature theory for the same shape of problem. I have run enough pace-variation and line-of-balance reviews to want to know how far that borrowing goes.",
               },
               {
-                q: "What does a digital twin mean for a country like Nepal?",
-                note: "Digital twins assume rich sensor data and clean BIM. Most Nepali infrastructure has neither. What's the minimum-data version that still saves lives in the next earthquake?",
+                q: "How large a geometric deviation stops being noise?",
+                note: "In the thesis, imperfection sensitivity was a curve I could plot. On site, deviation is a number in a report with a pass or fail next to it. The threshold that separates a cosmetic deviation from a structural one is set mostly by convention, and the two ways of thinking have never been properly introduced.",
               },
               {
-                q: "Can dataset QA be formalized for construction CV?",
-                note: "At CloudFactory I write review standards by judgment. There should be a measurable framework for annotation reliability in construction imagery. I have notes.",
+                q: "How much of pavement design survives contact with as-built tolerance?",
+                note: "IRC methods and IITPAVE take layer thicknesses as given. Construction delivers them within a tolerance. If capture and scan data can measure what was actually laid, the prediction of how that surface ages should be able to use the real numbers instead of the specified ones.",
+              },
+              {
+                q: "What is a sensor network telling you before it tells you anything?",
+                note: "My monitoring dashboard flags anomalies with a rolling z-score across accelerometer, strain and temperature channels. It is a blunt instrument. The interesting failures are slow, and a slow enough drift looks like a new baseline. Separating instrument drift from real change on limited history is still open for me.",
+              },
+              {
+                q: "Can dataset review be made measurable rather than judged?",
+                note: "I write domain review standards for annotated construction imagery, and they work, but they rest on experience rather than on anything I can put a number against. Annotation reliability in this setting should be measurable. I have notes and no framework yet.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#1a1a1a] bg-[#0a0a0a] p-5">
