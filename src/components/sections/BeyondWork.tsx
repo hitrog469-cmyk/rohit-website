@@ -126,7 +126,7 @@ const FAILURES = [
     hook: "April 25, 2015. The city I was heading toward was falling in real time. I was 200km away with nothing to give.",
     story: [
       "I was in Baglung when the earthquake hit. Our area was shaken but we were among the fortunate. Structures cracked, people frightened, but no one in my immediate circle was lost. In the scale of that disaster, we were lucky.",
-      "But on my phone: Dharahara was falling. Balkhu, the neighbourhood I'd move to for +2 where my school would later be, was on the news. Buildings I'd been to, a city I was heading toward, reduced to footage. 9,000 people died. My family was trying to reach each other. Lines were jammed. I was thirteen years old, in Baglung, with nothing to do except watch and pray.",
+      "But on my phone: Dharahara was falling. Balkhu, the neighbourhood I'd move to for +2 where my school would later be, was on the news. Buildings I'd been to, a city I was heading toward, reduced to footage. 9,000 people died. My family was trying to reach each other. Lines were jammed. I was twelve, in Baglung, with nothing to do except watch and pray.",
       "That specific feeling of being physically safe while somewhere you love falls apart doesn't leave you. I had no knowledge, no tools, nothing to give. Just a phone screen and the sudden, very clear understanding that buildings are not permanent. That the structures people trust with their lives can and do fail.",
     ],
     turned: "I chose structural engineering because of that afternoon. Not the heroic version, just the honest one. I want to understand why buildings fail so I can help build better ones. Every seismic paper I read, every finite element model I run, every plate analysis I write: April 25 is somewhere in the foundation. That day gave my work a reason that goes far beyond a degree.",
@@ -137,7 +137,7 @@ const FAILURES = [
     year: "2018",
     tag: "FIRST LEAP",
     tagColor: "#10B981",
-    title: "I left Baglung for Kathmandu at thirteen. I knew no one in that city.",
+    title: "I left Baglung for Kathmandu at fifteen, knowing no one in that city.",
     hook: "The capital was the first big bet I placed on myself. Overwhelming, clarifying, necessary.",
     story: [
       "After topping the district at Grade 10, the next move was clear: Kathmandu for the +2 science programme at Bernhardt Secondary School in Balkhu. Good school. Big city. And I had no social network there, no family nearby, no map beyond the hostel address.",
@@ -167,14 +167,14 @@ const FAILURES = [
     year: "2021–25",
     tag: "GROWTH",
     tagColor: "#8B5CF6",
-    title: "At NIT I said yes to everything. That grew me, and stretched me thin.",
-    hook: "Four years of clubs, responsibilities, research, and Learners Club on the side. I wanted all of it. I couldn't always deliver on all of it.",
+    title: "At NIT I said yes to everything, and it made me capable.",
+    hook: "Four years of clubs, responsibilities, research, and Learners Club on the side. I wanted all of it, and I learned how to carry it.",
     story: [
       "I didn't go to NIT to just study. I was involved. Student activities, events, helping juniors, lab work, the thesis, building Learners Club from Kathmandu. I wanted to understand what the institution had to offer beyond the syllabus, and I said yes to most things that came my way.",
       "That approach built things in me I'm genuinely grateful for: how to manage competing demands, how to show up for people while delivering on your own work, how to lead small things and follow in larger ones, how to fail fast and extract the lesson. Four years of doing too much produced a more capable person than four years of playing it safe would have.",
-      "But there were also stretches where I was spread too thin. Commitments I under-delivered on. Projects I half-finished. Moments where I was present in too many places at once and fully present in none. Learning to distinguish between what's important and what just feels urgent took longer than it should have.",
+      "There were stretches where I was carrying more than I could do well, and that is exactly where the useful lesson lived. Telling the difference between what actually matters and what merely feels urgent is a skill, and I built it in those years. I use it every week now, on work where the stakes are somebody else's schedule rather than my own.",
     ],
-    turned: "Being ambitious about what you take on and being ruthless about what you protect are not contradictions. They work together. I learned that the hard way. The person who came out of four years of doing too much is more capable than the person who played it safe would have been. But focus is a skill, not a limitation. I'm still building it.",
+    turned: "Being ambitious about what you take on and being deliberate about what you protect are not contradictions. They work together. The person who came out of four years of saying yes is more capable than the one who played it safe would have been, and the focus I built alongside it is the part I still sharpen. Capacity first, then judgement about where to spend it.",
     color: "#8B5CF6",
   },
   {
@@ -315,19 +315,18 @@ export default function BeyondWork() {
           >
             <div className="flex items-center gap-3 mb-5">
               <div className="h-px flex-1 max-w-[2rem]" style={{ background: "rgba(245,158,11,0.4)" }} />
-              <span className="text-[9px] font-mono tracking-[0.5em] text-[#F59E0B]">WHAT BROKE ME, WHAT BUILT ME</span>
+              <span className="text-[9px] font-mono tracking-[0.5em] text-[#F59E0B]">WHAT BUILT ME</span>
             </div>
             <h3
               className="font-black leading-none mb-6"
               style={{ fontSize: "clamp(2rem, 6vw, 4rem)", letterSpacing: "-0.03em", color: "var(--text-primary)" }}
             >
-              My failures are<br />
-              my <span style={{ color: "var(--amber)" }}>credentials.</span>
+              Every chapter<br />
+              built <span style={{ color: "var(--amber)" }}>something.</span>
             </h3>
             <p className="text-[#525252] text-base max-w-2xl leading-relaxed">
-              These aren&apos;t humble-brag setbacks. They hurt. Some of them still do.
-              I&apos;m putting them here because I&apos;m done pretending my path was clean.
-              It wasn&apos;t. Click any one.
+              Not a highlight reel, and not a list of regrets either. These are the moments
+              that changed how I work, and what each one gave me. Click any one.
             </p>
           </motion.div>
 
@@ -470,7 +469,7 @@ export default function BeyondWork() {
                             <div className="flex items-center gap-2 mb-3">
                               <div className="w-4 h-px" style={{ background: f.color }} />
                               <span className="text-[9px] font-mono tracking-[0.45em]" style={{ color: f.color }}>
-                                WHAT IT COST. WHAT IT TAUGHT.
+                                WHAT IT GAVE ME.
                               </span>
                             </div>
                             <p className="text-sm leading-[1.85]" style={{ color: "#A3A3A3" }}>
