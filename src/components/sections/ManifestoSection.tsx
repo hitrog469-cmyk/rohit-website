@@ -11,8 +11,8 @@ const BELIEFS = [
   },
   {
     n: "02",
-    statement: "Data reveals what intuition misses — and confirms what intuition gets right.",
-    expand: "I watched cricket for years before I ran the numbers. The data mostly confirmed my gut. But the 20% it didn't — that's where real understanding lives.",
+    statement: "Data reveals what intuition misses, and confirms what intuition gets right.",
+    expand: "I watched cricket for years before I ran the numbers. The data mostly confirmed my gut. But the 20% it didn't, that's where real understanding lives.",
   },
   {
     n: "03",
@@ -61,7 +61,7 @@ export default function ManifestoSection() {
             The engineer&apos;s code.
           </h2>
           <p className="text-[#525252] text-base max-w-lg leading-relaxed">
-            Six working principles — formed through thesis simulations, data analysis, and growing up in a country that needs more from its engineers.
+            Six working principles, formed through thesis simulations, data analysis, and growing up in a country that needs more from its engineers.
           </p>
         </motion.div>
 

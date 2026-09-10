@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { useCounter } from "@/hooks/useCounter";
-import { ChevronDown, Download, FlaskConical, GitBranch, Layers, Microscope } from "lucide-react";
+import { ChevronDown, FlaskConical, GitBranch, Layers, Microscope } from "lucide-react";
 
 /* ── Animated stat counter ─────────────────────────────────────── */
 function StatCard({
@@ -65,7 +65,7 @@ function PlateVisualizer() {
   return (
     <div ref={ref} className="relative w-full max-w-lg mx-auto">
       <p className="text-[#525252] text-xs font-mono tracking-widest text-center mb-4 uppercase">
-        FG-GRC Cross-Section — Graphene Distribution
+        FG-GRC Cross-Section · Graphene Distribution
       </p>
       <div className="relative rounded-xl overflow-hidden border border-[#222]">
         {layers.map((layer, i) => (
@@ -137,7 +137,7 @@ const TIMELINE = [
   {
     icon: <FlaskConical className="w-4 h-4" />,
     phase: "Simulation",
-    title: "ABAQUS parametric study — 12+ variables",
+    title: "ABAQUS parametric study across 12+ variables",
     desc: "Varied GPL weight fraction (0–1%), aspect ratio, plate geometry (a/h: 10–50), boundary conditions (SSSS, CCCC), temperature (300K–500K).",
   },
   {
@@ -289,11 +289,14 @@ export default function Research() {
           load it at the same time. Small departures from the ideal geometry move the
           critical buckling load, so the ABAQUS campaign varied imperfection amplitude
           alongside gradient index, aspect ratio, boundary conditions and temperature, with
-          the runs processed in Python and MATLAB.
-          <span className="text-[#F59E0B]"> B.Tech thesis — NIT Rourkela, 2025.</span>
+          the runs processed in Python and MATLAB. Before either of those I spent a
+          semester on site, supervising execution across industrial structures and preparing
+          bills of quantities from my own field measurements, which is where I learned how
+          far a drawing can sit from the thing that gets built.
+          <span className="text-[#F59E0B]"> B.Tech thesis, NIT Rourkela, 2025.</span>
         </motion.p>
 
-        {/* Open questions — what I want to pursue next */}
+        {/* Open questions, what I want to pursue next */}
         <motion.div
           className="mb-14"
           initial={{ opacity: 0, y: 20 }}
@@ -361,7 +364,7 @@ export default function Research() {
               animate={inView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
             >
-              FG-GRC Plate — Graphene Architecture
+              FG-GRC Plate · Graphene Architecture
             </motion.h3>
             <PlateVisualizer />
             <motion.p
@@ -371,7 +374,7 @@ export default function Research() {
               transition={{ delay: 0.8 }}
             >
               FG-X distributes graphene nanoplatelets with maximum concentration at the
-              surfaces — where bending stresses are highest — producing superior
+              surfaces, where bending stresses are highest, producing superior
               buckling resistance compared to uniform distribution.
             </motion.p>
           </div>
@@ -420,7 +423,7 @@ export default function Research() {
           </div>
         </motion.div>
 
-        {/* Second study — FRP seminar work */}
+        {/* Second study, FRP seminar work */}
         <motion.div
           className="rounded-xl border border-[#222] bg-surface p-6 mb-14"
           initial={{ opacity: 0, y: 20 }}
@@ -428,14 +431,14 @@ export default function Research() {
           transition={{ delay: 0.55 }}
         >
           <div className="flex items-center gap-3 mb-3">
-            <span className="text-[10px] font-mono tracking-widest text-[#F59E0B] uppercase">Also — Seminar Study, 2024</span>
+            <span className="text-[10px] font-mono tracking-widest text-[#F59E0B] uppercase">Also: Seminar Study, 2024</span>
           </div>
           <h3 className="text-[#F5F5F5] font-semibold text-lg mb-2">
             FRP Strengthening of Aging Reinforced Concrete
           </h3>
           <p className="text-[#A3A3A3] text-sm leading-relaxed max-w-3xl mb-3">
             Before the thesis, I spent a semester reviewing how CFRP, GFRP, and BFRP retrofitting
-            restores capacity in aging concrete structures — comparing externally bonded and
+            restores capacity in aging concrete structures, comparing externally bonded and
             near-surface-mounted systems, and deriving the analytical formulations for flexural
             capacity, shear contribution, and axial confinement. Reported gains in the literature:
             60–85% in flexure, up to 200% in shear, 50–60% axial. That review later became the basis
@@ -455,25 +458,13 @@ export default function Research() {
         {/* Artifacts */}
         <div className="flex flex-col sm:flex-row gap-4 items-start">
           <motion.a
-            href="/thesis.pdf"
-            download
-            className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#F59E0B] text-black text-sm font-bold hover:bg-[#FBBF24] transition-all hover:shadow-amber"
-            initial={{ opacity: 0, y: 10 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.6 }}
-            whileHover={{ scale: 1.03 }}
-          >
-            <Download className="w-4 h-4" />
-            Read the Thesis (PDF)
-          </motion.a>
-          <motion.a
             href="https://fg-grc-calculator.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full glass amber-border text-[#F59E0B] text-sm font-mono hover:bg-[#F59E0B]/10 transition-all"
+            className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#F59E0B] text-black text-sm font-bold hover:bg-[#FBBF24] transition-all"
             initial={{ opacity: 0, y: 10 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.7 }}
+            transition={{ delay: 0.6 }}
           >
             Run the buckling simulator →
           </motion.a>

@@ -80,7 +80,7 @@ export default function About() {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-          {/* Left — photo placeholder + detail cards */}
+          {/* Left, photo placeholder + detail cards */}
           <div className="relative">
             {/* Photo frame */}
             <motion.div
@@ -97,7 +97,7 @@ export default function About() {
                   border: "1px solid #222222",
                 }}
               >
-                {/* Initials fallback — visible until /rohit.jpg is added */}
+                {/* Initials fallback, visible until /rohit.jpg is added */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
                   <div className="w-20 h-20 rounded-full bg-[#F59E0B]/10 border border-[#F59E0B]/20 flex items-center justify-center">
                     <span className="text-2xl font-black tracking-tight text-[#F59E0B]">RA</span>
@@ -107,7 +107,7 @@ export default function About() {
                   </p>
                 </div>
 
-                {/* Real photo — auto-appears once public/rohit.jpg exists */}
+                {/* Real photo, auto-appears once public/rohit.jpg exists */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/rohit.jpg"
@@ -159,7 +159,7 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right — story */}
+          {/* Right, story */}
           <div className="flex flex-col justify-center">
             <motion.h2
               className="text-headline text-[#F5F5F5] mb-6"

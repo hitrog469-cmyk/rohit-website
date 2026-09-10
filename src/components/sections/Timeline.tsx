@@ -7,7 +7,7 @@ import { MapPin, ChevronDown, ExternalLink } from "lucide-react";
 const EVENTS = [
   {
     year: "2018",
-    role: "SEE — District Topper",
+    role: "SEE, District Topper",
     org: "Baglung, Nepal",
     location: "Baglung → Kathmandu",
     type: "education",
@@ -17,7 +17,7 @@ const EVENTS = [
   },
   {
     year: "2020",
-    role: "Co-founder — Learners Club",
+    role: "Co-founder, Learners Club",
     org: "YouTube",
     location: "Kathmandu (Remote)",
     type: "creative",
@@ -27,13 +27,13 @@ const EVENTS = [
   },
   {
     year: "2021",
-    role: "B.Tech — Civil Engineering",
+    role: "B.Tech, Civil Engineering",
     org: "India",
     location: "Rourkela, Odisha, India",
     type: "education",
     color: "#3B82F6",
     desc: "1,500km from home. Said yes to everything from day one. Class Representative. Branch Representative. Mentor at Institute Counselling Services, helping fellow students navigate academic and personal pressures. Represented the institute in football at inter-collegiate level. If a role meant contributing more, I took it. Four years of being uncomfortable on purpose.",
-    highlights: ["Class Representative", "Branch Representative", "Institute Counselling Mentor", "Football — Inter-collegiate"],
+    highlights: ["Class Representative", "Branch Representative", "Institute Counselling Mentor", "Football, Inter-collegiate"],
   },
   {
     year: "2024 · Summer",
@@ -47,7 +47,7 @@ const EVENTS = [
   },
   {
     year: "2024 · Aug",
-    role: "Thesis Research — FG-GRC Plates",
+    role: "Thesis Research, FG-GRC Plates",
     org: "Dept. of Civil Engineering",
     location: "Rourkela, India",
     type: "research",
@@ -59,12 +59,12 @@ const EVENTS = [
   },
   {
     year: "2024–25",
-    role: "Final Year — Placements · Research · One More Internship",
+    role: "Final Year, Placements · Research · One More Internship",
     org: "Engineering Institute",
     location: "Rourkela, India",
     type: "education",
     color: "#F59E0B",
-    desc: "Final year running three things at once: finishing the thesis, sitting for campus placements (curious what the industry looked like post-internship), and taking one more internship in the last semester to keep expanding what I knew. The internship experience had given me appetite for the non-traditional side of construction — the technology layer, the systems thinking. Wanted to understand where the field was actually heading.",
+    desc: "Final year running three things at once: finishing the thesis, sitting for campus placements (curious what the industry looked like post-internship), and taking one more internship in the last semester to keep expanding what I knew. The internship experience had given me appetite for the non-traditional side of construction, the technology layer, the systems thinking. Wanted to understand where the field was actually heading.",
     highlights: ["Thesis completion", "Campus placements", "Final semester internship", "Technology in construction"],
   },
   {
@@ -94,8 +94,8 @@ const EVENTS = [
     location: "Somewhere with the right lab",
     type: "future",
     color: "#525252",
-    desc: "The questions I care about now sit between AI and infrastructure: how machines read construction sites, how data changes the way we assess and maintain what we build. Answering them properly needs a real lab, the right supervisor, and time to go deep. The next academic chapter is a matter of timing and the right door.",
-    highlights: ["AI × infrastructure", "International research", "?"],
+    desc: "The questions I care about sit around how construction gets planned, measured and controlled: what a machine can reliably tell you about a site, where a human still has to decide, and how a disturbance in one place ends up moving a completion date somewhere else. Answering any of that properly needs a real lab, the right supervisor, and time to go deep. The next academic chapter is a matter of timing and the right door.",
+    highlights: ["Production planning and control", "Sensing and simulation", "International research"],
   },
 ];
 

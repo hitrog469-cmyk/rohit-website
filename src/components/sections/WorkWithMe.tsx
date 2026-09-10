@@ -7,35 +7,37 @@ import { ArrowUpRight } from "lucide-react";
 const SERVICES = [
   {
     number: "01",
+    title: "Construction Analytics & Project Controls",
+    icon: "▤",
+    color: "#F59E0B",
+    tagline: "Percent complete is a story. I would rather look at the rate.",
+    offerings: [
+      "Line of balance and pace variation review",
+      "Delay forecasting and schedule status reporting",
+      "As-built status from 360 capture, drone survey and 3D scans",
+      "Activity, dependency and auto-completion rule configuration",
+      "Root cause investigation on disputed progress results",
+      "BOQ and quantity take-off from field measurement",
+    ],
+    ideal: "Contractors, owners, project controls teams, construction technology groups",
+    cta: "Talk Through a Project",
+  },
+  {
+    number: "02",
     title: "Research Collaboration",
     icon: "⬡",
     color: "#8B5CF6",
     tagline: "The thesis opened more questions than it closed. I want to keep going.",
     offerings: [
-      "AI and computer vision for construction progress monitoring",
-      "BIM-based digital twin and site-data integration",
-      "Functionally Graded Material (FGM) plate analysis",
-      "ABAQUS parametric study design and execution",
-      "Halpin-Tsai micromechanics modelling · CPT formulation",
+      "Buckling and stability of composite and functionally graded plates",
+      "ABAQUS parametric study design, execution and post-processing",
+      "Halpin-Tsai micromechanics and classical plate theory formulation",
+      "Computer vision and BIM based construction progress monitoring",
+      "Production planning and control, rate based methods",
+      "Domain review for annotated construction datasets",
     ],
-    ideal: "Graduate supervisors · Research groups · PhD students · Conference papers",
+    ideal: "Graduate supervisors, research groups, PhD students, conference papers",
     cta: "Collaborate",
-  },
-  {
-    number: "02",
-    title: "Structural Analysis & FEM",
-    icon: "△",
-    color: "#F59E0B",
-    tagline: "200+ ABAQUS runs taught me where models break. That's the useful part.",
-    offerings: [
-      "Finite Element Modeling (ABAQUS, SAP2000, STAAD.Pro)",
-      "Buckling & vibration analysis of plates and frames",
-      "Composite material structural assessment",
-      "Seismic analysis & response spectrum evaluation",
-      "Load combination checks per IS/ACI/Eurocode",
-    ],
-    ideal: "Engineering firms · Research labs · Thesis supervision · Design consultants",
-    cta: "Request Analysis",
   },
   {
     number: "03",
@@ -196,8 +198,8 @@ export default function WorkWithMe() {
             transition={{ delay: 0.1, duration: 0.7 }}
           >
             <h2 className="text-headline text-[#F5F5F5]">
-              Open to Research <br />
-              <span className="text-[#F59E0B]">Collaboration</span>
+              Work I Would <br />
+              <span className="text-[#F59E0B]">Take On</span>
             </h2>
           </motion.div>
 
@@ -208,17 +210,24 @@ export default function WorkWithMe() {
             className="space-y-4"
           >
             <p className="text-[#A3A3A3] text-base leading-relaxed">
-              Most of civil engineering still runs on paper, gut feeling, and site visits. I work on the part that doesn&apos;t: at CloudFactory I check what an AI thinks a construction site looks like against what it actually looks like. Before that, four years at NIT Rourkela — thesis in computational mechanics, and a habit of turning every problem into a tool someone else can use.
+              Most of construction still gets measured in percent complete, reported once a
+              month, argued about later. I work on the part that does not. My day is spent
+              establishing what is actually built, comparing it to what was planned, and
+              working out where the schedule goes from here.
             </p>
             <p className="text-[#525252] text-sm leading-relaxed">
-              If you&apos;re a supervisor or research group working anywhere around AI, data, or computation in the built environment — or you need an engineering tool that doesn&apos;t exist yet — write to me. I answer every serious email.
+              Before that, four years at NIT Rourkela and a thesis in computational
+              mechanics, plus a habit of turning every problem into a tool somebody else can
+              use. If you run projects, study how they are planned and controlled, or need an
+              engineering tool that does not exist yet, write to me. I answer every serious
+              email.
             </p>
 
             {/* Availability badge */}
             <div className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-full border border-[#8B5CF6]/25 bg-[#8B5CF6]/08">
               <span className="w-2 h-2 rounded-full bg-[#8B5CF6] animate-pulse" />
               <span className="text-[#8B5CF6] text-sm font-medium">
-                Open to research collaborations and graduate opportunities
+                Open to graduate research and project work
               </span>
             </div>
           </motion.div>

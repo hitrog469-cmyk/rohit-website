@@ -24,17 +24,17 @@ const ALL_ITEMS: CommandItem[] = [
   // Pages
   { id: "blog-page", label: "Blog", sublabel: "Writing on engineering, Nepal, cricket", group: "Pages", icon: "▤", href: "/blog" },
   { id: "now-page", label: "Now", sublabel: "What I'm working on right now", group: "Pages", icon: "▶", href: "/now" },
-  { id: "stack-page", label: "Stack", sublabel: "Tools I use daily — engineering + dev", group: "Pages", icon: "◳", href: "/stack" },
+  { id: "stack-page", label: "Stack", sublabel: "Tools I use daily, engineering + dev", group: "Pages", icon: "◳", href: "/stack" },
   { id: "lab-hub", label: "The Lab", sublabel: "Structural engineering tools & deep dives", group: "Pages", icon: "⬡", href: "/lab" },
   { id: "structures-page", label: "Structural Systems", sublabel: "Trusses, frames, plates, cables, composites, seismic", group: "Pages", icon: "△", href: "/structures" },
   { id: "failures-page", label: "Failures Archive", sublabel: "Tacoma Narrows, Dharahara, WTC and more", group: "Pages", icon: "◈", href: "/failures" },
   { id: "beam-calc", label: "Beam Calculator", sublabel: "Live deflection, BMD and SFD diagrams", group: "Pages", icon: "─", href: "/lab/beam" },
   { id: "column-calc", label: "Column Buckling", sublabel: "Euler critical load + K-factor visualizer", group: "Pages", icon: "╪", href: "/lab/column" },
-  { id: "codex-hub", label: "Codex", sublabel: "Three open chambers — research, cricket, Nepal", group: "Pages", icon: "◈", href: "/codex" },
-  { id: "mind-page", label: "World Map", sublabel: "Interactive constellation — how everything connects", group: "Pages", icon: "◎", href: "/mind" },
+  { id: "codex-hub", label: "Codex", sublabel: "Three open chambers, research, cricket, Nepal", group: "Pages", icon: "◈", href: "/codex" },
+  { id: "mind-page", label: "World Map", sublabel: "Interactive constellation, how everything connects", group: "Pages", icon: "◎", href: "/mind" },
   { id: "journey-page", label: "The Journey", sublabel: "Eight chapters from Kathmandu to now", group: "Pages", icon: "▷", href: "/journey" },
   // Codex
-  { id: "codex-research", label: "Research Vault", sublabel: "FG-GRC deep dive — 200+ simulations", group: "◈ Codex", icon: "⬡", href: "/codex/research" },
+  { id: "codex-research", label: "Research Vault", sublabel: "FG-GRC deep dive, 200+ simulations", group: "◈ Codex", icon: "⬡", href: "/codex/research" },
   { id: "codex-cricket", label: "Cricket Codex", sublabel: "IPL analytics + XGBoost prediction model", group: "◈ Codex", icon: "◉", href: "/codex/cricket" },
   { id: "codex-nepal", label: "Nepal Files", sublabel: "Infrastructure, Kathmandu, home", group: "◈ Codex", icon: "◎", href: "/codex/nepal" },
   // Blog
@@ -142,7 +142,7 @@ export default function CommandPalette({ initialOpen = false, onClose }: Command
 
   return (
     <>
-      {/* Trigger hint in nav — handled via nav component; this is the global overlay */}
+      {/* Trigger hint in nav, handled via nav component; this is the global overlay */}
       <AnimatePresence>
         {open && (
           <>
@@ -184,7 +184,7 @@ export default function CommandPalette({ initialOpen = false, onClose }: Command
                 {/* Results */}
                 <div ref={listRef} className="max-h-[380px] overflow-y-auto py-2">
                   {grouped.length === 0 && (
-                    <div className="text-[#333] text-xs font-mono text-center py-10">no results — try &apos;codex&apos; or &apos;nepal&apos;</div>
+                    <div className="text-[#333] text-xs font-mono text-center py-10">no results, try &apos;codex&apos; or &apos;nepal&apos;</div>
                   )}
                   {grouped.map(({ group, items }) => {
                     return (

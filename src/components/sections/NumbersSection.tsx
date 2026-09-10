@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 
 const STATS = [
   { value: 200, suffix: "+", label: "ABAQUS simulations", sublabel: "parametric study runs", color: "#F59E0B" },
-  { value: 30, suffix: "%", prefix: "+", label: "buckling improvement", sublabel: "FG-X vs uniform distribution", color: "#F59E0B" },
+  { value: 30, suffix: "%", prefix: "+", label: "buckling load gain", sublabel: "GNP volume fraction, 5% to 25%", color: "#F59E0B" },
   { value: 1500, suffix: " km", label: "from home", sublabel: "Kathmandu → Rourkela", color: "#A3A3A3" },
   { value: 4, suffix: " yrs", label: "at NIT Rourkela", sublabel: "B.Tech Civil Engineering", color: "#A3A3A3" },
   { value: 12, suffix: "+", label: "variables studied", sublabel: "across parametric space", color: "#F59E0B" },

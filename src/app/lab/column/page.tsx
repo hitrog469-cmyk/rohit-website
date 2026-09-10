@@ -227,10 +227,10 @@ export default function ColumnPage() {
               <div className="text-[#333] text-[10px] font-mono tracking-widest mb-3">COLUMN PROPERTIES</div>
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { label: "L — Length", unit: "m", val: L, set: setL, min: 0.5, step: 0.5 },
-                  { label: "E — Modulus", unit: "GPa", val: E, set: setE, min: 1, step: 10 },
-                  { label: "I — Min. MoI", unit: "cm⁴", val: I, set: setI, min: 1, step: 100 },
-                  { label: "A — Area", unit: "cm²", val: A, set: setA, min: 1, step: 1 },
+                  { label: "L, Length", unit: "m", val: L, set: setL, min: 0.5, step: 0.5 },
+                  { label: "E, Modulus", unit: "GPa", val: E, set: setE, min: 1, step: 10 },
+                  { label: "I, Min. MoI", unit: "cm⁴", val: I, set: setI, min: 1, step: 100 },
+                  { label: "A, Area", unit: "cm²", val: A, set: setA, min: 1, step: 1 },
                 ].map((f) => (
                   <div key={f.label} className="flex flex-col gap-1">
                     <label className="text-[#333] text-[10px] font-mono">{f.label}</label>
@@ -339,7 +339,7 @@ export default function ColumnPage() {
           {/* Column visualizer */}
           <div className="hidden lg:block">
             <div className="sticky top-24 rounded-xl border border-[#1a1a1a] bg-[#0a0a0a] p-5">
-              <div className="text-[#333] text-[10px] font-mono tracking-widest mb-4">BUCKLED SHAPE — {cond.label.toUpperCase()}</div>
+              <div className="text-[#333] text-[10px] font-mono tracking-widest mb-4">BUCKLED SHAPE, {cond.label.toUpperCase()}</div>
               <ColumnSVG condition={condition} />
             </div>
           </div>

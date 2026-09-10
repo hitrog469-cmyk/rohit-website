@@ -22,10 +22,10 @@ const VARIABLES = [
 ];
 
 const FINDINGS = [
-  { icon: "⬡", title: "FG-X Distribution Wins", desc: "Graphene concentrated at surfaces — where bending stresses peak — delivers 30% more buckling resistance than uniform distribution.", value: "+30%", color: "#F59E0B" },
+  { icon: "⬡", title: "FG-X Distribution Wins", desc: "Graphene concentrated at surfaces, where bending stresses peak, delivers 30% more buckling resistance than uniform distribution.", value: "+30%", color: "#F59E0B" },
   { icon: "◈", title: "Temperature is the Enemy", desc: "A 300°C rise reduces critical buckling load by up to 18% in steel-graphene composites. Thermal management is not optional.", value: "-18%", color: "#EF4444" },
   { icon: "◉", title: "Boundary Conditions Dominate", desc: "Switching from simply-supported (SSSS) to fully-clamped (CCCC) edges increases buckling resistance by a factor of 3.8–4.2.", value: "4×", color: "#10B981" },
-  { icon: "◫", title: "GPL Weight Fraction Saturates", desc: "Beyond 0.7% GPL weight fraction, marginal gains plateau. Optimal is 0.5–0.7% — more graphene doesn't proportionally help.", value: "0.6%", color: "#8B5CF6" },
+  { icon: "◫", title: "GPL Weight Fraction Saturates", desc: "Beyond 0.7% GPL weight fraction, marginal gains plateau. Optimal is 0.5–0.7%, more graphene doesn't proportionally help.", value: "0.6%", color: "#8B5CF6" },
 ];
 
 function StatBar({ label, value, color, note, delay }: { label: string; value: number; color: string; note: string; delay: number }) {
@@ -77,7 +77,7 @@ export default function ResearchVault() {
                   The Research <span className="text-[#F59E0B]">Vault</span>
                 </h1>
                 <p className="text-[#525252] text-base leading-relaxed max-w-2xl">
-                  Everything about my B.Tech thesis on Functionally Graded Graphene Reinforced Composite plates — the methodology, the data, the 200+ ABAQUS simulation runs, and what it all means.
+                  Everything about my B.Tech thesis on Functionally Graded Graphene Reinforced Composite plates, the methodology, the data, the 200+ ABAQUS simulation runs, and what it all means.
                 </p>
                 <div className="h-px bg-gradient-to-r from-[#F59E0B]/40 via-[#F59E0B]/10 to-transparent mt-6" />
               </div>
@@ -89,10 +89,10 @@ export default function ResearchVault() {
                 </h2>
                 <div className="grid md:grid-cols-2 gap-4">
                   {[
-                    { term: "FG", full: "Functionally Graded", desc: "Material properties vary continuously through the thickness — not uniform, not layered. Gradient." },
-                    { term: "GRC", full: "Graphene Reinforced Composite", desc: "A matrix material (usually polymer/metal) reinforced with Graphene Platelets (GPLs) — the strongest known material." },
+                    { term: "FG", full: "Functionally Graded", desc: "Material properties vary continuously through the thickness, not uniform, not layered. Gradient." },
+                    { term: "GRC", full: "Graphene Reinforced Composite", desc: "A matrix material (usually polymer/metal) reinforced with Graphene Platelets (GPLs), the strongest known material." },
                     { term: "Plate", full: "Thin Structural Element", desc: "2D structural member where thickness is much smaller than other dimensions. Think: floors, walls, aircraft panels." },
-                    { term: "Buckling", full: "Sudden Lateral Deflection", desc: "When a compressed plate suddenly deforms sideways. Not fracture — deformation. The critical load is what we calculate." },
+                    { term: "Buckling", full: "Sudden Lateral Deflection", desc: "When a compressed plate suddenly deforms sideways. Not fracture, deformation. The critical load is what we calculate." },
                   ].map((item, i) => (
                     <motion.div
                       key={item.term}
@@ -198,7 +198,7 @@ export default function ResearchVault() {
                       <span className="text-[#F59E0B]/50 w-8 shrink-0">{s.step}</span>
                       <div>
                         <span className="text-[#F5F5F5]">{s.label}</span>
-                        <span className="text-[#444] ml-2">— {s.detail}</span>
+                        <span className="text-[#444] ml-2">{s.detail}</span>
                       </div>
                     </motion.div>
                   ))}
@@ -207,7 +207,7 @@ export default function ResearchVault() {
 
               {/* Closing */}
               <div className="border-t border-[#1a1a1a] pt-10 text-center">
-                <p className="text-[#333] font-mono text-xs">— Chamber 01 complete · FG-X forever · हर हर महादेव</p>
+                <p className="text-[#333] font-mono text-xs">Chamber 01 complete · FG-X forever · हर हर महादेव</p>
                 <Link href="/codex" className="inline-flex items-center gap-2 text-[#F59E0B] text-sm font-mono mt-4 hover:gap-3 transition-all">
                   ← Return to Codex
                 </Link>

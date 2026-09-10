@@ -5,7 +5,7 @@ import Link from "next/link";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
 import type { Post } from "@/lib/blog";
-// Post type is safe — only types, no fs imports
+// Post type is safe, only types, no fs imports
 import { ArrowLeft, Clock, Calendar } from "lucide-react";
 
 export default function PostClient({
@@ -99,7 +99,7 @@ export default function PostClient({
 
         {/* End signature */}
         <div className="mt-16 pt-8 border-t border-[#1a1a1a]">
-          <p className="text-[#333] font-mono text-sm text-center">— Rohit Acharya · हर हर महादेव</p>
+          <p className="text-[#333] font-mono text-sm text-center">Rohit Acharya · हर हर महादेव</p>
         </div>
       </article>
 

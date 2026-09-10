@@ -134,7 +134,7 @@ export default function CricketCodex() {
                       </div>
                     </motion.div>
                   ))}
-                  <p className="text-[#222] text-[10px] font-mono pt-2">* illustrative sample — real model uses full IPL dataset</p>
+                  <p className="text-[#222] text-[10px] font-mono pt-2">* illustrative sample, real model uses full IPL dataset</p>
                 </div>
               </section>
 
@@ -185,15 +185,15 @@ export default function CricketCodex() {
                   <span className="text-[#3B82F6] font-mono text-sm">04.</span> How Data Changed Everything
                 </h2>
                 <div className="space-y-4 text-[#525252] text-sm leading-relaxed">
-                  <p>Before the data: I watched cricket like everyone else — vibes, nostalgia, who looked confident at the crease. Kohli was king because he <em>felt</em> like king.</p>
-                  <p>After the data: I watch pressure indices, phase-adjusted contributions, and venue-specific wicket correlations. Kohli is still king — but now I can quantify exactly why he&rsquo;s 40% more impactful in pressure chases than his aggregate numbers suggest.</p>
-                  <p className="text-[#F5F5F5] font-semibold">The model taught me something the game already knew: in T20 cricket, death bowling is undervalued and powerplay wickets are overvalued by casual fans. The data says the middle overs — boring, overlooked — decide 40% of outcomes.</p>
-                  <p>Same is true in structural engineering. The critical failure modes aren&rsquo;t always the dramatic ones. FG-GRC plates don&rsquo;t fail at the surface — they fail when the middle-layer distribution breaks down. The boring middle matters everywhere.</p>
+                  <p>Before the data: I watched cricket like everyone else, vibes, nostalgia, who looked confident at the crease. Kohli was king because he <em>felt</em> like king.</p>
+                  <p>After the data: I watch pressure indices, phase-adjusted contributions, and venue-specific wicket correlations. Kohli is still king, but now I can quantify exactly why he&rsquo;s 40% more impactful in pressure chases than his aggregate numbers suggest.</p>
+                  <p className="text-[#F5F5F5] font-semibold">The model taught me something the game already knew: in T20 cricket, death bowling is undervalued and powerplay wickets are overvalued by casual fans. The data says the middle overs, boring, overlooked, decide 40% of outcomes.</p>
+                  <p>Same is true in structural engineering. The critical failure modes aren&rsquo;t always the dramatic ones. FG-GRC plates don&rsquo;t fail at the surface, they fail when the middle-layer distribution breaks down. The boring middle matters everywhere.</p>
                 </div>
               </section>
 
               <div className="border-t border-[#1a1a1a] pt-10 text-center">
-                <p className="text-[#333] font-mono text-xs">— Chamber 02 complete · bat straight · हर हर महादेव</p>
+                <p className="text-[#333] font-mono text-xs">Chamber 02 complete · bat straight · हर हर महादेव</p>
                 <Link href="/codex" className="inline-flex items-center gap-2 text-[#3B82F6] text-sm font-mono mt-4 hover:gap-3 transition-all">
                   ← Return to Codex
                 </Link>

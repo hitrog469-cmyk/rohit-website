@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { label: "Projects", href: "projects", page: false },
   { label: "Skills", href: "skills", page: false },
   { label: "Blog", href: "/blog", page: true },
-  { label: "Collaborate", href: "work-with-me", page: false },
+  { label: "Work With Me", href: "work-with-me", page: false },
   { label: "Contact", href: "contact", page: false },
 ];
 
@@ -18,10 +18,10 @@ const EXPLORE_LINKS = [
   { icon: "◎", label: "World Map",   href: "/mind",     desc: "How everything connects" },
   { icon: "▷", label: "The Journey", href: "/journey",  desc: "8 chapters, Kathmandu to now" },
   { icon: "⬡", label: "The Lab",     href: "/lab",      desc: "Live structural tools" },
-  { icon: "◈", label: "Failures",    href: "/failures", desc: "When structures fail — case studies" },
+  { icon: "◈", label: "Failures",    href: "/failures", desc: "Case studies in structural failure" },
 ];
 
-// Structural H-section cross-section — the universal structural engineering symbol
+// Structural H-section cross-section, the universal structural engineering symbol
 function StructuralMark() {
   return (
     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden>
@@ -127,7 +127,7 @@ export default function Navigation() {
         >
           <div className="max-w-7xl mx-auto px-6 md:px-12 h-16 flex items-center justify-between">
 
-            {/* Logo — structural H-section + ROHIT ACHARYA wordmark → always goes home */}
+            {/* Logo, structural H-section + ROHIT ACHARYA wordmark → always goes home */}
             <Link
               href="/"
               className="flex items-center gap-2.5 group"
@@ -234,7 +234,7 @@ export default function Navigation() {
                 </AnimatePresence>
               </div>
 
-              {/* Codex — prominent nav entry */}
+              {/* Codex, prominent nav entry */}
               <Link
                 href="/codex"
                 className="flex items-center gap-1.5 text-sm font-mono text-[#F59E0B]/50 hover:text-[#F59E0B] transition-all duration-200 group"

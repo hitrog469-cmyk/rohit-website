@@ -24,18 +24,18 @@ const STACK: Record<string, Tool[]> = {
     { name: "Python (NumPy/Pandas)", use: "FEM automation + data pipelines", note: "ABAQUS scripting, data analysis, IPL analytics model. The bridge between engineering software and real analysis.", level: "expert", years: "2 yrs" },
   ],
   "Development": [
-    { name: "Next.js 14", use: "Full-stack web apps (App Router)", note: "Built this entire site in it. Server components, client components, MDX blogs — the whole stack.", level: "proficient", years: "1 yr" },
+    { name: "Next.js 14", use: "Full-stack web apps (App Router)", note: "Built this entire site in it. Server components, client components, MDX blogs, the whole stack.", level: "proficient", years: "1 yr" },
     { name: "TypeScript", use: "Type-safe JavaScript everywhere", note: "Once you go typed you never go back. The compiler catches mistakes I wouldn't have caught for hours.", level: "proficient", years: "1 yr" },
-    { name: "React", use: "UI component architecture", note: "The mental model makes sense to me as an engineer — components are like structural assemblies.", level: "proficient", years: "1.5 yrs" },
+    { name: "React", use: "UI component architecture", note: "The mental model makes sense to me as an engineer, components are like structural assemblies.", level: "proficient", years: "1.5 yrs" },
     { name: "Three.js / R3F", use: "3D graphics + WebGL", note: "Used for the 3D hero section on this site. Building 3D things in the browser feels close to building physical things.", level: "learning", years: "6 mo" },
     { name: "Framer Motion", use: "Animations + micro-interactions", note: "Every smooth animation on this site. Physics-based motion makes UIs feel real.", level: "proficient", years: "1 yr" },
     { name: "Tailwind CSS", use: "Utility-first styling", note: "Converts design thinking directly to markup. Faster than writing CSS from scratch for every component.", level: "expert", years: "1.5 yrs" },
   ],
   "Learning": [
-    { name: "Rust", use: "Systems programming", note: "Just started. The borrow checker is humbling — and I think that humbling is good for me.", level: "learning" },
+    { name: "Rust", use: "Systems programming", note: "Just started. The borrow checker is humbling, and I think that humbling is good for me.", level: "learning" },
     { name: "Machine Learning", use: "XGBoost, scikit-learn, model training", note: "Applying to cricket prediction and infrastructure monitoring use cases. Self-taught via courses + projects.", level: "learning", years: "1 yr" },
     { name: "WebGL / GLSL", use: "Custom shaders + GPU rendering", note: "Want to build generative structural-pattern visualizations. The math overlaps with my engineering background.", level: "learning" },
-    { name: "Structural Health Monitoring", use: "Sensor networks + signal processing", note: "Not a dev tool — but a field I'm actively studying to apply to Nepal's infrastructure problems.", level: "learning" },
+    { name: "Structural Health Monitoring", use: "Sensor networks + signal processing", note: "Not a dev tool, but a field I'm actively studying to apply to Nepal's infrastructure problems.", level: "learning" },
   ],
   "Setup": [
     { name: "VS Code", use: "Primary editor", note: "One Dark Pro theme. JetBrains Mono font. The Vim motions extension that I use maybe 20% correctly.", level: "expert" },
@@ -80,7 +80,7 @@ export default function StackPage() {
             Stack.
           </h1>
           <p className="text-[#525252] text-base leading-relaxed max-w-xl">
-            The tools I use — honestly. What I&apos;m good at, what I&apos;m still learning, and what I think about each one.
+            The tools I use, honestly. What I&apos;m good at, what I&apos;m still learning, and what I think about each one.
             Two stacks: engineering software I use for research, and dev tools I use to build.
           </p>
           <div className="h-px bg-gradient-to-r from-[#F59E0B]/25 via-[#F59E0B]/8 to-transparent mt-6" />

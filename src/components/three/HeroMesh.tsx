@@ -24,7 +24,7 @@ function ParticleMesh() {
       const row = Math.floor(i / cols);
       const x = (col - cols / 2) * spacingX;
       const y = (row - rows / 2) * spacingY;
-      // Slight wave for the plate — like a buckled/deformed shape
+      // Slight wave for the plate, like a buckled/deformed shape
       const wave = Math.sin(col * 0.3) * Math.cos(row * 0.3) * 0.3;
       const z = wave;
 

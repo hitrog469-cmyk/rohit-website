@@ -81,7 +81,7 @@ export default function CodexPage() {
               transition={{ repeat: Infinity, duration: 2 }}
               className="w-1.5 h-1.5 rounded-full bg-[#F59E0B]"
             />
-            <span className="text-[#333] text-xs font-mono">ALL CHAMBERS OPEN — NO ANSWER REQUIRED</span>
+            <span className="text-[#333] text-xs font-mono">ALL CHAMBERS OPEN, NO ANSWER REQUIRED</span>
           </div>
         </motion.div>
 

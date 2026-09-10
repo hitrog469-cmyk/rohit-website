@@ -10,7 +10,7 @@ const NOW_DATA = {
   updated: "June 2026",
   working: [
     {
-      title: "B.Tech Thesis — FG-GRC Plates",
+      title: "B.Tech Thesis, FG-GRC Plates",
       detail: "Writing up final findings on functionally graded graphene reinforced composite plate buckling. 200+ ABAQUS simulation runs, almost done.",
       tag: "Research",
       color: "#F59E0B",
@@ -37,7 +37,7 @@ const NOW_DATA = {
   ],
   watching: [
     { what: "IPL 2024 replays", note: "Analyzing death-over patterns for the model." },
-    { what: "3Blue1Brown — Essence of Linear Algebra", note: "Revisiting the fundamentals. FEM makes more sense when you truly understand eigenvectors." },
+    { what: "3Blue1Brown, Essence of Linear Algebra", note: "Revisiting the fundamentals. FEM makes more sense when you truly understand eigenvectors." },
     { what: "Arrival (2016)", note: "Third time watching. Each time I understand why Amy Adams had to learn the alien language first." },
   ],
   thinking: [
@@ -47,7 +47,7 @@ const NOW_DATA = {
     "The relationship between graphene's hexagonal lattice and why FG-X distribution outperforms every other pattern. It's elegant. Like the universe is consistent about hexagons.",
   ],
   missing: [
-    "Kathmandu monsoon — the smell of rain on old brick",
+    "Kathmandu monsoon, the smell of rain on old brick",
     "Momo from that place near Asan Tole",
     "The sound of the city at 6am when you can still hear birds",
     "My bed at home",
@@ -78,7 +78,7 @@ export default function NowPage() {
             Now.
           </h1>
           <p className="text-[#525252] text-base leading-relaxed max-w-lg">
-            A snapshot of what I&apos;m doing right now. Updated occasionally — when the present feels worth recording.
+            A snapshot of what I&apos;m doing right now. Updated occasionally, when the present feels worth recording.
           </p>
           <div className="flex items-center gap-4 mt-5 text-xs font-mono">
             <span className="text-[#333]"><span className="text-[#F59E0B]/60">◎</span> {NOW_DATA.location}</span>
@@ -205,7 +205,7 @@ export default function NowPage() {
           className="mt-16 pt-8 border-t border-[#111]"
         >
           <p className="text-[#222] text-xs font-mono text-center mb-6">
-            Inspired by <a href="https://nownownow.com" target="_blank" rel="noopener" className="text-[#2a2a2a] hover:text-[#444] transition-colors">nownownow.com</a> — a movement of people with &apos;/now&apos; pages.
+            Inspired by <a href="https://nownownow.com" target="_blank" rel="noopener" className="text-[#2a2a2a] hover:text-[#444] transition-colors">nownownow.com</a>, a movement of people with &apos;/now&apos; pages.
           </p>
           <div className="flex items-center justify-center gap-6 text-xs font-mono">
             <Link href="/" className="text-[#333] hover:text-[#F59E0B] transition-colors">← Home</Link>

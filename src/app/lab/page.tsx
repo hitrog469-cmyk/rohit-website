@@ -33,7 +33,7 @@ const TOOLS = [
     href: "/structures",
     title: "Structural Systems",
     subtitle: "Explorer: trusses, frames, plates, cables",
-    desc: "Six structural typologies — how they work, where they fail, famous examples. Interactive force-flow diagrams and real-world case studies.",
+    desc: "Six structural typologies, how they work, where they fail, famous examples. Interactive force-flow diagrams and real-world case studies.",
     tags: ["Typology", "Force Flow", "Design"],
     icon: "⬡",
     color: "#3B82F6",
@@ -43,7 +43,7 @@ const TOOLS = [
     id: "failures",
     href: "/failures",
     title: "Structural Failures",
-    subtitle: "What went wrong — and what it taught us",
+    subtitle: "What went wrong, and what it taught us",
     desc: "Tacoma Narrows, Ronan Point, Dharahara 2015, and more. Each failure dissected: cause, mechanism, lessons. Engineering knowledge through catastrophe.",
     tags: ["Forensics", "Failures", "Case Study"],
     icon: "◈",
@@ -110,7 +110,7 @@ export default function LabPage() {
             The Lab.
           </h1>
           <p className="text-[#525252] text-base leading-relaxed max-w-xl">
-            Interactive tools, deep-dive explainers, and real structural engineering. Not textbook theory — live calculators, real failures, actual research.
+            Interactive tools, deep-dive explainers, and real structural engineering. Not textbook theory, live calculators, real failures, actual research.
           </p>
           <div className="flex items-center gap-4 mt-5 text-xs font-mono text-[#333]">
             <span>Euler-Bernoulli beam theory</span>
@@ -220,7 +220,7 @@ export default function LabPage() {
           className="mt-14 pt-8 border-t border-[#0d0d0d]"
         >
           <p className="text-[#1a1a1a] text-xs font-mono text-center">
-            All calculators use closed-form analytical solutions — no FEM approximation. Results are exact within beam theory assumptions.
+            All calculators use closed-form analytical solutions, no FEM approximation. Results are exact within beam theory assumptions.
           </p>
           <div className="flex items-center justify-center gap-6 mt-6 text-xs font-mono">
             <Link href="/" className="text-[#333] hover:text-[#F59E0B] transition-colors">← Home</Link>

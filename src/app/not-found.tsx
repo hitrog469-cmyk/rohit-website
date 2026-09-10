@@ -13,7 +13,7 @@ export default function NotFound() {
       />
 
       <p className="font-mono text-[var(--amber)] text-sm tracking-[0.3em] uppercase mb-6">
-        Error 404 — Load Path Not Found
+        Error 404, Load Path Not Found
       </p>
 
       <h1 className="text-display text-[var(--text-primary)]">
@@ -21,7 +21,7 @@ export default function NotFound() {
       </h1>
 
       <p className="text-[var(--text-tertiary)] max-w-md mt-6 leading-relaxed">
-        The page you requested failed under load — or it never existed in the
+        The page you requested failed under load, or it never existed in the
         first place. Either way, the safest path is back to stable ground.
       </p>
 

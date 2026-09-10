@@ -6,7 +6,7 @@ import Link from "next/link";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
 import type { PostMeta } from "@/lib/blog";
-// category colors passed as prop — no server imports needed
+// category colors passed as prop, no server imports needed
 import { ArrowUpRight, Clock, Calendar } from "lucide-react";
 
 export default function BlogIndexClient({
@@ -47,8 +47,7 @@ export default function BlogIndexClient({
             The <span className="text-[#F59E0B]">Blog</span>
           </h1>
           <p className="text-[#525252] text-base max-w-xl">
-            Research notes, engineering deep dives, and data-driven perspectives —
-            on structures, on Nepal, and occasionally on cricket.
+            Research notes, engineering deep dives, and data-driven perspectives, on structures, on Nepal, and occasionally on cricket.
           </p>
         </motion.div>
       </section>

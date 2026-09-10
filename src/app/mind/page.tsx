@@ -50,7 +50,7 @@ const CHILDREN: MindNode[] = [
   { id: "abaqus",   parentId: "engineering", label: "ABAQUS",     x: 98,  y: 258, r: 11, color: "#F59E0B", href: "/stack",
     desc: "FEM software. Python-automated parametric studies." },
   { id: "failures", parentId: "engineering", label: "Failures",   x: 185, y: 288, r: 11, color: "#F59E0B", href: "/failures",
-    desc: "Tacoma Narrows, Ronan Point, Dharahara — what collapsed and why." },
+    desc: "Tacoma Narrows, Ronan Point, Dharahara, what collapsed and why." },
   // Nepal
   { id: "kathmandu",      parentId: "nepal", label: "Kathmandu",      x: 685, y: 42,  r: 11, color: "#10B981", href: "/journey",
     desc: "City of temples, old masonry, monsoon rain and poor infrastructure data." },
@@ -90,7 +90,7 @@ const DOMAIN_INFO: Record<string, { title: string; lines: string[]; cta: string;
     title: "Engineering",
     lines: [
       "B.Tech Civil Engineering, NIT Rourkela.",
-      "Thesis: buckling of FG-GRC plates — graphene composites.",
+      "Thesis: buckling of FG-GRC plates, graphene composites.",
       "200+ ABAQUS parametric runs. Python automation pipeline.",
       "Beam calculator, column buckling, structural systems.",
     ],
@@ -101,7 +101,7 @@ const DOMAIN_INFO: Record<string, { title: string; lines: string[]; cta: string;
     title: "Nepal",
     lines: [
       "Grew up in Kathmandu. Left in 2021 for NIT Rourkela.",
-      "The 2015 earthquake chose my career — structures that hold vs. ones that don't.",
+      "The 2015 earthquake chose my career, structures that hold vs. ones that don't.",
       "3,000 bridges with no structural health monitoring.",
       "Going back with tools Nepal doesn't have yet.",
     ],
@@ -136,7 +136,7 @@ const DOMAIN_INFO: Record<string, { title: string; lines: string[]; cta: string;
       "Six structural typologies. Each carries load a different way.",
       "Gradient thinking: put the resource where the stress is.",
       "Six structural failures. The lessons you can't learn any other way.",
-      "Systems, not components — the insight is always at the connection.",
+      "Systems, not components, the insight is always at the connection.",
     ],
     cta: "Structural Systems →",
     ctaHref: "/structures",
@@ -290,7 +290,7 @@ export default function MindPage() {
                 <div className="absolute top-0 left-0 right-0 h-0.5"
                   style={{ background: `linear-gradient(90deg, transparent, ${activeDomainNode.color}, transparent)` }} />
                 <div className="text-[10px] font-mono mb-3 tracking-widest" style={{ color: `${activeDomainNode.color}70` }}>
-                  DOMAIN — {activeInfo.title.toUpperCase()}
+                  DOMAIN, {activeInfo.title.toUpperCase()}
                 </div>
                 <ul className="space-y-2 mb-5">
                   {activeInfo.lines.map((line, i) => (
@@ -439,11 +439,11 @@ export default function MindPage() {
               />
 
               {/* Tooltip for hovered child */}
-              {/* (omitted for performance — info is in panel) */}
+              {/* (omitted for performance, info is in panel) */}
 
               {/* Hint text */}
               <text x="400" y="590" textAnchor="middle" fontSize="8.5" fill="#1a1a1a" fontFamily="monospace">
-                {activeDomain ? `${activeChildren.length} connections — click any node to go deeper` : "click a domain to expand"}
+                {activeDomain ? `${activeChildren.length} connections, click any node to go deeper` : "click a domain to expand"}
               </text>
             </svg>
           </motion.div>

@@ -7,7 +7,7 @@ export async function generateStaticParams() {
   return getAllPosts().map((p) => ({ slug: p.slug }));
 }
 
-// Only slugs returned by generateStaticParams are valid — any other URL 404s.
+// Only slugs returned by generateStaticParams are valid, any other URL 404s.
 // Prevents arbitrary slug values from ever reaching the filesystem lookup.
 export const dynamicParams = false;
 
@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const post = getPost(params.slug);
   if (!post) return {};
   return {
-    title: `${post.title} — Rohit Acharya`,
+    title: `${post.title}, Rohit Acharya`,
     description: post.excerpt,
   };
 }

@@ -159,7 +159,7 @@ const FAILURES = [
       "NIT reshaped things quickly. The students around me had come through Kota coaching centres, cracked JEE, spent years drilling problems I was seeing for the first time. First semester, I sat in Structural Analysis and genuinely followed maybe a third of it. Too proud to raise my hand in the early weeks, so I ground through those months alone at night, rebuilding foundations from scratch.",
       "It took about a year to find my footing. Once I did, something became clear: curiosity, cross-disciplinary thinking, research instinct. These were real assets that hadn't been produced in everyone around me by the coaching-centre path. The early gap wasn't a ceiling. It was the opening chapter of a different kind of preparation.",
     ],
-    turned: "Being the best in a smaller room is not the same as being ready for a bigger one. That first year forced me to become a genuine student again — uncertain, humble, hungry to understand rather than to look like I already did. That process built the researcher I became. Not the certificate. The willingness to start over.",
+    turned: "Being the best in a smaller room is not the same as being ready for a bigger one. That first year forced me to become a genuine student again, uncertain, humble, hungry to understand rather than to look like I already did. That process built the researcher I became. Not the certificate. The willingness to start over.",
     color: "#F59E0B",
   },
   {
@@ -187,7 +187,7 @@ const FAILURES = [
     story: [
       "COVID-19 lockdown, 2020. Three school friends in Kathmandu, no classes, and a clear problem: high school students across Nepal had lost access to teachers overnight. So we built Learners Club, a YouTube channel teaching physics, chemistry, and maths. We didn't wait for permission. We just started.",
       "It worked better than we expected. 300+ videos. 3,000+ subscribers. Comments from students saying they finally understood topics they'd been stuck on for weeks. We weren't chasing numbers. We were solving a real problem with what we had. It was the most purposeful thing I'd been part of.",
-      "Then NIT started and the time compressed — four years of coursework, lab work, thesis research, and everything else. Uploading consistently became uploading occasionally, then rarely. The channel didn't end dramatically. It just got quieter. I'd check it sometimes and feel the recognition that something unfinished was waiting for me.",
+      "Then NIT started and the time compressed, four years of coursework, lab work, thesis research, and everything else. Uploading consistently became uploading occasionally, then rarely. The channel didn't end dramatically. It just got quieter. I'd check it sometimes and feel the recognition that something unfinished was waiting for me.",
     ],
     turned: "Learners Club is unfinished business, not a closed chapter. The mission of making quality education accessible to students who don't have the coaching-centre path is still exactly right. The research background I built at NIT only makes me more equipped to deliver on it. Getting back to it is a matter of when, not if.",
     color: "#10B981",
@@ -198,11 +198,11 @@ const FAILURES = [
     tag: "BECOMING",
     tagColor: "#F97316",
     title: "I came back to Kathmandu at 22. The person who returned wasn't the one who left.",
-    hook: "Four years in India changed how I think, what I expect, who I am. Coming home and recalibrating — that takes its own kind of work.",
+    hook: "Four years in India changed how I think, what I expect, who I am. Coming home and recalibrating, that takes its own kind of work.",
     story: [
       "I left Kathmandu at eighteen. Came back at twenty-two with a degree, a research background, and a very different relationship with my own capabilities and expectations.",
       "My family was the same. The city was mostly the same. But I had changed in ways that took time to fully see. I thought differently. I expected different things from work, from conversations, from myself. There was a recalibration period: finding how the person I'd become fits back into the place and the people I love.",
-      "I also saw things I'd been too young to fully see before. My parents were older. The sacrifices they'd made were more legible now that I had some life experience to read them through. The responsibility — to make something of what they'd given me — settled differently. Not heavier. More clearly mine.",
+      "I also saw things I'd been too young to fully see before. My parents were older. The sacrifices they'd made were more legible now that I had some life experience to read them through. The responsibility, to make something of what they'd given me, settled differently. Not heavier. More clearly mine.",
     ],
     turned: "Returning wasn't the end of something. It was a reorientation. I know now that wherever I go next, whether research, further study, or building things, I want it to connect back to here. Not to stay, but to build something that the place I came from can be part of. That's a cleaner ambition than just leaving and not looking back.",
     color: "#F97316",
@@ -213,13 +213,13 @@ const FAILURES = [
     tag: "THE REAL WORK",
     tagColor: "#A855F7",
     title: "Graduation was the beginning. The chapter after is the one that counts.",
-    hook: "Everyone had a plan for the morning after. Mine is still being written — intentionally.",
+    hook: "Everyone had a plan for the morning after. Mine is still being written, intentionally.",
     story: [
       "The imagined version of post-graduation: a clear next step, a research fellowship, forward momentum. The actual version: a full-time job because earning mattered and I knew it mattered. A family to pull weight for, responsibilities that were mine to carry. I made that decision with my eyes open.",
       "There was still a gap between the imagined trajectory and the real one. I'd spent four years building toward something. Coming back and operating at a different pace than I'd pictured required some adjustment.",
-      "What I've realised over the time since: the messy middle is where most of the important formation happens. The thesis proved I could do the research. Now I'm building the broader platform — the discipline, the direction, the work ethic — that makes the next opportunity worth taking when it arrives. That's what this chapter is actually for.",
+      "What I've realised over the time since: the messy middle is where most of the important formation happens. The thesis proved I could do the research. Now I'm building the broader platform, the discipline, the direction, the work ethic, that makes the next opportunity worth taking when it arrives. That's what this chapter is actually for.",
     ],
-    turned: "The research is coming. The next leap is coming. I'm building toward it methodically, not frantically. The gap between people who get where they're going and people who don't is rarely talent — it's consistency through the chapters that don't look impressive from the outside. This is one of those chapters, and I'm using it.",
+    turned: "The research is coming. The next leap is coming. I'm building toward it methodically, not frantically. The gap between people who get where they're going and people who don't is rarely talent, it's consistency through the chapters that don't look impressive from the outside. This is one of those chapters, and I'm using it.",
     color: "#A855F7",
   },
 ];
@@ -295,9 +295,7 @@ export default function BeyondWork() {
           transition={{ delay: 0.5 }}
           className="mb-20"
         >
-          <p className="text-[#333] text-xs font-mono tracking-widest uppercase mb-5 text-center">
-            — click to flip —
-          </p>
+          <p className="text-[#333] text-xs font-mono tracking-widest uppercase mb-5 text-center">, click to flip, </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {FUN_FACTS.map((fact, i) => (
               <FlipCard key={i} {...fact} delay={0.1 + i * 0.07} />
@@ -317,7 +315,7 @@ export default function BeyondWork() {
           >
             <div className="flex items-center gap-3 mb-5">
               <div className="h-px flex-1 max-w-[2rem]" style={{ background: "rgba(245,158,11,0.4)" }} />
-              <span className="text-[9px] font-mono tracking-[0.5em] text-[#F59E0B]">WHAT BROKE ME — WHAT BUILT ME</span>
+              <span className="text-[9px] font-mono tracking-[0.5em] text-[#F59E0B]">WHAT BROKE ME, WHAT BUILT ME</span>
             </div>
             <h3
               className="font-black leading-none mb-6"
@@ -333,7 +331,7 @@ export default function BeyondWork() {
             </p>
           </motion.div>
 
-          {/* Failure entries — editorial layout */}
+          {/* Failure entries, editorial layout */}
           <div className="space-y-0">
             {FAILURES.map((f, i) => {
               const isOpen = expandedFailure === i;
@@ -358,7 +356,7 @@ export default function BeyondWork() {
                       className="relative py-8 md:py-10 px-2 overflow-hidden"
                       style={{ transition: "background 0.3s" }}
                     >
-                      {/* Watermark number — massive background */}
+                      {/* Watermark number, massive background */}
                       <span
                         className="absolute right-0 top-1/2 -translate-y-1/2 select-none pointer-events-none font-black leading-none"
                         style={{
@@ -398,7 +396,7 @@ export default function BeyondWork() {
                             {f.title}
                           </h4>
 
-                          {/* Hook — always visible */}
+                          {/* Hook, always visible */}
                           <p
                             className="text-sm leading-relaxed"
                             style={{ color: isOpen ? "#737373" : "#525252", transition: "color 0.3s" }}
@@ -461,7 +459,7 @@ export default function BeyondWork() {
                             </div>
                           </div>
 
-                          {/* The lesson — visually separated */}
+                          {/* The lesson, visually separated */}
                           <div
                             className="rounded-xl p-5 md:p-6"
                             style={{

@@ -14,16 +14,16 @@ const INFRASTRUCTURE_GAPS = [
 ];
 
 const MEMORIES = [
-  { place: "Bagmati River, 2015", note: "The river I grew up near was a sewer. Then the cleanup campaign started — 3000+ volunteers, every weekend. 8 years later, kingfishers are back.", icon: "〰" },
+  { place: "Bagmati River, 2015", note: "The river I grew up near was a sewer. Then the cleanup campaign started, 3000+ volunteers, every weekend. 8 years later, kingfishers are back.", icon: "〰" },
   { place: "Thapathali Bridge", note: "The bridge I crossed every day to school. Built 1967, no sensors, no SHM. It just holds. The hope terrifies me as an engineer now.", icon: "⬡" },
-  { place: "Dharahara, 2015", note: "The tower fell in 15 seconds. 180 lives. I was in class when the 7.8 hit. The ground moved, the buildings didn't — ours were lucky. Others weren't.", icon: "◈" },
-  { place: "NIT Rourkela, 2021", note: "Left Nepal, landed in Odisha. First time realizing how far behind Nepal's engineering education was — and how much we needed builders who also coded.", icon: "◉" },
+  { place: "Dharahara, 2015", note: "The tower fell in 15 seconds. 180 lives. I was in class when the 7.8 hit. The ground moved, the buildings didn't, ours were lucky. Others weren't.", icon: "◈" },
+  { place: "NIT Rourkela, 2021", note: "Left Nepal, landed in Odisha. First time realizing how far behind Nepal's engineering education was, and how much we needed builders who also coded.", icon: "◉" },
 ];
 
 const WHAT_NEPAL_NEEDS = [
   { need: "Structural Health Monitoring", why: "Real-time sensor networks on critical bridges. Costs less than one bridge reconstruction. Saves lives before collapse.", tag: "SHM" },
   { need: "Engineers Who Code", why: "FEM + Python. Automation of parametric studies. Data pipelines for site monitoring. This combination doesn't exist enough in Nepal.", tag: "Tech" },
-  { need: "Open Data Infrastructure", why: "Geological survey data, flood models, bridge inspection records — all siloed in government PDFs. We need APIs.", tag: "Data" },
+  { need: "Open Data Infrastructure", why: "Geological survey data, flood models, bridge inspection records, all siloed in government PDFs. We need APIs.", tag: "Data" },
   { need: "Post-Earthquake Code Enforcement", why: "Nepal updated its building code after 2015. Enforcement is the problem. Software tools that help inspectors verify compliance at scale.", tag: "Compliance" },
 ];
 
@@ -118,13 +118,13 @@ export default function NepalFiles() {
                 </h2>
                 <div className="rounded-xl border border-[#10B981]/20 bg-[#0a0a0a] p-6 space-y-4">
                   <p className="text-[#A3A3A3] text-sm leading-relaxed">
-                    The Bagmati River runs through Kathmandu. For decades, it was the city&apos;s open sewer — black water, solid waste, zero aquatic life. Sacred river reduced to drainage.
+                    The Bagmati River runs through Kathmandu. For decades, it was the city&apos;s open sewer, black water, solid waste, zero aquatic life. Sacred river reduced to drainage.
                   </p>
                   <p className="text-[#A3A3A3] text-sm leading-relaxed">
                     In 2012, a cleanup campaign started. Not government-led. Community-led. Every Saturday morning, thousands of volunteers. No tech, no funding, just people with gloves and the idea that their river could be sacred again.
                   </p>
                   <p className="text-[#F5F5F5] text-sm leading-relaxed font-semibold">
-                    Ten years later: water quality improved by 60%. Fish returned. Kingfishers nesting on the banks. The river isn&apos;t fully restored — but it&apos;s alive.
+                    Ten years later: water quality improved by 60%. Fish returned. Kingfishers nesting on the banks. The river isn&apos;t fully restored, but it&apos;s alive.
                   </p>
                   <p className="text-[#525252] text-sm leading-relaxed">
                     What the Bagmati taught me: the biggest infrastructure problems in Nepal aren&apos;t technical. They&apos;re organizational. The technical solutions exist. What we lack is systematic application, data infrastructure, and engineers who can bridge the gap between research and community action.
@@ -165,12 +165,12 @@ export default function NepalFiles() {
                   <p className="text-[#F5F5F5] text-sm font-semibold mt-4">
                     That&apos;s not a plan. That&apos;s a debt I owe the country that made me.
                   </p>
-                  <p className="text-[#10B981] font-mono text-sm mt-4">— Rohit Acharya, Kathmandu native, structural engineer in training.</p>
+                  <p className="text-[#10B981] font-mono text-sm mt-4">Rohit Acharya, Kathmandu native, structural engineer in training.</p>
                 </div>
               </section>
 
               <div className="border-t border-[#1a1a1a] pt-10 text-center">
-                <p className="text-[#333] font-mono text-xs">— Chamber 03 complete · नेपाल जिन्दाबाद · हर हर महादेव</p>
+                <p className="text-[#333] font-mono text-xs">Chamber 03 complete · नेपाल जिन्दाबाद · हर हर महादेव</p>
                 <Link href="/codex" className="inline-flex items-center gap-2 text-[#10B981] text-sm font-mono mt-4 hover:gap-3 transition-all">
                   ← Return to Codex
                 </Link>

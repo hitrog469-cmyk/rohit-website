@@ -1,0 +1,56 @@
+---
+title: "Percent Complete Is a Story. The Rate Is the Fact."
+date: "2026-08-14"
+category: "Construction"
+readTime: "8 min"
+featured: true
+excerpt: "A number between 0 and 100 can be defended by almost anyone on a project. How fast work is actually moving through a location is much harder to argue with, and it is the thing that tells you whether the date will hold."
+---
+
+Ask five people on a large project how far along a floor is and you will get five numbers, all of them sincere.
+
+The site engineer counts what has been physically installed. The subcontractor counts what has been delivered and staged, because that is what they have paid for. Planning counts what the schedule says should be done by now. Commercial counts what can be billed. Somebody in a meeting averages these into a single figure, and that figure goes into a report.
+
+None of them are lying. Percent complete is simply not a measurement. It is a summary of a judgment, and judgments belong to whoever made them.
+
+## What the rate gives you that the percentage does not
+
+The useful question is not how much is finished. It is how fast the work is moving through the building, and whether that speed is enough.
+
+Line of balance takes this seriously. Instead of one number per activity, you plot each crew as a line moving through locations over time. Blockwork moves through floors at some rate. First fix follows at its own rate. Plaster follows that. The picture you get is not a status. It is a set of slopes.
+
+Slopes are hard to argue with. If blockwork was clearing a floor every nine days and is now taking fourteen, that shows up as a line bending, and it shows up weeks before anybody has to admit that a milestone is at risk. The percentage would still have been climbing the whole time. It just would have been climbing more slowly, which nobody notices in a table.
+
+The other thing slopes give you is the collision. When a following trade is moving faster than the trade in front of it, the two lines converge. At the point they meet, the follower runs out of workface. You can read the date off the chart. Nobody has to discover it by turning up on site with a crew and nowhere to put them.
+
+## Where the trouble actually starts
+
+I spend a fair amount of my time on disputed results, which means working backwards from a number somebody does not believe.
+
+The interesting thing is how rarely the problem is where people expect. The assumption is usually that the automated read was wrong. Sometimes it was. More often the capture missed a zone, or the scan was registered against a model revision that had moved on, or the activity was configured so that a partially finished condition counts as complete, or the dependency logic lets a successor open before its predecessor has genuinely closed.
+
+By the time any of that reaches a forecast, it has propagated. One activity configured too loosely on one floor becomes an optimistic rate, which becomes an optimistic completion date, which becomes a plan that other trades have already been sequenced around. The error does not stay where it started. It travels through the network, picking up authority as it goes, because each stage inherits the confidence of the stage before it.
+
+Tracing it is slow. You walk back through capture, then the model comparison, then the activity rules, then the dependency logic, then the inference itself, and you check each link on its own terms. I have not found a shortcut. That is one of the questions I would most like to spend real time on, because the current method is fundamentally me being careful, and being careful does not scale.
+
+## The parallel I keep coming back to
+
+Line of balance is a rate based method built around flow and capacity. So is traffic flow theory.
+
+A road has a capacity. Below it, vehicles move at something close to free speed. Approach it and small disturbances stop damping out and start amplifying instead. One driver brakes, the driver behind brakes harder, and a stop wave travels backwards up the road while every individual driver is behaving reasonably.
+
+A floor has a capacity too. So does a crew. Push more trades into a location than it can hold and productivity does not fall gracefully. It falls the way a road does when it tips past its limit. Everybody is working, nobody is obstructing anyone on purpose, and the whole thing slows down anyway.
+
+Traffic engineering has spent decades building the mathematics for this. Fundamental diagrams, shockwave analysis, queueing at bottlenecks. Construction planning has the same shape of problem and mostly does not borrow the tools. I do not know yet how far the borrowing goes. I suspect further than people assume, and I would like to be the person who finds out where it breaks.
+
+## Why I care about this more than I expected to
+
+I did my thesis on the buckling of composite plates that are not perfectly flat. The whole subject is imperfection sensitivity: how a small departure from the ideal geometry changes the load at which the thing gives way. A plate with a tiny initial bow does not fail at the textbook load. It fails earlier, and the amount earlier depends on the size and shape of the imperfection.
+
+Then I started working on sites, and it turned out to be the same subject wearing different clothes. The building is never quite what the model says. The schedule is never quite what the plan says. The interesting engineering is not in the ideal case. It is in knowing which deviations you can absorb and which ones bring the date forward on you.
+
+Nobody told me those were the same question. I am fairly sure they are.
+
+---
+
+*Nothing here refers to any specific project or client. The methods are standard practice and the examples are constructed.*

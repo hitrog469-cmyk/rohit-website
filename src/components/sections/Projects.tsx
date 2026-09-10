@@ -31,9 +31,9 @@ const PROJECTS = [
   {
     id: "shm",
     title: "SHM Dashboard",
-    tagline: "Structural Health Monitoring — real-time sensor data viz",
+    tagline: "Structural Health Monitoring, real-time sensor data viz",
     description:
-      "Dashboard for monitoring structural health of civil infrastructure. Real-time sensor visualization and anomaly detection — currently running on simulated sensor data while the full pipeline is built.",
+      "Dashboard for monitoring structural health of civil infrastructure. Real-time sensor visualization and anomaly detection, currently running on simulated sensor data while the full pipeline is built.",
     stack: ["Next.js", "TypeScript", "Recharts"],
     impact: "Prototype",
     impactSub: "Sample data running",
@@ -48,7 +48,7 @@ const PROJECTS = [
     title: "FG-GRC Simulator",
     tagline: "Interactive FEM plate buckling calculator",
     description:
-      "Web-based simulator that computes nondimensional buckling loads and natural frequencies for FG-GRC plates. Input GPL distribution, geometry, and boundary conditions — get instant results.",
+      "Web-based simulator that computes nondimensional buckling loads and natural frequencies for FG-GRC plates. Input GPL distribution, geometry, and boundary conditions, get instant results.",
     stack: ["React", "Python", "MATLAB", "FastAPI"],
     impact: "Target: 500ms",
     impactSub: "vs hours in ABAQUS",
@@ -78,7 +78,7 @@ const PROJECTS = [
     title: "NepHub",
     tagline: "Nepal's job, scholarship & opportunity portal",
     description:
-      "A platform that brings every opportunity for Nepal into one place — government jobs, Loksewa vacancies, private-sector careers, scholarships, internships and foreign employment. Verified and free, built for people back home.",
+      "A platform that brings every opportunity for Nepal into one place, government jobs, Loksewa vacancies, private-sector careers, scholarships, internships and foreign employment. Verified and free, built for people back home.",
     stack: ["Next.js", "TypeScript", "Tailwind"],
     impact: "Live product",
     impactSub: "Jobs · scholarships · Nepal",
@@ -91,9 +91,9 @@ const PROJECTS = [
   {
     id: "curry",
     title: "The Curry House",
-    tagline: "Client website — Indian restaurant in Yokosuka, Japan",
+    tagline: "Client website, Indian restaurant in Yokosuka, Japan",
     description:
-      "Production website built and shipped for a real restaurant business in Yokosuka, Japan. Menu, location, and the restaurant's full online presence — designed, deployed, and maintained for a live client.",
+      "Production website built and shipped for a real restaurant business in Yokosuka, Japan. Menu, location, and the restaurant's full online presence, designed, deployed, and maintained for a live client.",
     stack: ["Next.js", "TypeScript", "Tailwind"],
     impact: "Live client",
     impactSub: "Real business · Japan",
@@ -106,9 +106,9 @@ const PROJECTS = [
   {
     id: "learners-club",
     title: "Learners Club",
-    tagline: "YouTube channel — high school science, explained simply",
+    tagline: "YouTube channel, high school science, explained simply",
     description:
-      "Co-founded during the COVID-19 lockdown with two school friends. 300+ videos teaching physics, chemistry, and maths to high school students across Nepal — free, in a language they understand.",
+      "Co-founded during the COVID-19 lockdown with two school friends. 300+ videos teaching physics, chemistry, and maths to high school students across Nepal, free, in a language they understand.",
     stack: ["YouTube", "Education"],
     impact: "300+",
     impactSub: "Videos · 3,000+ subscribers",
@@ -196,7 +196,7 @@ function ProjectCard({ project, index }: { project: (typeof PROJECTS)[0]; index:
           ))}
         </div>
 
-        {/* Links — only shown once a real URL replaces the "#" placeholder */}
+        {/* Links, only shown once a real URL replaces the "#" placeholder */}
         {(project.live !== "#" || project.github !== "#") && (
           <div className="flex gap-3 mt-auto">
             {project.live !== "#" && (

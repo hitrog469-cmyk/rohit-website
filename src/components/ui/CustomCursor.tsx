@@ -51,7 +51,7 @@ export default function CustomCursor() {
 
   return (
     <>
-      {/* Outer ring — lags behind */}
+      {/* Outer ring, lags behind */}
       <motion.div
         animate={{
           width: hovered ? 48 : 36,
@@ -75,7 +75,7 @@ export default function CustomCursor() {
         }}
       />
 
-      {/* Core dot — snappy */}
+      {/* Core dot, snappy */}
       <motion.div
         animate={{
           width: hovered ? 10 : 6,

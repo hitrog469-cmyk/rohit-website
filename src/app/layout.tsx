@@ -26,7 +26,7 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rohitacharya.dev"),
-  title: "Rohit Acharya — Civil Engineer · Construction Analytics & Project Controls",
+  title: "Rohit Acharya, Civil Engineer · Construction Analytics & Project Controls",
   description:
     "Civil engineer working on construction progress monitoring, project controls and production planning. Construction Analyst at CloudFactory. Composite-plate research at NIT Rourkela. Builder of deployed engineering tools.",
   keywords: [
@@ -55,14 +55,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://rohitacharya.dev",
-    title: "Rohit Acharya — Civil Engineer · Construction Analytics & Project Controls",
+    title: "Rohit Acharya, Civil Engineer · Construction Analytics & Project Controls",
     description:
       "Civil engineer working on construction progress monitoring, project controls and production planning. Construction Analyst at CloudFactory. Composite-plate research at NIT Rourkela. Builder of deployed engineering tools.",
     siteName: "Rohit Acharya",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rohit Acharya — Civil Engineer · Construction Analytics & Project Controls",
+    title: "Rohit Acharya, Civil Engineer · Construction Analytics & Project Controls",
     description:
       "Civil engineer working on construction progress monitoring, project controls and production planning. Construction Analyst at CloudFactory. Composite-plate research at NIT Rourkela. Builder of deployed engineering tools.",
   },

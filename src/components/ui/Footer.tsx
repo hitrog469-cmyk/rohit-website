@@ -25,7 +25,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-xs leading-relaxed max-w-[200px]" style={{ color: "var(--text-dim)" }}>
-              Civil engineer working on AI and computational methods for construction and structures. NIT Rourkela.
+              Civil engineer. Construction analytics and project controls by day, research and engineering tools the rest of the time.
             </p>
           </div>
 
@@ -83,16 +83,16 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Title block — like the stamp box on a structural drawing sheet */}
+        {/* Title block, like the stamp box on a structural drawing sheet */}
         <div
           className="mb-8 grid grid-cols-2 md:grid-cols-5 font-mono text-[9px] tracking-wider uppercase"
           style={{ border: "1px solid var(--border-default)" }}
         >
           {[
-            { k: "PROJECT", v: "PERSONAL SITE — REV 2026" },
+            { k: "PROJECT", v: "PERSONAL SITE, REV 2026" },
             { k: "DRAWN BY", v: "R. ACHARYA" },
             { k: "CHECKED BY", v: "R. ACHARYA (NOBODY ELSE VOLUNTEERED)" },
-            { k: "SCALE", v: "1:1 — NO EXAGGERATION" },
+            { k: "SCALE", v: "1:1, NO EXAGGERATION" },
             { k: "LOCATION", v: "28.27°N 83.59°E → 27.72°N 85.32°E" },
           ].map(({ k, v }) => (
             <div key={k} className="p-3" style={{ borderRight: "1px solid var(--border-default)", borderTop: "1px solid var(--border-default)", marginTop: "-1px" }}>

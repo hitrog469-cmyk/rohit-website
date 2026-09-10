@@ -22,7 +22,7 @@ export default function Hero() {
           className="font-mono text-xs tracking-[0.25em] uppercase mb-8"
           style={{ color: "var(--text-tertiary)" }}
         >
-          Kathmandu, Nepal — Civil Engineer
+          Kathmandu, Nepal
         </motion.p>
 
         {/* Name */}
@@ -30,7 +30,7 @@ export default function Hero() {
           Rohit Acharya
         </motion.h1>
 
-        {/* Dimension line under the name — measured like a beam on a drawing */}
+        {/* Dimension line under the name, measured like a beam on a drawing */}
         <motion.div {...fade(0.35)} className="flex items-center max-w-md mb-10 select-none" aria-hidden>
           <div className="w-px h-3" style={{ background: "var(--amber)", opacity: 0.5 }} />
           <svg width="9" height="7" viewBox="0 0 9 7" className="shrink-0 -ml-px">
@@ -47,7 +47,7 @@ export default function Hero() {
           <div className="w-px h-3" style={{ background: "var(--amber)", opacity: 0.5 }} />
         </motion.div>
 
-        {/* Introduction — written, not designed */}
+        {/* Introduction, written, not designed */}
         <motion.div {...fade(0.45)} className="max-w-2xl space-y-5">
           <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--text-secondary)" }}>
             I work as a Construction Analyst at{" "}

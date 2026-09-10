@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
     from: "Contact Form <onboarding@resend.dev>",
     to: "hitrog469@gmail.com",
     replyTo: email,
-    subject: `New message from ${escape(name)} — rohitacharya.com`,
+    subject: `New message from ${escape(name)}, rohitacharya.com`,
     html: `
       <div style="font-family:sans-serif;max-width:600px;margin:0 auto">
         <h2 style="color:#F59E0B;margin-bottom:4px">New contact form submission</h2>

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 /**
- * An engineering dimension line — the |←— label —→| annotation
+ * An engineering dimension line, the dimension callout
  * from structural drawings, used as a section divider.
  */
 export default function DimensionLine({ label }: { label: string }) {

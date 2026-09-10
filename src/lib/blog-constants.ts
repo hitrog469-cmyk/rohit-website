@@ -1,7 +1,8 @@
-export const CATEGORIES = ["All", "Research", "Nepal", "Cricket", "Tech", "Life"];
+export const CATEGORIES = ["All", "Construction", "Research", "Nepal", "Cricket", "Tech", "Life"];
 
 export const CATEGORY_COLORS: Record<string, string> = {
-  Research: "#F59E0B",
+  Construction: "#F59E0B",
+  Research: "#A855F7",
   Nepal: "#10B981",
   Cricket: "#3B82F6",
   Tech: "#8B5CF6",

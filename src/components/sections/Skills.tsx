@@ -5,8 +5,36 @@ import { motion, useInView } from "framer-motion";
 
 const SKILL_GROUPS = [
   {
-    category: "Research",
+    category: "Construction",
     color: "#F59E0B",
+    icon: "▤",
+    skills: [
+      { name: "Line of Balance", desc: "Rate based planning, crew flow through locations" },
+      { name: "Pace Variation Analysis", desc: "Where production is drifting off the planned rate" },
+      { name: "Delay Forecasting", desc: "Projecting schedule outcomes from current progress" },
+      { name: "Work Plan Target Tracking", desc: "Committed versus achieved, week over week" },
+      { name: "Activity & Dependency Logic", desc: "Configuring how progress is inferred and sequenced" },
+      { name: "Root Cause Investigation", desc: "Tracing a disputed result back through the chain" },
+      { name: "BOQ & Quantity Take-off", desc: "Bills of quantities from field measurement" },
+      { name: "Site Execution Supervision", desc: "Industrial structures, running account billing" },
+    ],
+  },
+  {
+    category: "Reality Capture & BIM",
+    color: "#3B82F6",
+    icon: "◉",
+    skills: [
+      { name: "360 Walkthrough Capture", desc: "Site imagery registered against the model" },
+      { name: "Drone Survey", desc: "Aerial capture for as-built status" },
+      { name: "3D Scan Review", desc: "Point cloud against design geometry" },
+      { name: "Revit / BIM", desc: "Model coordination, as-planned reference" },
+      { name: "Navisworks", desc: "Model review, clash and sequence checking" },
+      { name: "Dataset Quality Audit", desc: "Annotation review standards for construction imagery" },
+    ],
+  },
+  {
+    category: "Analysis & Research",
+    color: "#A855F7",
     icon: "⬡",
     skills: [
       { name: "ABAQUS", desc: "FEM modeling, parametric studies, composite materials" },
@@ -30,26 +58,15 @@ const SKILL_GROUPS = [
     ],
   },
   {
-    category: "Civil Eng.",
+    category: "Structural & Transport",
     color: "#10B981",
     icon: "△",
     skills: [
       { name: "AutoCAD", desc: "2D drafting, structural drawings" },
       { name: "STAAD.Pro", desc: "Structural analysis, frame structures" },
       { name: "SAP2000", desc: "Building analysis, seismic design" },
-      { name: "Revit / BIM", desc: "Building information modeling" },
       { name: "ETABS", desc: "High-rise analysis, lateral loads" },
-    ],
-  },
-  {
-    category: "Create",
-    color: "#8B5CF6",
-    icon: "✦",
-    skills: [
-      { name: "Video Editing", desc: "Premiere Pro, DaVinci — YouTube content" },
-      { name: "Motion Graphics", desc: "After Effects, explainer animations" },
-      { name: "Figma", desc: "UI/UX design, component systems" },
-      { name: "Content Strategy", desc: "Learners Club — science education" },
+      { name: "IITPAVE", desc: "Flexible pavement design to IRC methods" },
     ],
   },
 ];
@@ -122,10 +139,10 @@ export default function Skills() {
             Skills
           </span>
           <h2 className="text-headline text-[#F5F5F5] mt-4">
-            The <span className="text-[#F59E0B]">Arsenal</span>
+            What I <span className="text-[#F59E0B]">Work With</span>
           </h2>
           <p className="text-[#525252] mt-3 text-base max-w-md">
-            Hover any skill for context. Filter by domain below.
+            Hover any item for context. Filter by domain below.
           </p>
         </motion.div>
 

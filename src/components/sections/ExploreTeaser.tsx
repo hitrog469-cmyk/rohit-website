@@ -93,7 +93,7 @@ const TABS = [
     tag: "LIVE TOOLS",
     tagColor: "#3B82F6",
     headline: "Real tools. Real math.",
-    sub: "Beam deflection solver, column buckling with Euler's formula, structural systems deep-dives. Not static diagrams — interactive calculators you can actually use.",
+    sub: "Beam deflection solver, column buckling with Euler's formula, structural systems deep-dives. Not static diagrams, interactive calculators you can actually use.",
     cta: "Open the lab →",
     preview: (
       <div className="w-full h-full flex items-center justify-center px-6 py-4">
@@ -128,7 +128,7 @@ const TABS = [
     tag: "PERSONAL",
     tagColor: "#EF4444",
     headline: "My failures are my credentials.",
-    sub: "Botched simulations. Blanked presentations. Projects nobody used. Every one of them taught me something a textbook never could. Not a victim of these — built by them.",
+    sub: "Botched simulations. Blanked presentations. Projects nobody used. Every one of them taught me something a textbook never could. Not a victim of these, built by them.",
     cta: "Read the honest part →",
     preview: (
       <div className="w-full h-full flex items-center justify-center px-6 py-4">
@@ -161,7 +161,7 @@ export default function ExploreTeaser() {
   return (
     <section id="explore" className="py-24 px-6 max-w-6xl mx-auto">
 
-      {/* ── Tab bar — FIRST, most prominent ── */}
+      {/* ── Tab bar, FIRST, most prominent ── */}
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}

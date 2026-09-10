@@ -156,7 +156,7 @@ function solveBeam(inp: Inputs): Results {
     y: SVG_H / 2 + deflArr[i] * deflScale,
   }));
 
-  // BMD — scale based on max absolute value
+  // BMD, scale based on max absolute value
   const mAbsMax = Math.max(Math.abs(Mmax_Nm), Math.abs(Mmin_Nm), 1);
   const mScale = 60 / mAbsMax;
   const bmdPts = xs.map((x, i) => ({
@@ -370,7 +370,7 @@ export default function BeamCalculatorPage() {
     catch { return null; }
   }, [inputs]);
 
-  const fmt = (n: number, d = 2) => isFinite(n) ? Math.abs(n).toFixed(d) : "—";
+  const fmt = (n: number, d = 2) => isFinite(n) ? Math.abs(n).toFixed(d) : ", ";
 
   return (
     <main className="min-h-screen bg-[#030303]">
@@ -435,12 +435,12 @@ export default function BeamCalculatorPage() {
                 ))}
               </div>
               {inputs.loadType === "udl" ? (
-                <NumInput label="w — UDL" unit="kN/m" value={inputs.w} onChange={(v) => set("w", v)} min={0.1} step={1} />
+                <NumInput label="w, UDL" unit="kN/m" value={inputs.w} onChange={(v) => set("w", v)} min={0.1} step={1} />
               ) : (
                 <div className="space-y-3">
-                  <NumInput label="P — Point load" unit="kN" value={inputs.P} onChange={(v) => set("P", v)} min={1} step={10} />
+                  <NumInput label="P, Point load" unit="kN" value={inputs.P} onChange={(v) => set("P", v)} min={1} step={10} />
                   <div className="flex flex-col gap-1">
-                    <label className="text-[#333] text-[10px] font-mono">a/L — Position</label>
+                    <label className="text-[#333] text-[10px] font-mono">a/L, Position</label>
                     <input
                       type="range" min="0.1" max="0.9" step="0.05"
                       value={inputs.aFrac}
@@ -457,9 +457,9 @@ export default function BeamCalculatorPage() {
             <div className="rounded-xl border border-[#1a1a1a] bg-[#0a0a0a] p-5">
               <div className="text-[#333] text-[10px] font-mono tracking-widest mb-3">BEAM GEOMETRY & MATERIAL</div>
               <div className="space-y-3">
-                <NumInput label="L — Span" unit="m" value={inputs.L} onChange={(v) => set("L", Math.max(0.5, v))} min={0.5} max={50} step={0.5} />
-                <NumInput label="E — Elastic modulus" unit="GPa" value={inputs.E} onChange={(v) => set("E", Math.max(1, v))} min={1} max={500} step={10} />
-                <NumInput label="I — Second moment of area" unit="cm⁴" value={inputs.I} onChange={(v) => set("I", Math.max(1, v))} min={1} step={1000} />
+                <NumInput label="L, Span" unit="m" value={inputs.L} onChange={(v) => set("L", Math.max(0.5, v))} min={0.5} max={50} step={0.5} />
+                <NumInput label="E, Elastic modulus" unit="GPa" value={inputs.E} onChange={(v) => set("E", Math.max(1, v))} min={1} max={500} step={10} />
+                <NumInput label="I, Second moment of area" unit="cm⁴" value={inputs.I} onChange={(v) => set("I", Math.max(1, v))} min={1} step={1000} />
               </div>
             </div>
 
@@ -538,8 +538,8 @@ export default function BeamCalculatorPage() {
                 <div className="text-[#1a1a1a] text-[10px] font-mono tracking-widest mb-2">ASSUMPTIONS</div>
                 <div className="text-[#222] text-xs font-mono leading-relaxed space-y-1">
                   <p>· Euler-Bernoulli beam theory (plane sections remain plane, small deflections)</p>
-                  <p>· Linear elastic material behaviour — no plasticity</p>
-                  <p>· Prismatic cross-section — uniform E and I throughout</p>
+                  <p>· Linear elastic material behaviour, no plasticity</p>
+                  <p>· Prismatic cross-section, uniform E and I throughout</p>
                   <p>· No shear deformation (Bernoulli, not Timoshenko)</p>
                   {inputs.bc === "fixed-fixed" && inputs.loadType === "point" && (
                     <p className="text-[#F59E0B]/40">· Fixed-Fixed + Point load approximated as UDL for this release</p>
