@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://rohit-website.vercel.app/sitemap.xml",
+    sitemap: "https://rohitacharya.dev/sitemap.xml",
   };
 }
