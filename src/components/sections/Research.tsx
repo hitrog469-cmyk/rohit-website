@@ -282,15 +282,67 @@ export default function Research() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2 }}
         >
-          My thesis asked what happens to a plate that is not quite flat when you heat it
-          and load it at the same time. Small departures from the ideal geometry move the
+          Most of my working days go to large capital projects, establishing what was
+          actually built from 360-degree capture, drone survey and 3D scans, reading that
+          against the model, and forecasting where the schedule goes next. Before that my
+          thesis asked what happens to a plate that is not quite flat when you heat it and
+          load it at the same time. Small departures from the ideal geometry move the
           critical buckling load, so the ABAQUS campaign varied imperfection amplitude
           alongside gradient index, aspect ratio, boundary conditions and temperature, with
-          the runs processed in Python and MATLAB. Since then most of my working days have
-          gone to large capital projects, establishing what was actually built from
-          360-degree capture, drone survey and 3D scans, and reading that against the model.
+          the runs processed in Python and MATLAB.
           <span className="text-[#F59E0B]"> B.Tech thesis — NIT Rourkela, 2025.</span>
         </motion.p>
+
+        {/* Open questions — what I want to pursue next */}
+        <motion.div
+          className="mb-14"
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.6 }}
+        >
+          <h3 className="text-[#F5F5F5] font-semibold text-lg mb-2">Questions I haven&apos;t answered yet</h3>
+          <p className="text-[#525252] text-sm mb-6 max-w-2xl">
+            The honest list. Some of these came out of the thesis. Most came from standing
+            on a site, then looking hard at the data that was supposed to describe it.
+          </p>
+          <div className="grid md:grid-cols-2 gap-3">
+            {[
+              {
+                q: "When an automated progress result is wrong, where did it actually break?",
+                note: "A disputed result can start in the capture, in the 3D or model review, in how an activity was configured, in the dependency logic, or in the inference itself. By the time it surfaces in a delay forecast it has already propagated through the network. I trace these by hand, one link at a time. There should be a principled way to localise the fault.",
+              },
+              {
+                q: "Where should the human sit in an automated progress loop?",
+                note: "Automated inference is fast and consistent. People are slower and better at knowing when something on a site does not add up. Right now that boundary is drawn by habit and by whoever is available. I would like to know where the handover actually belongs, and what it costs to put it in the wrong place.",
+              },
+              {
+                q: "Can production rates be read the way traffic flow is read?",
+                note: "Line of balance plans a project as crews moving through locations at a rate, against a fixed capacity. Roads have a mature theory for the same shape of problem. I have run enough pace-variation and line-of-balance reviews to want to know how far that borrowing goes.",
+              },
+              {
+                q: "How large a geometric deviation stops being noise?",
+                note: "In the thesis, imperfection sensitivity was a curve I could plot. On site, deviation is a number in a report with a pass or fail next to it. The threshold that separates a cosmetic deviation from a structural one is set mostly by convention, and the two ways of thinking have never been properly introduced.",
+              },
+              {
+                q: "How much of pavement design survives contact with as-built tolerance?",
+                note: "IRC methods and IITPAVE take layer thicknesses as given. Construction delivers them within a tolerance. If capture and scan data can measure what was actually laid, the prediction of how that surface ages should be able to use the real numbers instead of the specified ones.",
+              },
+              {
+                q: "What is a sensor network telling you before it tells you anything?",
+                note: "My monitoring dashboard flags anomalies with a rolling z-score across accelerometer, strain and temperature channels. It is a blunt instrument. The interesting failures are slow, and a slow enough drift looks like a new baseline. Separating instrument drift from real change on limited history is still open for me.",
+              },
+              {
+                q: "Can dataset review be made measurable rather than judged?",
+                note: "I write domain review standards for annotated construction imagery, and they work, but they rest on experience rather than on anything I can put a number against. Annotation reliability in this setting should be measurable. I have notes and no framework yet.",
+              },
+            ].map((item) => (
+              <div key={item.q} className="rounded-xl border border-[#1a1a1a] bg-[#0a0a0a] p-5">
+                <p className="text-[#F5F5F5] text-sm font-semibold mb-2 leading-snug">{item.q}</p>
+                <p className="text-[#525252] text-xs leading-relaxed">{item.note}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
 
         {/* Stats row */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
@@ -399,52 +451,6 @@ export default function Research() {
           </a>
         </motion.div>
 
-        {/* Open questions — what I want to pursue next */}
-        <motion.div
-          className="mb-14"
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.6 }}
-        >
-          <h3 className="text-[#F5F5F5] font-semibold text-lg mb-2">Questions I haven&apos;t answered yet</h3>
-          <p className="text-[#525252] text-sm mb-6 max-w-2xl">
-            The honest list. Some of these came out of the thesis. Most came from standing
-            on a site, then looking hard at the data that was supposed to describe it.
-          </p>
-          <div className="grid md:grid-cols-2 gap-3">
-            {[
-              {
-                q: "When an automated progress result is wrong, where did it actually break?",
-                note: "A disputed result can start in the capture, in the 3D or model review, in how an activity was configured, in the dependency logic, or in the inference itself. By the time it surfaces in a delay forecast it has already propagated through the network. I trace these by hand, one link at a time. There should be a principled way to localise the fault.",
-              },
-              {
-                q: "Can production rates be read the way traffic flow is read?",
-                note: "Line of balance plans a project as crews moving through locations at a rate, against a fixed capacity. Roads have a mature theory for the same shape of problem. I have run enough pace-variation and line-of-balance reviews to want to know how far that borrowing goes.",
-              },
-              {
-                q: "How large a geometric deviation stops being noise?",
-                note: "In the thesis, imperfection sensitivity was a curve I could plot. On site, deviation is a number in a report with a pass or fail next to it. The threshold that separates a cosmetic deviation from a structural one is set mostly by convention, and the two ways of thinking have never been properly introduced.",
-              },
-              {
-                q: "How much of pavement design survives contact with as-built tolerance?",
-                note: "IRC methods and IITPAVE take layer thicknesses as given. Construction delivers them within a tolerance. If capture and scan data can measure what was actually laid, the prediction of how that surface ages should be able to use the real numbers instead of the specified ones.",
-              },
-              {
-                q: "What is a sensor network telling you before it tells you anything?",
-                note: "My monitoring dashboard flags anomalies with a rolling z-score across accelerometer, strain and temperature channels. It is a blunt instrument. The interesting failures are slow, and a slow enough drift looks like a new baseline. Separating instrument drift from real change on limited history is still open for me.",
-              },
-              {
-                q: "Can dataset review be made measurable rather than judged?",
-                note: "I write domain review standards for annotated construction imagery, and they work, but they rest on experience rather than on anything I can put a number against. Annotation reliability in this setting should be measurable. I have notes and no framework yet.",
-              },
-            ].map((item) => (
-              <div key={item.q} className="rounded-xl border border-[#1a1a1a] bg-[#0a0a0a] p-5">
-                <p className="text-[#F5F5F5] text-sm font-semibold mb-2 leading-snug">{item.q}</p>
-                <p className="text-[#525252] text-xs leading-relaxed">{item.note}</p>
-              </div>
-            ))}
-          </div>
-        </motion.div>
 
         {/* Artifacts */}
         <div className="flex flex-col sm:flex-row gap-4 items-start">

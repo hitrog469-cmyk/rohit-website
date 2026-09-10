@@ -2,24 +2,28 @@
 import { useEffect, useRef, useState } from "react";
 
 export function useCounter(end: number, duration = 1800, startOnMount = false) {
-  const [count, setCount] = useState(0);
+  // Start at the final value so server-rendered HTML and any client with
+  // slow, blocked or reduced-motion JS shows the real number instead of 0.
+  const [count, setCount] = useState(end);
   const [started, setStarted] = useState(startOnMount);
   const frameRef = useRef<number>();
 
   const start = () => setStarted(true);
 
-  // Fallback: if the in-view trigger never fires (mobile, fast scroll,
-  // reduced motion), show the real value instead of staying at 0.
-  useEffect(() => {
-    const fallback = setTimeout(() => {
-      setCount((c) => (c === 0 ? end : c));
-    }, 2500);
-    return () => clearTimeout(fallback);
-  }, [end]);
-
   useEffect(() => {
     if (!started) return;
+
+    // Respect reduced-motion: hold the final value, skip the count-up.
+    if (
+      typeof window !== "undefined" &&
+      window.matchMedia?.("(prefers-reduced-motion: reduce)").matches
+    ) {
+      setCount(end);
+      return;
+    }
+
     const startTime = performance.now();
+    setCount(0);
 
     const tick = (now: number) => {
       const elapsed = now - startTime;
@@ -27,7 +31,11 @@ export function useCounter(end: number, duration = 1800, startOnMount = false) {
       // Ease out expo
       const eased = 1 - Math.pow(2, -10 * progress);
       setCount(Math.round(eased * end));
-      if (progress < 1) frameRef.current = requestAnimationFrame(tick);
+      if (progress < 1) {
+        frameRef.current = requestAnimationFrame(tick);
+      } else {
+        setCount(end);
+      }
     };
 
     frameRef.current = requestAnimationFrame(tick);

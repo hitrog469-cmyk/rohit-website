@@ -27,19 +27,19 @@ export default function Home() {
       <PageCurtain />
       <Navigation />
       <Hero />
-      <About />
       <DimensionLine label="Section A-A · The Work" />
       <Research />
       <Projects />
+      <Skills />
       <NumbersSection />
+      <Education />
       <DimensionLine label="Section B-B · The Road" />
       <Timeline />
-      <ManifestoSection />
-      <Skills />
-      <Education />
-      <DimensionLine label="Section C-C · The Person" />
-      <BeyondWork />
       <WorkWithMe />
+      <DimensionLine label="Section C-C · The Person" />
+      <About />
+      <BeyondWork />
+      <ManifestoSection />
       <BlogPreview posts={posts} />
       <ExploreTeaser />
       <CodexTeaser />

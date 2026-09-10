@@ -9,7 +9,6 @@ const STATS = [
   { value: 1500, suffix: " km", label: "from home", sublabel: "Kathmandu → Rourkela", color: "#A3A3A3" },
   { value: 4, suffix: " yrs", label: "at NIT Rourkela", sublabel: "B.Tech Civil Engineering", color: "#A3A3A3" },
   { value: 12, suffix: "+", label: "variables studied", sublabel: "across parametric space", color: "#F59E0B" },
-  { value: 67, suffix: ".3%", label: "model accuracy", sublabel: "IPL match prediction (XGBoost)", color: "#3B82F6" },
   { value: 300, suffix: "+", label: "teaching videos", sublabel: "Learners Club · physics, chem, maths", color: "#8B5CF6" },
   { value: 8848, suffix: "m", label: "of reasons to go home", sublabel: "height of Sagarmatha", color: "#10B981" },
 ];
@@ -19,14 +18,15 @@ function AnimatedNumber({ value, prefix = "", suffix = "", inView }: { value: nu
   const animated = useRef(false);
 
   useEffect(() => {
-    // Fallback: always show real value after 2s regardless of scroll state
-    const fallback = setTimeout(() => setDisplay(value), 2000);
-    return () => clearTimeout(fallback);
-  }, [value]);
-
-  useEffect(() => {
     if (!inView || animated.current) return;
     animated.current = true;
+    if (
+      typeof window !== "undefined" &&
+      window.matchMedia?.("(prefers-reduced-motion: reduce)").matches
+    ) {
+      setDisplay(value);
+      return;
+    }
     let current = 0;
     const step = Math.ceil(value / 60);
     const interval = setInterval(() => {

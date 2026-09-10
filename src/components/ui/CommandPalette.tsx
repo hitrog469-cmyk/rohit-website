@@ -30,7 +30,7 @@ const ALL_ITEMS: CommandItem[] = [
   { id: "failures-page", label: "Failures Archive", sublabel: "Tacoma Narrows, Dharahara, WTC and more", group: "Pages", icon: "◈", href: "/failures" },
   { id: "beam-calc", label: "Beam Calculator", sublabel: "Live deflection, BMD and SFD diagrams", group: "Pages", icon: "─", href: "/lab/beam" },
   { id: "column-calc", label: "Column Buckling", sublabel: "Euler critical load + K-factor visualizer", group: "Pages", icon: "╪", href: "/lab/column" },
-  { id: "codex-hub", label: "Codex", sublabel: "Three cipher-locked secret chambers", group: "Pages", icon: "◈", href: "/codex" },
+  { id: "codex-hub", label: "Codex", sublabel: "Three open chambers — research, cricket, Nepal", group: "Pages", icon: "◈", href: "/codex" },
   { id: "mind-page", label: "World Map", sublabel: "Interactive constellation — how everything connects", group: "Pages", icon: "◎", href: "/mind" },
   { id: "journey-page", label: "The Journey", sublabel: "Eight chapters from Kathmandu to now", group: "Pages", icon: "▷", href: "/journey" },
   // Codex

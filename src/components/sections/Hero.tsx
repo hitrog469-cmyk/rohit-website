@@ -50,18 +50,27 @@ export default function Hero() {
         {/* Introduction — written, not designed */}
         <motion.div {...fade(0.45)} className="max-w-2xl space-y-5">
           <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-            I spend my days at{" "}
+            I work as a Construction Analyst at{" "}
             <span style={{ color: "var(--text-primary)", fontWeight: 600 }}>CloudFactory</span>{" "}
-            checking what an AI thinks a construction site looks like against what it
-            actually looks like — 360° site imagery versus BIM models, on the Buildots
-            platform. Evenings go to research and to building engineering tools nobody
-            asked me to build.
+            on an AI construction monitoring and project controls platform, across large
+            commercial, industrial and advanced-manufacturing capital projects. My week is
+            line-of-balance reviews, pace-variation analysis, work-plan target tracking and
+            delay forecasting. I establish what was actually built from 360-degree
+            walkthrough capture, drone survey and 3D scans registered against BIM models,
+            and measure that against the plan. I also configure the activity, dependency
+            and auto-completion logic that decides how progress is inferred, and when a
+            client disputes an automated result, the root-cause investigation comes to me.
+          </p>
+          <p className="text-lg md:text-xl leading-relaxed" style={{ color: "var(--text-secondary)" }}>
+            Evenings go to research and to building engineering tools nobody asked me to
+            build.
           </p>
           <p className="text-base leading-relaxed" style={{ color: "var(--text-tertiary)" }}>
             Before this: a B.Tech in civil engineering at NIT Rourkela, a thesis on the
             buckling of graphene-reinforced composite plates, and a childhood in Baglung
-            that explains everything else. Currently applying to graduate programs in
-            AI and computational methods for the built environment.
+            that explains everything else. Currently applying to graduate programs where
+            production planning, sensing and simulation meet how projects actually get
+            delivered.
           </p>
         </motion.div>
 

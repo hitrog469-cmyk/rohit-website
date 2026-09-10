@@ -64,16 +64,16 @@ export default function CodexPage() {
         >
           <div className="inline-flex items-center gap-3 mb-6">
             <div className="h-px w-12 bg-[#F59E0B]/30" />
-            <span className="text-[#F59E0B] text-[10px] font-mono tracking-[0.5em]">RESTRICTED ACCESS</span>
+            <span className="text-[#F59E0B] text-[10px] font-mono tracking-[0.5em]">SIDE QUARTERS</span>
             <div className="h-px w-12 bg-[#F59E0B]/30" />
           </div>
           <h1 className="font-black text-[#F5F5F5] mb-4" style={{ fontSize: "clamp(3rem, 8vw, 5rem)", letterSpacing: "-0.02em" }}>
             THE <span className="text-[#F59E0B]">CODEX</span>
           </h1>
           <p className="text-[#525252] text-base max-w-lg mx-auto leading-relaxed font-mono">
-            Three chambers. Each locked behind a question.
+            Three chambers, all open. Research, cricket, Nepal.
             <br />
-            Wrong answer still grants entry — knowledge is its own key.
+            There is a question at each door, but it is only there for fun.
           </p>
           <div className="flex items-center justify-center gap-2 mt-6">
             <motion.div
@@ -81,7 +81,7 @@ export default function CodexPage() {
               transition={{ repeat: Infinity, duration: 2 }}
               className="w-1.5 h-1.5 rounded-full bg-[#F59E0B]"
             />
-            <span className="text-[#333] text-xs font-mono">CIPHER LOCK ACTIVE ON ALL CHAMBERS</span>
+            <span className="text-[#333] text-xs font-mono">ALL CHAMBERS OPEN — NO ANSWER REQUIRED</span>
           </div>
         </motion.div>
 
@@ -117,7 +117,7 @@ export default function CodexPage() {
                       </span>
                       <span className="text-4xl opacity-20" style={{ color: c.color }}>{c.glyph}</span>
                     </div>
-                    {/* Padlock icon */}
+                    {/* Open padlock */}
                     <motion.div
                       className="w-9 h-9 rounded-lg border flex items-center justify-center"
                       style={{ borderColor: `${c.color}30`, background: `${c.color}08` }}
@@ -125,7 +125,7 @@ export default function CodexPage() {
                       transition={{ duration: 0.4 }}
                     >
                       <svg width="16" height="18" viewBox="0 0 16 18" fill="none">
-                        <path d="M4 8V5a4 4 0 0 1 8 0v3" stroke={c.color} strokeWidth="1.5" strokeLinecap="round" opacity="0.7"/>
+                        <path d="M4 8V5a4 4 0 0 1 7.4 -2.4" stroke={c.color} strokeWidth="1.5" strokeLinecap="round" opacity="0.7"/>
                         <rect x="1" y="8" width="14" height="10" rx="2" stroke={c.color} strokeWidth="1.5" opacity="0.7"/>
                         <circle cx="8" cy="13" r="1.5" fill={c.color} opacity="0.7"/>
                       </svg>
@@ -152,7 +152,7 @@ export default function CodexPage() {
 
                   {/* CTA */}
                   <div className="flex items-center gap-2 text-xs font-mono" style={{ color: c.color }}>
-                    <span>ATTEMPT ENTRY</span>
+                    <span>ENTER</span>
                     <motion.span
                       animate={{ x: [0, 3, 0] }}
                       transition={{ repeat: Infinity, duration: 1.5 }}
@@ -171,7 +171,7 @@ export default function CodexPage() {
           transition={{ delay: 0.9 }}
           className="text-center mt-16 text-[#222] text-xs font-mono"
         >
-          The answer is in the research.
+          No passwords, no puzzles. Just things I got curious about.
         </motion.div>
       </div>
 

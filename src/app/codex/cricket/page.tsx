@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
-import CipherLock from "@/components/ui/CipherLock";
 
 const BATTING_METRICS = [
   { player: "V. Kohli", impact: 94, avg: 36.2, sr: 131, color: "#F59E0B" },
@@ -33,40 +32,14 @@ const MODEL_FEATURES = [
 ];
 
 export default function CricketCodex() {
-  const [unlocked, setUnlocked] = useState(false);
   const [activePhase, setActivePhase] = useState(0);
 
   return (
-    <AnimatePresence mode="wait">
-      {!unlocked ? (
-        <motion.div key="lock" exit={{ opacity: 0, scale: 1.05 }} transition={{ duration: 0.4 }}>
-          <CipherLock
-            chamberCode="02"
-            chamberName="THE CRICKET CODEX"
-            question="How many wickets must fall to end an innings in cricket?"
-            hint="maximum wickets possible in one innings"
-            correctAnswers={["10", "ten"]}
-            extraEggs={{
-              cricket: "DOMAIN KNOWLEDGE CONFIRMED. GRANTED.",
-              ipl: "IPL INSIDER DETECTED. WELCOME.",
-              virat: "KING KOHLI INVOKED. GRANTED.",
-              dhoni: "CAPTAIN COOL RECOGNIZED. GRANTED.",
-              rohit: "HITMAN INVOKED. GRANTED.",
-              six: "MAXIMUM. GRANTED.",
-              four: "BOUNDARY. CLOSE ENOUGH. GRANTED.",
-              yorker: "LETHAL DELIVERY. ACCESS GRANTED.",
-              innings: "CORRECT CONTEXT. GRANTED.",
-            }}
-            onUnlock={() => setUnlocked(true)}
-          />
-        </motion.div>
-      ) : (
-        <motion.div
-          key="content"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
           <main className="min-h-screen bg-[#050505]">
             <Navigation />
 
@@ -76,7 +49,7 @@ export default function CricketCodex() {
               </Link>
 
               <div className="mb-14">
-                <span className="text-[#3B82F6] text-[10px] font-mono tracking-[0.5em]">CHAMBER 02 — UNLOCKED</span>
+                <span className="text-[#3B82F6] text-[10px] font-mono tracking-[0.5em]">CHAMBER 02</span>
                 <h1 className="text-[#F5F5F5] font-black mt-3 mb-4" style={{ fontSize: "clamp(2rem,5vw,3.5rem)" }}>
                   The Cricket <span className="text-[#3B82F6]">Codex</span>
                 </h1>
@@ -229,8 +202,6 @@ export default function CricketCodex() {
 
             <Footer />
           </main>
-        </motion.div>
-      )}
-    </AnimatePresence>
+    </motion.div>
   );
 }

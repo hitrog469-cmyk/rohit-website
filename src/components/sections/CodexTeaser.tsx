@@ -50,7 +50,7 @@ export default function CodexTeaser() {
           </motion.div>
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-px w-10 bg-[#F59E0B]/25" />
-            <span className="text-[#F59E0B] text-[10px] font-mono tracking-[0.6em]">RESTRICTED ACCESS</span>
+            <span className="text-[#F59E0B] text-[10px] font-mono tracking-[0.6em]">SIDE QUARTERS</span>
             <div className="h-px w-10 bg-[#F59E0B]/25" />
           </div>
           <h2
@@ -61,8 +61,8 @@ export default function CodexTeaser() {
             <span className="text-[#F59E0B]">than you can see.</span>
           </h2>
           <p className="text-[#444] text-base max-w-md mx-auto leading-relaxed font-mono">
-            Three chambers. Each locked behind a question.
-            Wrong answer still gets you in — knowledge is its own key.
+            Three chambers, all open. Research, cricket, Nepal.
+            There is a question at each door, but it is only there for fun.
           </p>
         </motion.div>
 
@@ -100,7 +100,7 @@ export default function CodexTeaser() {
                   </span>
                   <div className="w-6 h-6 flex items-center justify-center">
                     <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
-                      <path d="M3 6V4a3 3 0 0 1 6 0v2" stroke={c.color} strokeWidth="1.2" strokeLinecap="round" opacity="0.5"/>
+                      <path d="M3 6V4a3 3 0 0 1 5.5 -1.8" stroke={c.color} strokeWidth="1.2" strokeLinecap="round" opacity="0.5"/>
                       <rect x="0.6" y="6" width="10.8" height="7.4" rx="1.6" stroke={c.color} strokeWidth="1.2" opacity="0.5"/>
                     </svg>
                   </div>
@@ -133,7 +133,7 @@ export default function CodexTeaser() {
             >→</motion.span>
           </Link>
           <p className="text-[#1a1a1a] text-[10px] font-mono mt-4 tracking-widest">
-            The answer is in the research.
+            No passwords, no puzzles. Just things I got curious about.
           </p>
         </motion.div>
       </div>

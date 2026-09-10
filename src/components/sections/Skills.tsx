@@ -9,11 +9,11 @@ const SKILL_GROUPS = [
     color: "#F59E0B",
     icon: "⬡",
     skills: [
-      { name: "ABAQUS", level: 90, desc: "FEM modeling, parametric studies, composite materials" },
-      { name: "MATLAB", level: 85, desc: "Numerical analysis, matrix operations, plate theory" },
-      { name: "FEM Theory", level: 88, desc: "Classical plate theory, variational methods" },
-      { name: "Classical Plate Theory", level: 85, desc: "CPT, FSDT, governing equations" },
-      { name: "LaTeX", level: 80, desc: "Academic writing, thesis formatting" },
+      { name: "ABAQUS", desc: "FEM modeling, parametric studies, composite materials" },
+      { name: "MATLAB", desc: "Numerical analysis, matrix operations, plate theory" },
+      { name: "FEM Theory", desc: "Classical plate theory, variational methods" },
+      { name: "Classical Plate Theory", desc: "CPT, FSDT, governing equations" },
+      { name: "LaTeX", desc: "Academic writing, thesis formatting" },
     ],
   },
   {
@@ -21,12 +21,12 @@ const SKILL_GROUPS = [
     color: "#3B82F6",
     icon: "◳",
     skills: [
-      { name: "Python", level: 85, desc: "Scientific computing, FastAPI, data analysis" },
-      { name: "Next.js", level: 80, desc: "Full-stack web apps, App Router, server components" },
-      { name: "TypeScript", level: 78, desc: "Type-safe JavaScript, React ecosystem" },
-      { name: "React", level: 82, desc: "Component architecture, hooks, state management" },
-      { name: "D3.js", level: 70, desc: "Data visualization, force graphs, custom charts" },
-      { name: "Three.js", level: 68, desc: "3D graphics, WebGL, particle systems" },
+      { name: "Python", desc: "Scientific computing, FastAPI, data analysis" },
+      { name: "Next.js", desc: "Full-stack web apps, App Router, server components" },
+      { name: "TypeScript", desc: "Type-safe JavaScript, React ecosystem" },
+      { name: "React", desc: "Component architecture, hooks, state management" },
+      { name: "D3.js", desc: "Data visualization, force graphs, custom charts" },
+      { name: "Three.js", desc: "3D graphics, WebGL, particle systems" },
     ],
   },
   {
@@ -34,11 +34,11 @@ const SKILL_GROUPS = [
     color: "#10B981",
     icon: "△",
     skills: [
-      { name: "AutoCAD", level: 85, desc: "2D drafting, structural drawings" },
-      { name: "STAAD.Pro", level: 78, desc: "Structural analysis, frame structures" },
-      { name: "SAP2000", level: 72, desc: "Building analysis, seismic design" },
-      { name: "Revit / BIM", level: 65, desc: "Building information modeling" },
-      { name: "ETABS", level: 70, desc: "High-rise analysis, lateral loads" },
+      { name: "AutoCAD", desc: "2D drafting, structural drawings" },
+      { name: "STAAD.Pro", desc: "Structural analysis, frame structures" },
+      { name: "SAP2000", desc: "Building analysis, seismic design" },
+      { name: "Revit / BIM", desc: "Building information modeling" },
+      { name: "ETABS", desc: "High-rise analysis, lateral loads" },
     ],
   },
   {
@@ -46,52 +46,34 @@ const SKILL_GROUPS = [
     color: "#8B5CF6",
     icon: "✦",
     skills: [
-      { name: "Video Editing", level: 78, desc: "Premiere Pro, DaVinci — YouTube content" },
-      { name: "Motion Graphics", level: 65, desc: "After Effects, explainer animations" },
-      { name: "Figma", level: 72, desc: "UI/UX design, component systems" },
-      { name: "Content Strategy", level: 80, desc: "Learners Club — science education" },
+      { name: "Video Editing", desc: "Premiere Pro, DaVinci — YouTube content" },
+      { name: "Motion Graphics", desc: "After Effects, explainer animations" },
+      { name: "Figma", desc: "UI/UX design, component systems" },
+      { name: "Content Strategy", desc: "Learners Club — science education" },
     ],
   },
 ];
 
 function SkillBar({
   name,
-  level,
   desc,
   color,
-  delay,
 }: {
   name: string;
-  level: number;
   desc: string;
   color: string;
-  delay: number;
 }) {
   const [hovered, setHovered] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-30px" });
 
   return (
     <motion.div
-      ref={ref}
       className="group"
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
     >
-      <div className="flex justify-between items-baseline mb-1.5">
+      <div className="flex items-baseline gap-2 mb-1">
+        <span className="w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: color }} />
         <span className="text-[#F5F5F5] text-sm font-medium">{name}</span>
-        <span className="text-[10px] font-mono" style={{ color }}>{level}%</span>
-      </div>
-
-      {/* Track */}
-      <div className="h-1.5 rounded-full bg-[#1a1a1a] overflow-hidden mb-1">
-        <motion.div
-          className="h-full rounded-full"
-          style={{ backgroundColor: color }}
-          initial={{ width: 0 }}
-          animate={inView ? { width: `${level}%` } : {}}
-          transition={{ duration: 1.2, delay, ease: [0.22, 1, 0.36, 1] }}
-        />
       </div>
 
       {/* Tooltip */}
@@ -203,15 +185,13 @@ export default function Skills() {
                 <div className="flex-1 h-px" style={{ background: `linear-gradient(to right, ${group.color}40, transparent)` }} />
               </div>
 
-              <div className="space-y-4">
-                {group.skills.map((skill, si) => (
+              <div className="space-y-3">
+                {group.skills.map((skill) => (
                   <SkillBar
                     key={skill.name}
                     name={skill.name}
-                    level={skill.level}
                     desc={skill.desc}
                     color={group.color}
-                    delay={0.2 + si * 0.08}
                   />
                 ))}
               </div>

@@ -1,11 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
-import CipherLock from "@/components/ui/CipherLock";
 
 const INFRASTRUCTURE_GAPS = [
   { issue: "Bridge Maintenance", stat: "~3,000", unit: "bridges with no SHM system", severity: 0.9, color: "#EF4444" },
@@ -30,38 +28,13 @@ const WHAT_NEPAL_NEEDS = [
 ];
 
 export default function NepalFiles() {
-  const [unlocked, setUnlocked] = useState(false);
 
   return (
-    <AnimatePresence mode="wait">
-      {!unlocked ? (
-        <motion.div key="lock" exit={{ opacity: 0, scale: 1.05 }} transition={{ duration: 0.4 }}>
-          <CipherLock
-            chamberCode="03"
-            chamberName="THE NEPAL FILES"
-            question="What is the name of the world's highest peak, located in Nepal?"
-            hint="8,848.86 meters above sea level"
-            correctAnswers={["everest", "mount everest", "mt everest", "sagarmatha", "chomolungma", "qomolangma", "8848", "8849", "8848.86"]}
-            extraEggs={{
-              nepal: "HOME COUNTRY RECOGNIZED. GRANTED.",
-              kathmandu: "CAPITAL CITY INVOKED. GRANTED.",
-              himalaya: "MOUNTAIN RANGE IDENTIFIED. GRANTED.",
-              namaste: "NEPALI GREETING DETECTED. नमस्ते। GRANTED.",
-              tharu: "INDIGENOUS WISDOM. GRANTED.",
-              bagmati: "RIVER OF KATHMANDU. GRANTED.",
-              dharahara: "2015 EARTHQUAKE MEMORIAL. SOLEMN GRANT.",
-              "2015": "GORKHA EARTHQUAKE. WE REMEMBER. GRANTED.",
-            }}
-            onUnlock={() => setUnlocked(true)}
-          />
-        </motion.div>
-      ) : (
-        <motion.div
-          key="content"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
           <main className="min-h-screen bg-[#050505]">
             <Navigation />
 
@@ -71,7 +44,7 @@ export default function NepalFiles() {
               </Link>
 
               <div className="mb-14">
-                <span className="text-[#10B981] text-[10px] font-mono tracking-[0.5em]">CHAMBER 03 — UNLOCKED</span>
+                <span className="text-[#10B981] text-[10px] font-mono tracking-[0.5em]">CHAMBER 03</span>
                 <h1 className="text-[#F5F5F5] font-black mt-3 mb-4" style={{ fontSize: "clamp(2rem,5vw,3.5rem)" }}>
                   The Nepal <span className="text-[#10B981]">Files</span>
                 </h1>
@@ -206,8 +179,6 @@ export default function NepalFiles() {
 
             <Footer />
           </main>
-        </motion.div>
-      )}
-    </AnimatePresence>
+    </motion.div>
   );
 }

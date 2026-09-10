@@ -70,12 +70,12 @@ const EVENTS = [
   {
     year: "2025",
     role: "Construction Analyst",
-    org: "CloudFactory (Buildots)",
+    org: "CloudFactory",
     location: "Lalitpur, Nepal · Jul 2025 – Present",
     type: "current",
     color: "#EF4444",
-    desc: "Working on Buildots, an AI platform that monitors construction progress by comparing 360° site walkthrough imagery against BIM models and schedules. My job is making sure the AI doesn't lie: verifying progress claims, auditing annotated datasets, catching sequencing and scope deviations, and writing the domain review standards that keep the computer-vision models honest. Got in through a written exam and two interview rounds.",
-    highlights: ["CloudFactory · Buildots", "BIM vs 360° Site Imagery", "CV-based Progress Monitoring", "Construction × AI"],
+    desc: "Construction Analyst on an AI construction monitoring and project controls platform, across large commercial, industrial and advanced-manufacturing capital projects. Line-of-balance reviews, pace-variation analysis, work-plan target tracking and delay forecasting. I establish what was actually built from 360-degree walkthrough capture, drone survey and 3D scans registered against BIM models, and measure that against the plan. I configure the activity, dependency and auto-completion logic that decides how progress is inferred, and when a client disputes an automated result the root-cause investigation comes to me. Got in through a written exam and two interview rounds.",
+    highlights: ["Project Controls", "Line of Balance · Pace Variation", "Delay Forecasting", "Reality Capture vs BIM", "Root-Cause Investigation"],
   },
   {
     year: "Now",
