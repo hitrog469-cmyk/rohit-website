@@ -25,7 +25,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rohitacharya.dev"),
+  metadataBase: new URL("https://rohit-website.vercel.app"),
   title: "Rohit Acharya, Civil Engineer · Construction Analytics & Project Controls",
   description:
     "Civil engineer working on construction progress monitoring, project controls and production planning. Construction Analyst at CloudFactory. Composite-plate research at NIT Rourkela. Builder of deployed engineering tools.",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://rohitacharya.dev",
+    url: "https://rohit-website.vercel.app",
     title: "Rohit Acharya, Civil Engineer · Construction Analytics & Project Controls",
     description:
       "Civil engineer working on construction progress monitoring, project controls and production planning. Construction Analyst at CloudFactory. Composite-plate research at NIT Rourkela. Builder of deployed engineering tools.",
