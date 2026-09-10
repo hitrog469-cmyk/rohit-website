@@ -17,15 +17,6 @@ const CHAMBERS = [
   },
   {
     code: "02",
-    href: "/codex/cricket",
-    name: "The Cricket Codex",
-    desc: "IPL analytics, XGBoost match prediction, and how data transformed the way I watch cricket.",
-    tags: ["XGBoost", "IPL", "Batting Impact", "Python"],
-    color: "#3B82F6",
-    glyph: "◈",
-  },
-  {
-    code: "03",
     href: "/codex/nepal",
     name: "The Nepal Files",
     desc: "Infrastructure gaps, the Kathmandu I grew up in, and why Nepal desperately needs engineers who code.",
@@ -71,7 +62,7 @@ export default function CodexPage() {
             THE <span className="text-[#F59E0B]">CODEX</span>
           </h1>
           <p className="text-[#525252] text-base max-w-lg mx-auto leading-relaxed font-mono">
-            Three chambers, all open. Research, cricket, Nepal.
+            Two chambers, both open. The research vault and the Nepal files.
             <br />
             There is a question at each door, but it is only there for fun.
           </p>
@@ -81,7 +72,7 @@ export default function CodexPage() {
               transition={{ repeat: Infinity, duration: 2 }}
               className="w-1.5 h-1.5 rounded-full bg-[#F59E0B]"
             />
-            <span className="text-[#333] text-xs font-mono">ALL CHAMBERS OPEN, NO ANSWER REQUIRED</span>
+            <span className="text-[#333] text-xs font-mono">BOTH CHAMBERS OPEN, NO ANSWER REQUIRED</span>
           </div>
         </motion.div>
 

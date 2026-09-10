@@ -72,10 +72,10 @@ export default function Footer() {
                 <span className="text-xs font-mono transition-colors" style={{ color: "var(--amber)", opacity: 0.5 }}>THE CODEX</span>
               </div>
               <p className="text-[10px] leading-relaxed transition-colors" style={{ color: "var(--text-ghost)" }}>
-                Three open chambers. Research, cricket, Nepal. A question at each door, purely for fun.
+                Two open chambers. The research vault and the Nepal files. A question at each door, purely for fun.
               </p>
               <div className="flex gap-2 mt-2 flex-wrap">
-                {["Research Vault", "Cricket Codex", "Nepal Files"].map((c) => (
+                {["Research Vault", "Nepal Files"].map((c) => (
                   <span key={c} className="text-[8px] font-mono transition-colors" style={{ color: "var(--text-ghost)" }}>{c}</span>
                 ))}
               </div>

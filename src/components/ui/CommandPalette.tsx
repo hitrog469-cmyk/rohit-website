@@ -30,12 +30,11 @@ const ALL_ITEMS: CommandItem[] = [
   { id: "failures-page", label: "Failures Archive", sublabel: "Tacoma Narrows, Dharahara, WTC and more", group: "Pages", icon: "◈", href: "/failures" },
   { id: "beam-calc", label: "Beam Calculator", sublabel: "Live deflection, BMD and SFD diagrams", group: "Pages", icon: "─", href: "/lab/beam" },
   { id: "column-calc", label: "Column Buckling", sublabel: "Euler critical load + K-factor visualizer", group: "Pages", icon: "╪", href: "/lab/column" },
-  { id: "codex-hub", label: "Codex", sublabel: "Three open chambers, research, cricket, Nepal", group: "Pages", icon: "◈", href: "/codex" },
+  { id: "codex-hub", label: "Codex", sublabel: "Two open chambers, research and Nepal", group: "Pages", icon: "◈", href: "/codex" },
   { id: "mind-page", label: "World Map", sublabel: "Interactive constellation, how everything connects", group: "Pages", icon: "◎", href: "/mind" },
   { id: "journey-page", label: "The Journey", sublabel: "Eight chapters from Kathmandu to now", group: "Pages", icon: "▷", href: "/journey" },
   // Codex
   { id: "codex-research", label: "Research Vault", sublabel: "FG-GRC deep dive, 200+ simulations", group: "◈ Codex", icon: "⬡", href: "/codex/research" },
-  { id: "codex-cricket", label: "Cricket Codex", sublabel: "IPL analytics + XGBoost prediction model", group: "◈ Codex", icon: "◉", href: "/codex/cricket" },
   { id: "codex-nepal", label: "Nepal Files", sublabel: "Infrastructure, Kathmandu, home", group: "◈ Codex", icon: "◎", href: "/codex/nepal" },
   // Blog
   { id: "blog-1", label: "Buckling & Life", sublabel: "How structural failure taught me to be flexible", group: "Blog", icon: "▤", href: "/blog/buckling-and-life" },

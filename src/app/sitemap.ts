@@ -9,7 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/blog", priority: 0.8 },
     { path: "/codex", priority: 0.6 },
     { path: "/codex/research", priority: 0.5 },
-    { path: "/codex/cricket", priority: 0.5 },
     { path: "/codex/nepal", priority: 0.5 },
     { path: "/failures", priority: 0.6 },
     { path: "/journey", priority: 0.6 },

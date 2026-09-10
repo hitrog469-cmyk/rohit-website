@@ -6,8 +6,7 @@ import Link from "next/link";
 
 const CHAMBERS = [
   { code: "01", name: "Research Vault", color: "#F59E0B", glyph: "⬡", hint: "200+ simulations" },
-  { code: "02", name: "Cricket Codex", color: "#3B82F6", glyph: "◉", hint: "XGBoost model" },
-  { code: "03", name: "Nepal Files", color: "#10B981", glyph: "◎", hint: "Home country" },
+  { code: "02", name: "Nepal Files", color: "#10B981", glyph: "◎", hint: "Home country" },
 ];
 
 export default function CodexTeaser() {
@@ -61,13 +60,13 @@ export default function CodexTeaser() {
             <span className="text-[#F59E0B]">than you can see.</span>
           </h2>
           <p className="text-[#444] text-base max-w-md mx-auto leading-relaxed font-mono">
-            Three chambers, all open. Research, cricket, Nepal.
+            Two chambers, both open. The research vault and the Nepal files.
             There is a question at each door, but it is only there for fun.
           </p>
         </motion.div>
 
         {/* Chamber cards */}
-        <div className="grid md:grid-cols-3 gap-4 mb-10">
+        <div className="grid md:grid-cols-2 gap-4 mb-10 max-w-2xl mx-auto">
           {CHAMBERS.map((c, i) => (
             <motion.div
               key={c.code}
@@ -76,7 +75,7 @@ export default function CodexTeaser() {
               transition={{ delay: 0.2 + i * 0.1, duration: 0.5 }}
             >
               <Link
-                href={`/codex/${c.code === "01" ? "research" : c.code === "02" ? "cricket" : "nepal"}`}
+                href={`/codex/${c.code === "01" ? "research" : "nepal"}`}
                 onMouseEnter={() => setHovered(c.code)}
                 onMouseLeave={() => setHovered(null)}
                 className="block p-5 rounded-xl border transition-all duration-300 relative overflow-hidden group"

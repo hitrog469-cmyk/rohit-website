@@ -56,7 +56,7 @@ const CHAPTERS = [
     title: "The cricket problem that wouldn't leave me alone",
     body: `I have watched cricket my whole life. Then I started running the numbers. Phase-weighted batting impact. Death bowling undervalued everywhere. I built an XGBoost model on IPL 2024 data, 17.3 percentage points above baseline. It turned out engineering and cricket analysis are the same activity: identify variables, build a model, validate it against reality. The boundary between structural analysis and sports data dissolved for me that year.`,
     learned: "A domain is just a set of constraints. The thinking underneath is universal.",
-    ledTo: "The Cricket Codex. A new way to watch the game.",
+    ledTo: "A new way to watch the game, and a habit of testing what I assume.",
   },
   {
     year: "2024",
