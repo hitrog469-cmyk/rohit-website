@@ -2,53 +2,7 @@
 
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { useCounter } from "@/hooks/useCounter";
 import { ChevronDown, FlaskConical, GitBranch, Layers, Microscope } from "lucide-react";
-
-/* ── Animated stat counter ─────────────────────────────────────── */
-function StatCard({
-  prefix = "",
-  value,
-  suffix = "",
-  label,
-  delay,
-}: {
-  prefix?: string;
-  value: number;
-  suffix?: string;
-  label: string;
-  delay: number;
-}) {
-  const ref = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-60px" });
-  const { count, start } = useCounter(value, 1600);
-  const started = useRef(false);
-
-  if (inView && !started.current) {
-    started.current = true;
-    setTimeout(start, delay);
-  }
-
-  return (
-    <motion.div
-      ref={ref}
-      className="flex flex-col items-center text-center p-6 rounded-2xl glass amber-border relative overflow-hidden group"
-      initial={{ opacity: 0, y: 30 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ delay: delay / 1000, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      whileHover={{ scale: 1.03 }}
-    >
-      <div
-        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-        style={{ background: "radial-gradient(ellipse at center, rgba(245,158,11,0.06) 0%, transparent 70%)" }}
-      />
-      <div className="text-4xl md:text-5xl font-black amber-glow-text mb-2">
-        {prefix}{count}{suffix}
-      </div>
-      <div className="text-[#A3A3A3] text-sm leading-snug max-w-[140px]">{label}</div>
-    </motion.div>
-  );
-}
 
 /* ── FG-GRC plate visualizer ────────────────────────────────────── */
 function PlateVisualizer() {
@@ -336,10 +290,6 @@ export default function Research() {
                 note: "In the thesis, imperfection sensitivity was a curve I could plot. On site, deviation is a number in a report with a pass or fail next to it. The threshold that separates a cosmetic deviation from a structural one is set mostly by convention, and the two ways of thinking have never been properly introduced.",
               },
               {
-                q: "How much of pavement design survives contact with as-built tolerance?",
-                note: "IRC methods and IITPAVE take layer thicknesses as given. Construction delivers them within a tolerance. If capture and scan data can measure what was actually laid, the prediction of how that surface ages should be able to use the real numbers instead of the specified ones.",
-              },
-              {
                 q: "What is a sensor network telling you before it tells you anything?",
                 note: "My monitoring dashboard flags anomalies with a rolling z-score across accelerometer, strain and temperature channels. It is a blunt instrument. The interesting failures are slow, and a slow enough drift looks like a new baseline. Separating instrument drift from real change on limited history is still open for me.",
               },
@@ -352,16 +302,26 @@ export default function Research() {
           </div>
         </motion.div>
 
-        {/* Stats row */}
-        <p className="text-[#525252] text-xs font-mono tracking-wider uppercase mb-4">
-          Figures from the thesis
-        </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
-          <StatCard prefix="+" value={30} suffix="%" label="Critical buckling load, GNP fraction 5% to 25%" delay={0} />
-          <StatCard prefix="-" value={15} suffix="%" label="Capacity lost, thermal exposure 300K to 500K" delay={150} />
-          <StatCard value={12} suffix="+" label="Parametric variables studied" delay={300} />
-          <StatCard value={4} label="GPL distribution patterns compared" delay={450} />
-        </div>
+        {/* What I am looking for next */}
+        <motion.div
+          className="rounded-xl border border-[#F59E0B]/20 bg-[#F59E0B]/5 p-6 mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.65 }}
+        >
+          <p className="text-[10px] font-mono tracking-widest text-[#F59E0B] uppercase mb-2">
+            What I am looking for next
+          </p>
+          <p className="text-[#A3A3A3] text-sm leading-relaxed max-w-3xl">
+            The right lab, and the right supervisor. I have done enough self directed work to
+            know where it stops. The thesis went as far as a workstation and a reading list
+            could take it, and the questions above are past what I can answer alone. What I
+            want now is a group where some of this is already being argued about, and someone
+            whose standards are higher than mine, who will tell me plainly when I am wrong.
+            I am not looking for a place to be comfortable. I am looking for the people who
+            will make me considerably better at this than I currently am.
+          </p>
+        </motion.div>
 
         {/* Two-column: plate viz + timeline */}
         <div className="grid lg:grid-cols-2 gap-16 mb-20">

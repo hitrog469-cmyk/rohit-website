@@ -295,7 +295,7 @@ export default function BeyondWork() {
           transition={{ delay: 0.5 }}
           className="mb-20"
         >
-          <p className="text-[#333] text-xs font-mono tracking-widest uppercase mb-5 text-center">, click to flip, </p>
+          <p className="text-[#333] text-xs font-mono tracking-widest uppercase mb-5 text-center">click to flip</p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {FUN_FACTS.map((fact, i) => (
               <FlipCard key={i} {...fact} delay={0.1 + i * 0.07} />

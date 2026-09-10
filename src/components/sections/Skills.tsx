@@ -66,7 +66,6 @@ const SKILL_GROUPS = [
       { name: "STAAD.Pro", desc: "Structural analysis, frame structures" },
       { name: "SAP2000", desc: "Building analysis, seismic design" },
       { name: "ETABS", desc: "High-rise analysis, lateral loads" },
-      { name: "IITPAVE", desc: "Flexible pavement design to IRC methods" },
     ],
   },
 ];

@@ -7,7 +7,6 @@ import { GraduationCap, BookOpen, Award, ChevronDown } from "lucide-react";
 const COURSES = [
   "Construction Planning and Scheduling",
   "Transportation Engineering",
-  "Pavement Design (IRC, IITPAVE)",
   "Highway Engineering Laboratory",
   "Finite Element Method",
   "Advanced Structural Analysis",
@@ -17,6 +16,29 @@ const COURSES = [
   "Numerical Analysis",
   "Fluid Mechanics",
   "Composite Materials",
+];
+
+const HONOURS = [
+  { title: "National Astronomy Olympiad, Nepal", detail: "Finalist. Selected through the national rounds while in the science stream.", year: "" },
+  { title: "COMPEX Scholarship", detail: "Government of India scholarship for Nepali students, awarded by national competitive examination.", year: "2021" },
+  { title: "Aspire Institute Leadership Program Scholar", detail: "Selected for a competitive global leadership programme on decision making, social impact and cross cultural collaboration.", year: "2024" },
+  { title: "District Topper, Baglung", detail: "Ranked among the highest performing students in the district in the Secondary Education Examination, GPA 3.95 / 4.0.", year: "2018" },
+  { title: "Academic Distinction, Higher Secondary", detail: "CGPA 3.85 / 4.0 with A grades in physics, chemistry, maths and computer science.", year: "2020" },
+];
+
+const SERVICE = [
+  { role: "Student Mentor", org: "Institute Counselling Services, NIT Rourkela", when: "2023 to 2025", detail: "Academic, personal and career guidance to junior students through the institute peer support programme." },
+  { role: "Founder and Lead Educator", org: "Learners Club", when: "2020 to 2024", detail: "Free STEM education platform started during COVID for school students in Nepal. Physics, chemistry and maths, 300 videos, 20,000+ views." },
+  { role: "Program Coordinator", org: "SDG Campus Club, NIT Rourkela", when: "2022 to 2025", detail: "Sustainability focused campus activities aligned with the UN Sustainable Development Goals. Event planning, logistics, outreach." },
+  { role: "Class and Branch Representative", org: "Civil Engineering, NIT Rourkela", when: "2021 to 2025", detail: "Elected representative between the cohort and the department. Also played inter collegiate football for the institute." },
+  { role: "Student Member", org: "American Society of Civil Engineers", when: "2021 to 2024", detail: "ASCE student membership through the undergraduate years." },
+];
+
+const CERTS = [
+  "Python for Data Science, AI and Development, IBM",
+  "Foundations: Data, Data, Everywhere, Google",
+  "Introduction to Thermodynamics",
+  "AWS S3 Basics",
 ];
 
 const BEYOND = [
@@ -215,6 +237,77 @@ export default function Education() {
                 </div>
               </div>
             </div>
+          </div>
+        </motion.div>
+
+        {/* Honours and service */}
+        <div className="grid lg:grid-cols-2 gap-6 mb-6">
+          <motion.div
+            className="rounded-2xl p-7"
+            style={{ background: "var(--bg-ink)", border: "1px solid var(--border-default)" }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.35, duration: 0.6 }}
+          >
+            <div className="flex items-center gap-2.5 mb-5">
+              <Award className="w-5 h-5 text-[#F59E0B]" />
+              <h3 className="text-[#F5F5F5] font-bold text-lg">Honours</h3>
+            </div>
+            <div className="space-y-4">
+              {HONOURS.map((h) => (
+                <div key={h.title} className="border-l-2 border-[#F59E0B]/25 pl-4">
+                  <div className="flex items-baseline justify-between gap-3">
+                    <p className="text-[#F5F5F5] text-sm font-semibold leading-snug">{h.title}</p>
+                    {h.year && (
+                      <span className="text-[10px] font-mono text-[#525252] shrink-0">{h.year}</span>
+                    )}
+                  </div>
+                  <p className="text-[#525252] text-xs leading-relaxed mt-1">{h.detail}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="rounded-2xl p-7"
+            style={{ background: "var(--bg-ink)", border: "1px solid var(--border-default)" }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.45, duration: 0.6 }}
+          >
+            <div className="flex items-center gap-2.5 mb-5">
+              <BookOpen className="w-5 h-5 text-[#3B82F6]" />
+              <h3 className="text-[#F5F5F5] font-bold text-lg">Leadership and service</h3>
+            </div>
+            <div className="space-y-4">
+              {SERVICE.map((v) => (
+                <div key={v.role} className="border-l-2 border-[#3B82F6]/25 pl-4">
+                  <div className="flex items-baseline justify-between gap-3">
+                    <p className="text-[#F5F5F5] text-sm font-semibold leading-snug">{v.role}</p>
+                    <span className="text-[10px] font-mono text-[#525252] shrink-0">{v.when}</span>
+                  </div>
+                  <p className="text-[#A3A3A3] text-xs mt-0.5">{v.org}</p>
+                  <p className="text-[#525252] text-xs leading-relaxed mt-1">{v.detail}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+
+        <motion.div
+          className="rounded-2xl p-6 mb-16"
+          style={{ background: "var(--bg-ink)", border: "1px solid var(--border-default)" }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.5, duration: 0.6 }}
+        >
+          <p className="text-[#525252] text-xs font-mono tracking-wider uppercase mb-3">Certifications</p>
+          <div className="flex flex-wrap gap-2">
+            {CERTS.map((c) => (
+              <span key={c} className="text-[10px] px-2.5 py-1 rounded bg-[#1a1a1a] text-[#A3A3A3] border border-[#222]">
+                {c}
+              </span>
+            ))}
           </div>
         </motion.div>
 
