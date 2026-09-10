@@ -305,8 +305,9 @@ export default function Research() {
         >
           <h3 className="text-[#F5F5F5] font-semibold text-lg mb-2">Questions I haven&apos;t answered yet</h3>
           <p className="text-[#525252] text-sm mb-6 max-w-2xl">
-            The honest list. Some of these came out of the thesis. Most came from standing
-            on a site, then looking hard at the data that was supposed to describe it.
+            The honest list. A few came out of the thesis. Most came from standing on a
+            site, watching people build something, then looking hard at the data that was
+            supposed to describe both.
           </p>
           <div className="grid md:grid-cols-2 gap-3">
             {[
@@ -315,12 +316,20 @@ export default function Research() {
                 note: "A disputed result can start in the capture, in the 3D or model review, in how an activity was configured, in the dependency logic, or in the inference itself. By the time it surfaces in a delay forecast it has already propagated through the network. I trace these by hand, one link at a time. There should be a principled way to localise the fault.",
               },
               {
+                q: "Why do two crews with the same scope produce different rates?",
+                note: "Same drawings, same sequence, same headcount, and the line of balance still comes out with different slopes. Nothing in my data accounts for the gap. Physiological and mental state are real inputs to production, heat, fatigue, sleep, how long the commute was, whether the foreman is trusted, what happened at home that morning, and none of them appear in any schedule I have worked with. Wearables and site sensing could measure some of it. I do not know yet which parts you should measure, or where measuring turns a site into surveillance, and that is most of why the question interests me.",
+              },
+              {
                 q: "Where should the human sit in an automated progress loop?",
                 note: "Automated inference is fast and consistent. People are slower and better at knowing when something on a site does not add up. Right now that boundary is drawn by habit and by whoever is available. I would like to know where the handover actually belongs, and what it costs to put it in the wrong place.",
               },
               {
                 q: "Can production rates be read the way traffic flow is read?",
                 note: "Line of balance plans a project as crews moving through locations at a rate, against a fixed capacity. Roads have a mature theory for the same shape of problem. I have run enough pace-variation and line-of-balance reviews to want to know how far that borrowing goes.",
+              },
+              {
+                q: "Can dataset review be made measurable rather than judged?",
+                note: "I write domain review standards for annotated construction imagery, and they work, but they rest on experience rather than on anything I can put a number against. Annotation reliability in this setting should be measurable. I have notes and no framework yet.",
               },
               {
                 q: "How large a geometric deviation stops being noise?",
@@ -334,10 +343,6 @@ export default function Research() {
                 q: "What is a sensor network telling you before it tells you anything?",
                 note: "My monitoring dashboard flags anomalies with a rolling z-score across accelerometer, strain and temperature channels. It is a blunt instrument. The interesting failures are slow, and a slow enough drift looks like a new baseline. Separating instrument drift from real change on limited history is still open for me.",
               },
-              {
-                q: "Can dataset review be made measurable rather than judged?",
-                note: "I write domain review standards for annotated construction imagery, and they work, but they rest on experience rather than on anything I can put a number against. Annotation reliability in this setting should be measurable. I have notes and no framework yet.",
-              },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#1a1a1a] bg-[#0a0a0a] p-5">
                 <p className="text-[#F5F5F5] text-sm font-semibold mb-2 leading-snug">{item.q}</p>
@@ -348,6 +353,9 @@ export default function Research() {
         </motion.div>
 
         {/* Stats row */}
+        <p className="text-[#525252] text-xs font-mono tracking-wider uppercase mb-4">
+          Figures from the thesis
+        </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
           <StatCard prefix="+" value={30} suffix="%" label="Critical buckling load, GNP fraction 5% to 25%" delay={0} />
           <StatCard prefix="-" value={15} suffix="%" label="Capacity lost, thermal exposure 300K to 500K" delay={150} />
